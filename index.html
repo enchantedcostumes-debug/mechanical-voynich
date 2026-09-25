@@ -2515,7 +2515,12 @@
                         <div class="inventory-item-card">
                             <div class="item-title"><span>Transcribed Lines (${textLines.length})</span></div>
                             <div style="font-family:'JetBrains Mono'; font-size:0.75rem; color:#cbd5e1; max-height:260px; overflow-y:auto; line-height:1.6; margin-top:0.4rem;">
-                                ${textLines.map(l => `<div><span style="color:var(--text-muted); margin-right:0.5rem;">L.${l.line}</span>${l.text}</div>`).join('')}
+                                ${textLines.map(l => `
+                                    <div style="margin-bottom:0.35rem; display:flex; align-items:baseline; flex-wrap:wrap; gap:0.25rem;">
+                                        <span style="color:var(--text-muted); font-size:0.7rem; min-width:32px;">L.${l.line}</span>
+                                        ${(l.words || []).map(w => `<span class="folio-word-chip" style="font-size:0.72rem; padding:0.1rem 0.35rem;" onclick="closeModal('pageMapModal'); openWordDetail('${w}')">${w}</span>`).join('')}
+                                    </div>
+                                `).join('')}
                             </div>
                         </div>
                     `;
