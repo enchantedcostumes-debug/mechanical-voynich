@@ -1,7 +1,7 @@
-# THE 15TH-CENTURY PHYSICAL FINDING AIDS IN BEINECKE MS 408
+﻿# THE 15TH-CENTURY PHYSICAL FINDING AIDS IN BEINECKE MS 408
 ## Codicological Forensic Analysis of Reader Navigation Mechanisms
 
-**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)  
+**Author & Lead Investigator**: Tammy Lou Casey   
 *Independent Forensic Codicological Investigation*  
 
 ---
@@ -89,3 +89,4 @@ The Voynich Manuscript was not an impenetrable wall of mystery to its creator—
 2. **Beinecke Rare Book & Manuscript Library**. (2026). *Voynich Manuscript MS 408 Digital Facsimile*. Yale University.
 3. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Washington, D.C.
 4. **Clemens, R., & Harkness, D. E.** (2016). *The Voynich Manuscript*. Yale University Press.
+

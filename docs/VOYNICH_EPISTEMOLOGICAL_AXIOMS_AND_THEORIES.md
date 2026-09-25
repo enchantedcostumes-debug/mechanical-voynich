@@ -1,6 +1,6 @@
-# THE VOYNICH EPISTEMOLOGICAL AXIOMS & HYPOTHESES MATRIX
+﻿# THE VOYNICH EPISTEMOLOGICAL AXIOMS & HYPOTHESES MATRIX
 
-**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)  
+**Author:** Tammy Lou Casey   
 *Affiliation*: Independent Researcher  
 
 ---
@@ -227,3 +227,4 @@ Any future decipherment, translation, or structural claim must clear the **Axiom
 ```
 
 By enforcing this invariant matrix, this study eliminates subjective speculation and locks reasoning strictly to physical reality.
+

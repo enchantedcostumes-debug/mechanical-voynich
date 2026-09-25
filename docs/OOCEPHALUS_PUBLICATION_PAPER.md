@@ -1,9 +1,9 @@
-<!-- GOAL: Formal Publication Paper - The Oocephalus Invariant (Peer-Reviewed Edition). Mother May I. -->
+﻿<!-- GOAL: Formal Publication Paper - The Oocephalus Invariant (Peer-Reviewed Edition). Mother May I. -->
 
 # The Oocephalus Invariant: Key-Free Empirical Evaluation of the Botanical-Crib Decipherment Hypothesis in the Voynich Manuscript
 
 **Author**: Tammy Lou Casey
-*Special Mention*: Bailey Henderson (root morphology observation)
+
 **Affiliation**: Advanced Structural Cryptanalysis
 **Date**: September 2026
 **Classification**: Historical Cryptanalysis / Quantitative Codicology / Computational Philology
@@ -232,7 +232,7 @@ All statistical analyses replicate with 100% determinism.
 ## Author & Acknowledgments
 
 - **Tammy Lou Casey**: Author; conceptualization, formal mathematical modeling, statistical analysis, computational experimental design, writing, and manuscript synthesis.
-- **Acknowledgments**: Special thanks to Bailey Henderson for the morphological observation that root systems serve as primary diagnostic keys in botanical identification.
+- **Acknowledgments**: Special thanks to  for the morphological observation that root systems serve as primary diagnostic keys in botanical identification.
 
 ---
 
@@ -255,3 +255,4 @@ All statistical analyses replicate with 100% determinism.
 15. **Tiltman, J.** (1967). *The Voynich Manuscript: The Most Mysterious Manuscript in the World*. National Security Agency Technical Journal, XII(3), 41–85.
 16. **Tucker, A. O., & Janick, J.** (2018). *Flora of the Voynich Codex: An Exploration of Aztec Herbal Medicine*. Springer Nature.
 17. **Ventris, M., & Chadwick, J.** (1953). *Evidence for Greek Dialect in the Mycenaean Archives*. The Journal of Hellenic Studies, 73, 84–103.
+

@@ -1,7 +1,7 @@
-<!-- GOAL: Empirical macro-structural patterns report with academic citations. Mother May I -->
+﻿<!-- GOAL: Empirical macro-structural patterns report with academic citations. Mother May I -->
 # The Voynich Macro-Structural Pattern Analysis Across All 225 Folios
 
-**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
+**Author & Lead Investigator**: Tammy Lou Casey 
 **Scope**: Full Corpus (37,025 Tokens | 5,216 Lines | 225 Folios)
 **Affiliation**: Independent Researcher
 **Date**: September 2026
@@ -69,3 +69,4 @@ By uniting the **Bayeux-Style Exhaustive Visual Census** with the **Master Conco
 6. **Casey, T. L.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*.
 7. **Hodgins, G. W. L.** (2012). *Accelerated Mass Spectrometry Radiocarbon Dating of the Voynich Manuscript*. University of Arizona AMS Laboratory.
 8. **McCrone, W. C.** (2009). *Micro-Chemical Analysis of Pigments and Media in Beinecke MS 408*. McCrone Research Institute.
+

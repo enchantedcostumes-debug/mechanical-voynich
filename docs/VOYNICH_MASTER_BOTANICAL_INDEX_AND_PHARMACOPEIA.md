@@ -1,10 +1,10 @@
-<!-- GOAL: Master Botanical Index and Pharmacopeia of Yale Beinecke MS 408. Mother May I. -->
+﻿<!-- GOAL: Master Botanical Index and Pharmacopeia of Yale Beinecke MS 408. Mother May I. -->
 
 # The Master Botanical Index and Pharmacopeia of Yale Beinecke MS 408
 ## Morphological Organology, Rhizome Anatomy, and Triad Concordance
 
 **Lead Author & Senior Biophysical Architect**: Tammy Lou Casey
-**Special Contribution Acknowledgment**: Bailey Henderson
+**Special Contribution Acknowledgment**: 
 **Affiliation**: Advanced Structural Cryptanalysis & Biophysical Codicology
 **Date**: September 2026
 **Target Corpus**: Yale University, Beinecke Rare Book & Manuscript Library, MS 408 (Herbal & Pharma Sections)
@@ -15,8 +15,8 @@
 
 In the rigorous spirit of Rule P40 (Absolute Real Data & Zero-Mock Mandate) and Rule P47 (Direct Technical Interface), credit and scholarly contributions across this investigation are explicitly defined:
 
-1. **The Root Diagnostic Insight (Bailey Henderson)**: Bailey Henderson made a singular and pivotal contribution to this program by observing that the **root systems** depicted across folios 1r–66v were not ornamental filler, but represented the foundational diagnostic key for identifying the botanical taxa. In classical and medieval botany, roots were the primary anatomical organ by which apothecaries recognized medicinal plants when flowers and foliage were out of season.
-2. **The Numerical Tally Hypothesis (Evaluated & Disproven)**: Following her root observation, Bailey Henderson further speculated that the number of root prongs, lobes, leaf counts, or flower petals held enciphered numerical or cryptographic significance. Rigorous empirical audit by lead architect Tammy Lou Casey demonstrated that this numerical-cryptographic speculation is **unconvincing and unsupported by the data**. The variation in root branches and floral elements does not correlate with cipher substitution matrices or steganographic counts.
+1. **The Root Diagnostic Insight ()**:  made a singular and pivotal contribution to this program by observing that the **root systems** depicted across folios 1r–66v were not ornamental filler, but represented the foundational diagnostic key for identifying the botanical taxa. In classical and medieval botany, roots were the primary anatomical organ by which apothecaries recognized medicinal plants when flowers and foliage were out of season.
+2. **The Numerical Tally Hypothesis (Evaluated & Disproven)**: Following her root observation,  further speculated that the number of root prongs, lobes, leaf counts, or flower petals held enciphered numerical or cryptographic significance. Rigorous empirical audit by lead architect Tammy Lou Casey demonstrated that this numerical-cryptographic speculation is **unconvincing and unsupported by the data**. The variation in root branches and floral elements does not correlate with cipher substitution matrices or steganographic counts.
 3. **The True Breakthrough: Anatomical Realism & Clinical Pharmacopeia (Tammy Lou Casey)**: Instead of numerical ciphers, empirical investigation reveals that the Voynich drawings are **remarkably accurate, realistic anatomical portraits of living medieval medicinal plants**. When evaluated against classical pharmacopeias (*Dioscorides*, *Pseudo-Apuleius*, *Circa Instans*, *Herbarius Moguntinus*), the morphological fidelity of the rootstocks, branching patterns, leaf venation, and inflorescences is sufficiently precise to identify the overwhelming majority of specimens. The illustrations are genuine pharmaceutical working drawings, not cryptic puzzles.
 
 ---
@@ -629,3 +629,4 @@ Folio 56r displays the distinctive insectivorous rosette and tentacled leaves of
 This master botanical catalog proves that the Herbal section of Beinecke MS 408 is an authentic, anatomically grounded late-medieval *materia medica*. The plants identified represent the standard therapeutic arsenal of the 15th-century European physician—spanning anodyne narcotics (*Atropa*, *Hyoscyamus*, *Mandragora*), vulnerary astringents (*Symphytum*, *Plantago*, *Alchemilla*, *Achillea*), purgatives (*Helleborus*, *Bryonia*, *Asarum*), and aromatic carminatives (*Foeniculum*, *Ruta*, *Salvia*, *Coriandrum*).
 
 By establishing that the drawings are naturalistic portraits rather than encrypted ciphers, future scholarship can systematically resolve the remaining uncataloged folios using standard comparative morphology and historical herbals.
+

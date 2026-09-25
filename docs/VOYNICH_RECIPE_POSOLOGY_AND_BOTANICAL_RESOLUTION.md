@@ -1,7 +1,7 @@
-# THE VOYNICH RECIPE POSOLOGY & BOTANICAL RESOLUTION REPORT
+﻿# THE VOYNICH RECIPE POSOLOGY & BOTANICAL RESOLUTION REPORT
 ## Empirical Quantitative Analysis of Administration Frequency in Beinecke MS 408
 
-**Lead Researcher & Author**: Tammy Lou Casey (Special Mention: Bailey Henderson)  
+**Lead Researcher & Author**: Tammy Lou Casey   
 *Affiliation*: Independent Researcher  
 **Target Folios**: Yale Beinecke MS 408, Folios 103r through 116v (Recipe & Stars Section)  
 

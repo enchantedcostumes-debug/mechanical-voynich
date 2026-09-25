@@ -1,9 +1,9 @@
-<!-- GOAL: The Mechanical Voynich Public Repository Documentation. Mother May I. -->
+﻿<!-- GOAL: The Mechanical Voynich Public Repository Documentation. Mother May I. -->
 # The Mechanical Voynich
 ### Interactive SVG Image Map Concordance Atlas & Iatromathematical Triad Engine
 
 **Live Production Web Application**: [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com)  
-**Lead Researchers & Architects**: Tammy Lou Casey & Bailey Henderson  
+**Lead Researchers & Architects**: Tammy Lou Casey &   
 *The Oracle Platform — Codicological Biophysics & Manuscript Intelligence*
 
 ---
@@ -12,7 +12,7 @@
 
 For over a century, cryptographers, computational linguists, and historians treated the **Voynich Manuscript (Yale Beinecke MS 408)** as either an undeciphered cipher or an unknown lost language.
 
-The **Iatromathematical Concordance Hypothesis**, formulated by **Tammy Lou Casey & Bailey Henderson**, establishes that Beinecke MS 408 is neither: it is an **ergonomically engineered 15th-century hyperlinking concordance system for medieval clinical practice**.
+The **Iatromathematical Concordance Hypothesis**, formulated by **Tammy Lou Casey & **, establishes that Beinecke MS 408 is neither: it is an **ergonomically engineered 15th-century hyperlinking concordance system for medieval clinical practice**.
 
 The recurring cross-sectional vocabulary (`otal`, `okaly`, `okeody`, `am`, `ar`, `otaiin`) serves as **indexical bridge tokens**:
 1. **The Software Hyperlinks (Triad Bridge Tokens)**:
@@ -103,7 +103,7 @@ If you utilize this concordance hypothesis, empirical census data, or interactiv
 
 ```bibtex
 @article{casey_henderson_2026_voynich,
-  author    = {Tammy Lou Casey and Bailey Henderson},
+  author    = {Tammy Lou Casey and },
   title     = {The Mechanical Voynich: The Iatromathematical Concordance Hypothesis and Physical Navigation Aids in Beinecke MS 408},
   journal   = {The Oracle Platform Codicological Intelligence Series},
   year      = {2026},
@@ -116,3 +116,4 @@ If you utilize this concordance hypothesis, empirical census data, or interactiv
 ### Acknowledgments
 - **Yale University Beinecke Rare Book & Manuscript Library** for high-resolution public domain digital access to MS 408.
 - The **Voynich Research Community** for standardizing the EVA (European Voynich Alphabet) corpus.
+

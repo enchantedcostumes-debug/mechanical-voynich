@@ -1,8 +1,8 @@
-# THE IATROMATHEMATICAL CONCORDANCE HYPOTHESIS
+﻿# THE IATROMATHEMATICAL CONCORDANCE HYPOTHESIS
 ## An Empirical Evaluation of Cross-Sectional Token Relational Indexing in Beinecke MS 408
 
 **Author & Lead Investigator**: Tammy Lou Casey
-*Special Mention*: Bailey Henderson (root morphology observation)
+
 *Affiliation*: Independent Researcher
 **Core Hypothesis**: The Casey Concordance & Hyperlink Model
 **Mathematical Object**: Tripartite Bipartite Graph $G = (V_{Zodiac}, V_{Herbal}, V_{Pharma}, E)$
@@ -151,3 +151,4 @@ The **Casey Concordance Hypothesis** provides a coherent, non-cryptographic, cod
 2. **Ketham, J. de.** (1491). *Fasciculus Medicinae*. Venice: Giovanni and Gregorio de' Gregorii.
 3. **Thorndike, L.** (1923). *A History of Magic and Experimental Science*. Columbia University Press.
 4. **Siraisi, N. G.** (1990). *Medieval and Early Renaissance Medicine: An Introduction to Knowledge and Practice*. University of Chicago Press.
+

@@ -1,9 +1,9 @@
-<!-- GOAL: Canonical Monograph - The Timeline of Discovery and Architectural Concordance of Beinecke MS 408. Mother May I. -->
+﻿<!-- GOAL: Canonical Monograph - The Timeline of Discovery and Architectural Concordance of Beinecke MS 408. Mother May I. -->
 # THE MECHANICAL VOYNICH
 ## The Chronological Steps of Discovery & Architectural Concordance of Beinecke MS 408
 
 **Lead Researcher & Author**: Tammy Lou Casey
-*Special Mention*: Bailey Henderson (root morphology observation)
+
 *Affiliation*: Independent Researcher
 **Canonical Publication URL**: [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com)
 **Target Manuscript**: Yale University Beinecke Rare Book & Manuscript Library, MS 408 (c. 1404–1438)
@@ -14,7 +14,7 @@
 
 For more than a century, the Voynich Manuscript (Yale Beinecke MS 408) has been framed as either an unbroken military-grade cipher, an untranslatable lost natural language, or an elaborate Renaissance hoax. Every attempt to decipher the text as alphabetic substitution or natural linguistic prose has collapsed.
 
-The research journey documented in this monograph represents a multi-year empirical investigation conducted by **Tammy Lou Casey** (with root morphology observations contributed by **Bailey Henderson**), beginning in **November 2025** and culminating in the definitive breakthroughs of **September 2026**.
+The research journey documented in this monograph represents a multi-year empirical investigation conducted by **Tammy Lou Casey** (with root morphology observations contributed by ****), beginning in **November 2025** and culminating in the definitive breakthroughs of **September 2026**.
 
 Rather than attempting to force modern cryptographic or phonetic models onto the text, the investigation advanced from early statistical cipher baselines and cross-linguistic harmonic analyses to an uncompromising separation between **Empirical Physical Axioms** and speculative theories, codified directly into an empirical relational database.
 
@@ -175,3 +175,4 @@ The recurring tokens (`otal`, `okaly`, `okeody`, `am`, `ar`) are the **hyperlink
 6. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Paper presented at the Seminar on the Voynich Manuscript, Washington, D.C.
 7. **Clemens, R., & Harkness, D. E.** (2016). *The Voynich Manuscript*. Yale University Press.
 8. **Ketham, J. de**. (1491). *Fasciculus Medicinae*. Venice: Johannes and Gregorius de Gregoriis.
+

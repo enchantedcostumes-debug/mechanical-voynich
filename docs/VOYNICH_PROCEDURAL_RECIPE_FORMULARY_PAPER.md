@@ -1,8 +1,8 @@
-<!-- GOAL: Formal Publication Paper - The Universal Procedural Formulary of Yale Beinecke MS 408. Mother May I. -->
+﻿<!-- GOAL: Formal Publication Paper - The Universal Procedural Formulary of Yale Beinecke MS 408. Mother May I. -->
 
 # The Universal Procedural Formulary of Yale Beinecke MS 408: Empirical Proof of Five-Stage Compounding Architecture and Galenic Posology Across 223 Recipe Units
 
-**Author**: Tammy Lou Casey (Special Mention: Bailey Henderson)
+**Author**: Tammy Lou Casey 
 **Affiliation**: Advanced Structural Cryptanalysis & Biophysical Codicology
 **Date**: September 2026
 **Classification**: Historical Cryptanalysis / Quantitative Codicology / Computational Philology / Medieval Medical History
@@ -324,8 +324,8 @@ These discoveries provide the structural and semantic foundation for future lexi
 
 1. Antidotarium Nicolai (c. 1150). *Ed. platearius*. Venice: Nicolaus de Pratis, 1471.
 2. Bax, Stephen (2014). "A proposed partial decipherment of the Voynich manuscript." *Lingua*, 152: 21–32.
-3. Casey, Tammy L. & Henderson, Bailey (2026). "The Oocephalus Invariant: Key-Free Empirical Evaluation of the Botanical-Crib Decipherment Hypothesis in the Voynich Manuscript." *Advanced Structural Cryptanalysis Reports*, MS-408-R01.
-4. Casey, Tammy L. & Henderson, Bailey (2026). "The 15th-Century Physical Finding Aids in Beinecke MS 408." *Biophysics & Codicological Intelligence Dossier*, MS-408-R02.
+3. Casey, Tammy L. &  (2026). "The Oocephalus Invariant: Key-Free Empirical Evaluation of the Botanical-Crib Decipherment Hypothesis in the Voynich Manuscript." *Advanced Structural Cryptanalysis Reports*, MS-408-R01.
+4. Casey, Tammy L. &  (2026). "The 15th-Century Physical Finding Aids in Beinecke MS 408." *Biophysics & Codicological Intelligence Dossier*, MS-408-R02.
 5. Currier, Prescott H. (1976). "Some Important New Statistical Findings." In *New Research on the Voynich Manuscript*, Washington, D.C.
 6. Knowles, Mark (2020). "A Census of Voynich Manuscript Pharmaceutical Drawings and Herbal Parallels." *Voynich Information Portal*.
 7. Mattheus Platearius (c. 1160). *Circa Instans (De Simplicibus Medicinis)*. Rome: Biblioteca Casanatense MS 459.
@@ -335,3 +335,4 @@ These discoveries provide the structural and semantic foundation for future lexi
 11. Tiltman, John H. (1967). "The Voynich Manuscript: "The Most Mysterious Manuscript in the World"." *NSA Technical Journal*, 12(3): 41–85.
 12. Tucker, Arthur O. & Janick, Jules (2018). *Flora of the Voynich Codex: An Exploration of Aztec Elixirs*. Springer.
 13. Zandbergen, René (2024). "The Voynich Manuscript: Structure and Sections." *voynich.nu*.
+

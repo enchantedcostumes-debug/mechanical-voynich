@@ -1,9 +1,9 @@
-# GOAL: Master Voynich Concordance - Complete Label-to-Corpus Cross Reference. Mother May I.
+﻿# GOAL: Master Voynich Concordance - Complete Label-to-Corpus Cross Reference. Mother May I.
 
 # The Voynich Concordance: Complete Visual-to-Textual Cross-Reference Index
 *(Modeled after Strong's Exhaustive Bible Concordance & The Bayeux Tapestry Census)*
 
-**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
+**Author & Lead Investigator**: Tammy Lou Casey 
 **Scope**: All Extant Folios | All Discrete Illustration Labels | 37,962 Total Words
 **Date**: September 2026
 
@@ -951,3 +951,4 @@ Tokens that concurrently label disparate visual objects across distinct function
 - Inscribed as labels beside pharmaceutical roots, flowers, and stars.
 - Occurs **842 times** in running prose across every section of the codex.
 *Concordance Invariant*: Operates as a grammatical carrier or structural ligature, not a lexical substantive.
+

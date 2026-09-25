@@ -1,7 +1,7 @@
-<!-- GOAL: Add formal references to zodiac star concordance report. Mother May I -->
+﻿<!-- GOAL: Add formal references to zodiac star concordance report. Mother May I -->
 # THE VOYNICH ZODIAC STAR CONCORDANCE & ASTRONOMICAL GROUND-TRUTH
 
-**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)
+**Author:** Tammy Lou Casey 
 *Affiliation*: Independent Researcher
 
 ---
@@ -105,3 +105,4 @@ The handwritten Romance month names (*marz, abril, mayo, jon, julliet, agost, se
 6. **Casey, T. L.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*.
 7. **Tiltman, J.** (1967). *The Voynich Manuscript: The Most Mysterious Manuscript in the World*. National Security Agency Technical Journal, XII(3), 41–85.
 8. **Kunitzsch, P.** (1986). *The Star Catalogue Commonly Appended to the Alfonsine Tables*. Journal for the History of Astronomy, 17(2), 89–98.
+

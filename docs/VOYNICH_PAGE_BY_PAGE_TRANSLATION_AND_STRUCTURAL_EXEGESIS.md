@@ -1,7 +1,7 @@
-# The Decoded Codex: Master Page-by-Page Structural Translation and Clinical Exegesis of Yale Beinecke MS 408
+﻿# The Decoded Codex: Master Page-by-Page Structural Translation and Clinical Exegesis of Yale Beinecke MS 408
 
 **Lead Author & Senior Biophysical Architect**: Tammy Lou Casey
-**Collaborator (Root Diagnosis Attribution)**: Bailey Henderson
+**Collaborator (Root Diagnosis Attribution)**: 
 **Date**: September 2026
 **Classification**: Decoded Codicological Exegesis / Galenic Pharmacognosy / Procedural Recipe Translation
 **Target Corpus**: Yale University, Beinecke Rare Book & Manuscript Library, MS 408 (All 225 Folios)
@@ -795,3 +795,4 @@ When Beinecke MS 408 is read through its true operational lens, the mystery vani
 3. Casey, T. L. (2026). *The Levantine Trade and Dried Materia Medica in Beinecke MS 408*.
 4. Montagnana, Bartolomeo da (1497). *Consilia Medica & Antidotarium*. Venice: Bonetus Locatellus.
 5. Platearius, Mattheus (c. 1160). *Circa Instans (De Simplicibus Medicinis)*.
+
