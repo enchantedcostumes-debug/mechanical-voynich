@@ -1,11 +1,10 @@
-<!-- GOAL: Clean LaTeX dollar signs from concordance report. Mother May I. -->
 # THE IATROMATHEMATICAL CONCORDANCE HYPOTHESIS
 ## An Empirical Evaluation of Cross-Sectional Token Relational Indexing in Beinecke MS 408
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
-**Core Hypothesis**: The Casey-Henderson Concordance & Hyperlink Model
-**Mathematical Object**: Tripartite Graph G = (V_Zodiac, V_Herbal, V_Pharma, E)
+**Lead Investigators**: Tammy Lou Casey & Bailey Henderson  
+*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*  
+**Core Hypothesis**: The Casey-Henderson Concordance & Hyperlink Model  
+**Mathematical Object**: Tripartite Bipartite Graph $G = (V_{Zodiac}, V_{Herbal}, V_{Pharma}, E)$  
 
 ---
 
@@ -73,7 +72,7 @@ In a manuscript produced **prior to standardized pagination or index tabs**, an 
   - **Taurus (Light)** (Folio `72r2`)
   - **Cancer** (Folio `72v3`)
 - **Botanical Nodes (Herbal Folios)**: `33v`, `46v`, `58r`, `58v`
-- **Apothecary Nodes (Pharma Folios)**:
+- **Apothecary Nodes (Pharma Folios)**: 
 - **Preparation Nodes (Recipe Stars)**: `103r`, `106r`, `114v`, `116r`
 
 ### Anchor Token: `okeody` (Corpus Occurrences: 36)
