@@ -2,7 +2,7 @@
 
 # The Universal Procedural Formulary of Yale Beinecke MS 408: Empirical Proof of Five-Stage Compounding Architecture and Galenic Posology Across 223 Recipe Units
 
-**Authors**: Tammy Lou Casey & Bailey Henderson
+**Author**: Tammy Lou Casey (Special Mention: Bailey Henderson)
 **Affiliation**: Advanced Structural Cryptanalysis & Biophysical Codicology
 **Date**: September 2026
 **Classification**: Historical Cryptanalysis / Quantitative Codicology / Computational Philology / Medieval Medical History

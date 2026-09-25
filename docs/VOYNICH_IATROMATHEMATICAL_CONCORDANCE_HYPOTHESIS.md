@@ -1,10 +1,11 @@
 # THE IATROMATHEMATICAL CONCORDANCE HYPOTHESIS
 ## An Empirical Evaluation of Cross-Sectional Token Relational Indexing in Beinecke MS 408
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson  
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*  
-**Core Hypothesis**: The Casey-Henderson Concordance & Hyperlink Model  
-**Mathematical Object**: Tripartite Bipartite Graph $G = (V_{Zodiac}, V_{Herbal}, V_{Pharma}, E)$  
+**Author & Lead Investigator**: Tammy Lou Casey
+*Special Mention*: Bailey Henderson (root morphology observation)
+*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
+**Core Hypothesis**: The Casey Concordance & Hyperlink Model
+**Mathematical Object**: Tripartite Bipartite Graph $G = (V_{Zodiac}, V_{Herbal}, V_{Pharma}, E)$
 
 ---
 
@@ -72,7 +73,7 @@ In a manuscript produced **prior to standardized pagination or index tabs**, an 
   - **Taurus (Light)** (Folio `72r2`)
   - **Cancer** (Folio `72v3`)
 - **Botanical Nodes (Herbal Folios)**: `33v`, `46v`, `58r`, `58v`
-- **Apothecary Nodes (Pharma Folios)**: 
+- **Apothecary Nodes (Pharma Folios)**:
 - **Preparation Nodes (Recipe Stars)**: `103r`, `106r`, `114v`, `116r`
 
 ### Anchor Token: `okeody` (Corpus Occurrences: 36)
@@ -146,7 +147,7 @@ The **Casey-Henderson Concordance Hypothesis** provides a coherent, non-cryptogr
 
 ## References
 
-1. **Casey, T. L., & Henderson, B.** (2026). *The Voynich Cross-Reference Anomaly Investigation*. The Oracle Platform.
+1. **Casey, T. L.** (2026). *The Voynich Cross-Reference Anomaly Investigation*. The Oracle Platform.
 2. **Ketham, J. de.** (1491). *Fasciculus Medicinae*. Venice: Giovanni and Gregorio de' Gregorii.
 3. **Thorndike, L.** (1923). *A History of Magic and Experimental Science*. Columbia University Press.
 4. **Siraisi, N. G.** (1990). *Medieval and Early Renaissance Medicine: An Introduction to Knowledge and Practice*. University of Chicago Press.

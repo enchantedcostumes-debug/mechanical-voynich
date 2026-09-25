@@ -2,7 +2,7 @@
 
 # Quantitative Evaluation of the Plant-Organ and Preparation Label Hypothesis in the Voynich Pharmaceutical Corpus
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson
+**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
 **Corpus**: Beinecke MS 408 Pharmaceutical Section (folios f87r–f102v)
 **Date**: September 2026
 **Methodology**: Morphological Contingency Analysis, Cross-Sectional Semantic Bleed, and Information-Theoretic Mutual Information

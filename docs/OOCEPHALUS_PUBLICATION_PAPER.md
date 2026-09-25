@@ -2,7 +2,8 @@
 
 # The Oocephalus Invariant: Key-Free Empirical Evaluation of the Botanical-Crib Decipherment Hypothesis in the Voynich Manuscript
 
-**Authors**: Tammy Lou Casey & Bailey Henderson
+**Author**: Tammy Lou Casey
+*Special Mention*: Bailey Henderson (root morphology observation)
 **Affiliation**: Advanced Structural Cryptanalysis
 **Date**: September 2026
 **Classification**: Historical Cryptanalysis / Quantitative Codicology / Computational Philology
@@ -228,10 +229,10 @@ All statistical analyses replicate with 100% determinism.
 
 ---
 
-## Author Contributions & Acknowledgments
+## Author & Acknowledgments
 
-- **Tammy Lou Casey**: Conceptualization, formal mathematical modeling, statistical analysis, computational experimental design, writing, and manuscript synthesis.
-- **Bailey Henderson**: Visual and comparative morphological analysis of manuscript illustrations, identification of image cross-references, and verification of duplicate specimen pairings.
+- **Tammy Lou Casey**: Author; conceptualization, formal mathematical modeling, statistical analysis, computational experimental design, writing, and manuscript synthesis.
+- **Acknowledgments**: Special thanks to Bailey Henderson for the morphological observation that root systems serve as primary diagnostic keys in botanical identification.
 
 ---
 

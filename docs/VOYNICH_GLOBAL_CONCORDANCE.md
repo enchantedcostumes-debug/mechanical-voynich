@@ -3,7 +3,7 @@
 # The Voynich Concordance: Complete Visual-to-Textual Cross-Reference Index
 *(Modeled after Strong's Exhaustive Bible Concordance & The Bayeux Tapestry Census)*
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson
+**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
 **Scope**: All Extant Folios | All Discrete Illustration Labels | 37,962 Total Words
 **Date**: September 2026
 

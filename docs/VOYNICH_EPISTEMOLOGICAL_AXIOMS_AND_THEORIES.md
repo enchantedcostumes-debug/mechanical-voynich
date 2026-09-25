@@ -1,6 +1,6 @@
 # THE VOYNICH EPISTEMOLOGICAL AXIOMS & HYPOTHESES MATRIX
 
-**Authors:** Tammy Lou Casey & Bailey Henderson
+**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)
 *The Oracle Platform · Epistemological Ground-Truth & Bayesian Falsification*
 
 ---

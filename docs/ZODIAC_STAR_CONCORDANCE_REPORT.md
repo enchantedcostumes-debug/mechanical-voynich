@@ -1,7 +1,7 @@
 <!-- GOAL: Add formal references to zodiac star concordance report. Mother May I -->
 # THE VOYNICH ZODIAC STAR CONCORDANCE & ASTRONOMICAL GROUND-TRUTH
 
-**Authors:** Tammy Lou Casey & Bailey Henderson
+**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)
 *The Oracle Platform · Astrological & Structural Ephemeris Benchmark*
 
 ---

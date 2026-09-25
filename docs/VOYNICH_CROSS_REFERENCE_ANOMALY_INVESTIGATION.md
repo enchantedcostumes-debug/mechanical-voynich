@@ -1,6 +1,6 @@
 # THE VOYNICH CROSS-REFERENCE ANOMALY INVESTIGATION
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson
+**Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
 *The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
 **Target**: Yale Beinecke MS 408 (Voynich Codex) · 225 Folios · 37,025 Inscribed Tokens
 **Synastry Resonance Ratio**: 1/2 (Harmonically Locked)
