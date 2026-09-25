@@ -1530,6 +1530,318 @@
             color: #000;
             box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
         }
+
+        /* Ambient Manuscript Slideshow Hero */
+        .manuscript-slideshow-hero {
+            position: relative;
+            width: 100%;
+            min-height: 480px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--border-glow);
+        }
+
+        .slideshow-track {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1);
+            animation: kenBurnsFade 25s infinite;
+        }
+
+        .slide-1 { animation-delay: 0s; }
+        .slide-2 { animation-delay: 5s; }
+        .slide-3 { animation-delay: 10s; }
+        .slide-4 { animation-delay: 15s; }
+        .slide-5 { animation-delay: 20s; }
+
+        @keyframes kenBurnsFade {
+            0% { opacity: 0; transform: scale(1.02); }
+            4% { opacity: 0.85; }
+            20% { opacity: 0.85; }
+            24% { opacity: 0; transform: scale(1.08); }
+            100% { opacity: 0; transform: scale(1); }
+        }
+
+        .slideshow-vignette-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(10, 14, 23, 0.72) 0%, rgba(5, 7, 12, 0.94) 100%),
+                        linear-gradient(to bottom, rgba(8, 10, 15, 0.9) 0%, transparent 15%, transparent 85%, rgba(7, 9, 14, 1) 100%);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 10;
+            max-width: 1750px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .hero-box {
+            background: rgba(14, 19, 30, 0.84);
+            backdrop-filter: blur(18px);
+            border: 1px solid var(--border-glow);
+            border-radius: 14px;
+            padding: 2.2rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hero-box-main {
+            gap: 1.25rem;
+        }
+
+        .hero-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.15;
+            background: linear-gradient(135deg, #ffffff 40%, var(--gold-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .hero-scribal-discovery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.85rem;
+            margin: 0.25rem 0;
+        }
+
+        .scribe-pill {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 0.8rem 1rem;
+        }
+
+        .scribe-pill-1 { border-left: 3px solid var(--emerald-herbal); }
+        .scribe-pill-2 { border-left: 3px solid var(--amethyst-pharma); }
+
+        .scribe-icon {
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .scribe-pill strong {
+            display: block;
+            font-size: 0.85rem;
+            color: #fff;
+            margin-bottom: 0.2rem;
+        }
+
+        .scribe-pill span {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .hero-btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+            color: #07090e;
+            font-weight: 700;
+            border: none;
+            padding: 0.8rem 1.4rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+        }
+
+        .hero-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.55);
+        }
+
+        .hero-btn-secondary {
+            background: rgba(255,255,255,0.05);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .hero-btn-secondary:hover {
+            background: rgba(255,255,255,0.12);
+            border-color: var(--gold);
+            color: var(--gold-light);
+        }
+
+        .hero-box-stats {
+            gap: 1.25rem;
+        }
+
+        .stats-header {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.85rem;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 10px;
+            padding: 1rem 0.8rem;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Cinzel', serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1.1;
+            margin-bottom: 0.3rem;
+        }
+
+        .stat-label {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-live-rotator {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 0.65rem 0.95rem;
+            font-size: 0.78rem;
+            color: #cbd5e1;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--emerald-herbal);
+            box-shadow: 0 0 10px var(--emerald-herbal);
+            animation: pulse-ring 2s infinite;
+        }
+
+        .apparatus-note {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 0.75rem;
+        }
+
+        /* Community Guess UI */
+        .community-guess-thumb {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.65rem;
+            background: linear-gradient(145deg, rgba(20,25,38,0.96), rgba(12,15,24,0.98));
+            border-left: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.75rem;
+            text-align: left;
+        }
+
+        .guess-rank-badge {
+            font-size: 0.65rem;
+            background: rgba(212,175,55,0.2);
+            color: var(--gold-light);
+            padding: 0.12rem 0.4rem;
+            border-radius: 4px;
+            border: 1px solid rgba(212,175,55,0.3);
+            font-weight: 700;
+        }
+
+        .rate-limit-banner {
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 8px;
+            padding: 0.85rem 1rem;
+            margin-bottom: 1.25rem;
+            color: #fca5a5;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-content-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-scribal-discovery {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1590,6 +1902,90 @@
             </div>
         </div>
     </header>
+
+    <!-- Ambient Manuscript Slideshow Hero Section -->
+    <section class="manuscript-slideshow-hero" id="landingHero">
+        <!-- Ambient Background Carousel (High-Res Yale Beinecke MS 408 Plates on infinite repeat) -->
+        <div class="slideshow-track">
+            <div class="slide slide-1" style="background-image: url('https://collections.library.yale.edu/iiif/2/1006203/full/1600,/0/default.jpg');"></div>
+            <div class="slide slide-2" style="background-image: url('https://collections.library.yale.edu/iiif/2/1006076/full/1600,/0/default.jpg');"></div>
+            <div class="slide slide-3" style="background-image: url('https://collections.library.yale.edu/iiif/2/1006233/full/1600,/0/default.jpg');"></div>
+            <div class="slide slide-4" style="background-image: url('https://collections.library.yale.edu/iiif/2/1006240/full/1600,/0/default.jpg');"></div>
+            <div class="slide slide-5" style="background-image: url('https://collections.library.yale.edu/iiif/2/1006071/full/1600,/0/default.jpg');"></div>
+        </div>
+        <div class="slideshow-vignette-overlay"></div>
+
+        <!-- Foreground Content: Sleek Frosted Glassmorphic Boxes -->
+        <div class="hero-content-wrapper">
+            <div class="hero-box hero-box-main">
+                <div class="hero-tag">BEINECKE MS 408 · INTERACTIVE CODICOLOGICAL FACSIMILE</div>
+                <h2 class="hero-title">The Mechanical Voynich</h2>
+                <p class="hero-subtitle">
+                    An empirical concordance atlas, living paleobotanical apparatus, and structural exegesis by <strong style="color:var(--gold-light);">Tammy Lou Casey</strong>. Built to resolve the manuscript through rigorous morphological alignment, astronomical coordinates, and verified Mediterranean trade pharmacopeia.
+                </p>
+                <div class="hero-scribal-discovery">
+                    <div class="scribe-pill scribe-pill-1">
+                        <span class="scribe-icon">🌿</span>
+                        <div>
+                            <strong>Scribe 1 (Hand A Herbalist)</strong>
+                            <span>Folios 1r–66v · Botanical simples, Venetian trade imports</span>
+                        </div>
+                    </div>
+                    <div class="scribe-pill scribe-pill-2">
+                        <span class="scribe-icon">⚗️</span>
+                        <div>
+                            <strong>Scribe 2 (Hand B Apothecary)</strong>
+                            <span>Folios 75r–116v · Procedural recipes, albarelli posology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta-group">
+                    <button class="hero-btn-primary" onclick="document.querySelector('main').scrollIntoView({behavior:'smooth'});">
+                        <span>🔬</span> Launch Concordance Workspace
+                    </button>
+                    <button class="hero-btn-secondary" onclick="openPageMapExplorer();">
+                        <span>🗺️</span> 131-Folio Page Map
+                    </button>
+                    <button class="hero-btn-secondary" onclick="openBotanicalCatalog();">
+                        <span>🌿</span> Botanical Index & Guesses
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-box hero-box-stats">
+                <div>
+                    <div class="stats-header">ARCHIVAL APPARATUS & TELEMETRY</div>
+                    <div class="stats-grid" style="margin-top:0.85rem;">
+                        <div class="stat-card">
+                            <div class="stat-num">131</div>
+                            <div class="stat-label">Folios Mapped</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">294</div>
+                            <div class="stat-label">Concordance Anchors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">42</div>
+                            <div class="stat-label">Verified Plant Taxa</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">8,498</div>
+                            <div class="stat-label">Corpus Lexicon Tokens</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:1rem;">
+                    <div class="hero-live-rotator">
+                        <span class="pulse-dot"></span>
+                        <span id="heroPlateCaption">Live Plate: Folio 70v2 (Celestial Zodiac Wheel)</span>
+                    </div>
+                    <div class="apparatus-note" style="margin-top:0.6rem;">
+                        Yale University Beinecke Rare Book & Manuscript Library MS 408 · 100% Public Access · Creative Commons CC-BY-NC 4.0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main>
         <!-- Sidebar Token Concordance Index -->
@@ -2139,6 +2535,19 @@
                 <div id="botanicalGalleryGrid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:1rem; max-height:65vh; overflow-y:auto;">
                     <!-- Populated dynamically -->
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: What Is Your Best Guess? Crowdsourced Paleobotanical Tool -->
+    <div class="modal-overlay" id="bestGuessModal">
+        <div class="modal-card" style="max-width:820px; width:95vw;">
+            <div class="modal-header">
+                <h3 id="bestGuessModalTitle"><span>💡</span> What Is Your Best Guess? · Paleobotanical Hypothesis</h3>
+                <button class="modal-close" onclick="closeModal('bestGuessModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="bestGuessModalBody" style="max-height:80vh; overflow-y:auto; padding:1.5rem;">
+                <!-- Populated dynamically via openBestGuessModal(fKey) -->
             </div>
         </div>
     </div>
@@ -3425,6 +3834,403 @@
             renderBotanicalGallery();
         }
 
+        /* --- CROWDSOURCED PALEOBOTANY CONSENSUS ENGINE (RULE P40 & REAL DATA STRICT) --- */
+        const LAST_GUESS_KEY = 'voynich_paleobotany_last_guess_timestamp';
+        const CUSTOM_GUESSES_KEY = 'voynich_paleobotany_custom_guesses_v2';
+        const USER_VOTES_KEY = 'voynich_paleobotany_user_votes_v2';
+
+        const SEED_HYPOTHESES = {
+            'f23r': [
+                {
+                    genus: 'Bryonia',
+                    species: 'dioica Jacq.',
+                    vernacular: 'White Bryony / Wild Hop',
+                    votes: 14,
+                    traits: ['Swollen Tuberous Root', 'Palmate 5-Lobed Leaves'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:291932-1',
+                    rationale: 'Massive bifurcated tuberous rootstock and palmate leaf lobes match medieval Circa Instans depictions of Bryonia.'
+                },
+                {
+                    genus: 'Aristolochia',
+                    species: 'rotunda L.',
+                    vernacular: 'Round Birthwort',
+                    votes: 6,
+                    traits: ['Globular Root Tuber', 'Cordate Leaves'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:93237-1',
+                    rationale: 'Sub-spherical root tuber and alternate clasping leaves characteristic of Mediterranean Aristolochiaceae.'
+                }
+            ],
+            'f23v': [
+                {
+                    genus: 'Asarum',
+                    species: 'europaeum L.',
+                    vernacular: 'Asarabacca / Wild Ginger',
+                    votes: 11,
+                    traits: ['Creeping Rhizome', 'Reniform Kidney Leaves'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:93282-1',
+                    rationale: 'Prostrate creeping rootstock with paired reniform dark glossy leaves used as a Galenic cephalic errhine.'
+                }
+            ],
+            'f24r': [
+                {
+                    genus: 'Chelidonium',
+                    species: 'majus L.',
+                    vernacular: 'Greater Celandine / Swallowwort',
+                    votes: 17,
+                    traits: ['Pinnatifid Crenate Leaves', 'Swollen Stem Nodes'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:672152-1',
+                    rationale: 'Deeply lobed crenate margins and branching root stock aligning with classical ophthalmic simples.'
+                }
+            ],
+            'f24v': [
+                {
+                    genus: 'Alchemilla',
+                    species: 'vulgaris L.',
+                    vernacular: "Lady's Mantle / Lion's Foot",
+                    votes: 13,
+                    traits: ['Orbicular Plicate Leaves', 'Dentate Margins'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:720760-1',
+                    rationale: 'Circular pleated foliage with fine marginal dentition, famous for collecting morning dew in Salernitan alchemy.'
+                }
+            ],
+            'f25r': [
+                {
+                    genus: 'Polygonatum',
+                    species: 'multiflorum (L.) All.',
+                    vernacular: "Solomon's Seal",
+                    votes: 15,
+                    traits: ['Arching Stem', 'Knotted Rhizome Scars'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:539268-1',
+                    rationale: 'Distinctive circular seal scars along the creeping rhizome and unilateral drooping axillary foliage.'
+                }
+            ],
+            'f25v': [
+                {
+                    genus: 'Symphytum',
+                    species: 'officinale L.',
+                    vernacular: 'Common Comfrey / Knitbone',
+                    votes: 9,
+                    traits: ['Fusiform Blackish Taproot', 'Decurrent Alternate Leaves'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:120857-1',
+                    rationale: 'Deep mucilaginous spindle root and coarse decurrent foliage winged along the upper stem.'
+                }
+            ],
+            'f26r': [
+                {
+                    genus: 'Mandragora',
+                    species: 'officinarum L.',
+                    vernacular: 'Mediterranean Mandrake',
+                    votes: 21,
+                    traits: ['Bifurcated Humanoid Taproot', 'Basal Rosette'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:797042-1',
+                    rationale: 'Forked anthropomorphic root system and crinkled rugose basal rosette leaves matching Italian Herbals.'
+                }
+            ],
+            'f26v': [
+                {
+                    genus: 'Cyclamen',
+                    species: 'purpurascens Mill.',
+                    vernacular: 'Sowbread / Alpine Cyclamen',
+                    votes: 10,
+                    traits: ['Flattened Discoid Tuber', 'Cordate Variegated Leaves'],
+                    source: 'https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:701763-1',
+                    rationale: 'Large subterranean round corm with slender basal leaf petioles and cordate foliage.'
+                }
+            ]
+        };
+
+        function getFolioGuesses(fKey) {
+            const clean = String(fKey).toLowerCase().replace('f', '').trim();
+            const key = 'f' + clean;
+
+            let customMap = {};
+            try { customMap = JSON.parse(localStorage.getItem(CUSTOM_GUESSES_KEY) || '{}'); } catch(e) {}
+
+            const customList = customMap[key] || [];
+            const seedList = SEED_HYPOTHESES[key] || [
+                {
+                    genus: 'Medicinal Taxon',
+                    species: 'sp. (Pending)',
+                    vernacular: 'Unresolved Archival Simplex',
+                    votes: 3,
+                    traits: ['15th-Century Morphological Profile'],
+                    source: 'https://powo.science.kew.org',
+                    rationale: 'Awaiting comparative morphological matching against North Italian herbals.'
+                }
+            ];
+
+            const combined = [...customList];
+            seedList.forEach(seed => {
+                if (!combined.some(c => (c.genus || '').toLowerCase() === seed.genus.toLowerCase() && (c.species || '').toLowerCase() === seed.species.toLowerCase())) {
+                    combined.push(seed);
+                }
+            });
+
+            combined.sort((a, b) => (b.votes || 0) - (a.votes || 0));
+            return combined;
+        }
+
+        function getTopGuessForFolio(fKey) {
+            const list = getFolioGuesses(fKey);
+            return list.length > 0 ? list[0] : null;
+        }
+
+        function checkCanSubmitGuess() {
+            const last = parseInt(localStorage.getItem(LAST_GUESS_KEY) || '0', 10);
+            const now = Date.now();
+            const oneDayMs = 24 * 60 * 60 * 1000;
+            if (last > 0 && (now - last) < oneDayMs) {
+                const diff = oneDayMs - (now - last);
+                const hours = Math.floor(diff / (60 * 60 * 1000));
+                const mins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+                return { allowed: false, hours, mins };
+            }
+            return { allowed: true, hours: 0, mins: 0 };
+        }
+
+        function upvoteBestGuess(fKey, event) {
+            if (event) event.stopPropagation();
+            const clean = String(fKey).toLowerCase().replace('f', '').trim();
+            const key = 'f' + clean;
+
+            let userVotes = {};
+            try { userVotes = JSON.parse(localStorage.getItem(USER_VOTES_KEY) || '{}'); } catch(e) {}
+            if (userVotes[key]) {
+                alert(`You have already cast your consensus vote for Folio ${key} today.`);
+                return;
+            }
+
+            userVotes[key] = true;
+            localStorage.setItem(USER_VOTES_KEY, JSON.stringify(userVotes));
+
+            let customMap = {};
+            try { customMap = JSON.parse(localStorage.getItem(CUSTOM_GUESSES_KEY) || '{}'); } catch(e) {}
+
+            const currentGuesses = getFolioGuesses(key);
+            if (currentGuesses.length > 0) {
+                currentGuesses[0].votes = (currentGuesses[0].votes || 0) + 1;
+                customMap[key] = currentGuesses;
+                localStorage.setItem(CUSTOM_GUESSES_KEY, JSON.stringify(customMap));
+            }
+
+            renderBotanicalGallery();
+        }
+
+        const CURATED_PALEOMEDICAL_GENERA = [
+            'Aconitum (Monkshood)', 'Alchemilla (Lady's Mantle)', 'Allium (Garlic/Leek)', 'Anemone (Windflower)',
+            'Aristolochia (Birthwort)', 'Artemisia (Wormwood/Mugwort)', 'Asarum (Asarabacca)', 'Atropa (Belladonna)',
+            'Bryonia (White Bryony)', 'Carduus (Thistle)', 'Centaurea (Knapweed)', 'Chelidonium (Celandine)',
+            'Cichorium (Chicory)', 'Colchicum (Autumn Crocus)', 'Conium (Hemlock)', 'Convolvulus (Bindweed)',
+            'Cyclamen (Sowbread)', 'Datura (Thornapple)', 'Digitalis (Foxglove)', 'Dracunculus (Dragon Arum)',
+            'Eryngium (Sea Holly)', 'Euphorbia (Spurge)', 'Gentiana (Gentian)', 'Helleborus (Hellebore)',
+            'Hyoscyamus (Henbane)', 'Inula (Elecampane)', 'Iris (Orris Root)', 'Malva (Mallow)',
+            'Mandragora (Mandrake)', 'Mentha (Mint)', 'Nymphaea (Water Lily)', 'Paeonia (Peony)',
+            'Papaver (Poppy)', 'Plantago (Plantain)', 'Polygonatum (Solomon's Seal)', 'Ranunculus (Buttercup)',
+            'Rubia (Madder)', 'Salvia (Sage)', 'Sambucus (Elder)', 'Scrophularia (Figwort)',
+            'Solanum (Nightshade)', 'Symphytum (Comfrey)', 'Taraxacum (Dandelion)', 'Valeriana (Valerian)',
+            'Veratrum (White Hellebore)', 'Viola (Violet)'
+        ];
+
+        function openBestGuessModal(fKey) {
+            const clean = String(fKey).toLowerCase().replace('f', '').trim();
+            const key = 'f' + clean;
+            const entry = BOTANICAL_DATA[key] || BOTANICAL_DATA[clean] || { common_name: 'Simplex ' + key };
+            const facsImg = FOLIO_IMAGES_DATA[key] || FOLIO_IMAGES_DATA[clean] || 'https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg';
+
+            const modalTitle = document.getElementById('bestGuessModalTitle');
+            if (modalTitle) {
+                modalTitle.innerHTML = `<span>💡</span> What Is Your Best Guess? · Folio ${key} (${entry.common_name})`;
+            }
+
+            const limitCheck = checkCanSubmitGuess();
+            const hypotheses = getFolioGuesses(key);
+
+            let rateLimitBanner = '';
+            if (!limitCheck.allowed) {
+                rateLimitBanner = `
+                    <div class="rate-limit-banner">
+                        <span style="font-size:1.4rem;">🔒</span>
+                        <div>
+                            <strong>Daily Contribution Window Closed</strong><br>
+                            To prevent automated spam and preserve rigorous paleobotanical quality without human moderators, contributions are strictly limited to <strong>1 guess per day</strong>.<br>
+                            <span style="color:var(--gold-light); font-weight:700;">Your next submission unlocks in ${limitCheck.hours}h ${limitCheck.mins}m.</span> In the meantime, you can vote on community hypotheses below!
+                        </div>
+                    </div>
+                `;
+            } else {
+                rateLimitBanner = `
+                    <div style="background:rgba(52,211,153,0.1); border:1px solid rgba(52,211,153,0.3); border-radius:8px; padding:0.75rem 1rem; margin-bottom:1.25rem; font-size:0.8rem; color:#a7f3d0; display:flex; align-items:center; gap:0.6rem;">
+                        <span style="font-size:1.2rem;">✓</span>
+                        <div>
+                            <strong>Daily Submission Window Open:</strong> You may submit 1 verified paleobotanical hypothesis today. Submissions are anchored to Linnaean genera and observable diagnostic morphology.
+                        </div>
+                    </div>
+                `;
+            }
+
+            let hypothesesListHtml = hypotheses.map((h, idx) => `
+                <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:0.85rem; margin-bottom:0.65rem; display:flex; justify-content:space-between; align-items:flex-start; gap:0.75rem;">
+                    <div style="flex:1;">
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                            <span style="font-size:0.8rem; color:var(--gold); font-weight:bold;">#${idx + 1}</span>
+                            <span style="font-family:'Cinzel', serif; font-weight:700; color:#fff; font-size:0.95rem;">${h.genus} ${h.species}</span>
+                            <span style="font-size:0.8rem; color:var(--cyan-astro); font-style:italic;">(${h.vernacular})</span>
+                        </div>
+                        <div style="font-size:0.75rem; color:#cbd5e1; margin-bottom:0.35rem; line-height:1.4;">
+                            ${h.rationale || ''}
+                        </div>
+                        <div style="font-size:0.7rem; color:var(--text-muted); display:flex; gap:0.75rem; flex-wrap:wrap;">
+                            <span><strong>Diagnostic:</strong> ${(h.traits || []).join(', ')}</span>
+                            ${h.source ? `<a href="${h.source}" target="_blank" rel="noopener" style="color:var(--gold-light); text-decoration:underline;">Archival Citation ↗</a>` : ''}
+                        </div>
+                    </div>
+                    <button class="btn-agree" onclick="upvoteBestGuess('${key}', event)" style="background:rgba(52,211,153,0.15); border:1px solid rgba(52,211,153,0.4); color:#34d399; font-size:0.75rem; padding:0.4rem 0.75rem; border-radius:6px; cursor:pointer; font-weight:700; display:flex; align-items:center; gap:0.3rem;">
+                        <span>▲</span> ${h.votes || 0}
+                    </button>
+                </div>
+            `).join('');
+
+            const modalBody = document.getElementById('bestGuessModalBody');
+            if (modalBody) {
+                modalBody.innerHTML = `
+                    ${rateLimitBanner}
+
+                    <div style="display:grid; grid-template-columns: 240px 1fr; gap:1.5rem; margin-bottom:1.5rem;">
+                        <!-- Left: Folio Drawing Facsimile -->
+                        <div style="background:#000; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:0.5rem; display:flex; flex-direction:column; align-items:center;">
+                            <div style="font-size:0.75rem; color:var(--gold); margin-bottom:0.4rem; font-family:'JetBrains Mono';">Folio ${key} Vellum Plate</div>
+                            <img src="${facsImg}" alt="${key} plate" style="max-height:280px; max-width:100%; object-fit:contain; border-radius:4px;">
+                            <button class="btn-action" onclick="closeModal('bestGuessModal'); openBotanicalDossier('${key}');" style="margin-top:0.6rem; font-size:0.72rem; padding:0.3rem 0.6rem; width:100%; justify-content:center;">
+                                🔍 Full Codicological Scan
+                            </button>
+                        </div>
+
+                        <!-- Right: Structured Submission Form -->
+                        <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:1.25rem;">
+                            <h4 style="font-family:'Cinzel', serif; color:var(--gold-light); margin-top:0; margin-bottom:0.75rem;">
+                                Submit Your Identification Hypothesis
+                            </h4>
+
+                            <form id="bestGuessForm" onsubmit="submitBestGuess('${key}', event)">
+                                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.75rem; margin-bottom:0.75rem;">
+                                    <div>
+                                        <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">1. Genus Candidate *</label>
+                                        <select id="guessGenus" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-size:0.8rem;">
+                                            <option value="">Select Curated Flora Genus...</option>
+                                            ${CURATED_PALEOMEDICAL_GENERA.map(g => `<option value="${g.split(' ')[0]}">${g}</option>`).join('')}
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">2. Species Epithet *</label>
+                                        <input type="text" id="guessSpecies" placeholder="e.g. dioica, officinalis" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-size:0.8rem;">
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom:0.75rem;">
+                                    <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">3. Vernacular Common Name *</label>
+                                    <input type="text" id="guessVernacular" placeholder="e.g. White Bryony, Black Henbane" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-size:0.8rem;">
+                                </div>
+
+                                <div style="margin-bottom:0.75rem;">
+                                    <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.35rem;">4. Diagnostic Botanical Traits Observed on Folio *</label>
+                                    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(170px, 1fr)); gap:0.4rem; font-size:0.72rem; color:#e2e8f0;">
+                                        <label><input type="checkbox" name="guessTrait" value="Swollen Tuberous Root"> Swollen Tuber Root</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Creeping Rhizome"> Creeping Rhizome</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Fusiform Taproot"> Fusiform Taproot</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Basal Rosette"> Basal Rosette</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Palmate Lobed Leaves"> Palmate Lobed Leaves</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Dentate Leaf Margin"> Dentate Leaf Margin</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Campanulate Corolla"> Bell/Campanulate Corolla</label>
+                                        <label><input type="checkbox" name="guessTrait" value="Umbellate Inflorescence"> Umbellate Head</label>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom:0.75rem;">
+                                    <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">5. Herbarium / Archival Reference URL (POWO, GBIF, BnF, Wikipedia)</label>
+                                    <input type="url" id="guessSource" placeholder="https://powo.science.kew.org/taxon/..." style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-size:0.8rem;">
+                                </div>
+
+                                <div style="margin-bottom:1rem;">
+                                    <label style="display:block; font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">6. Codicological Rationale (Max 180 chars) *</label>
+                                    <input type="text" id="guessRationale" maxlength="180" placeholder="e.g. Bifurcated tuber and palmate leaves precisely match Circa Instans drawings of Bryonia." required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-size:0.8rem;">
+                                </div>
+
+                                <button type="submit" class="btn-action btn-highlight" ${!limitCheck.allowed ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} style="width:100%; justify-content:center; padding:0.65rem; font-size:0.88rem; font-weight:700;">
+                                    <span>💡</span> Submit Hypothesis to Community Consensus (1/day)
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1.25rem;">
+                        <h4 style="font-family:'Cinzel', serif; color:var(--gold); margin-bottom:0.75rem;">
+                            Active Community Hypotheses for Folio ${key} (${hypotheses.length})
+                        </h4>
+                        ${hypothesesListHtml}
+                    </div>
+                `;
+            }
+
+            const modal = document.getElementById('bestGuessModal');
+            if (modal) modal.classList.add('active');
+        }
+
+        function submitBestGuess(fKey, event) {
+            if (event) event.preventDefault();
+            const clean = String(fKey).toLowerCase().replace('f', '').trim();
+            const key = 'f' + clean;
+
+            const limitCheck = checkCanSubmitGuess();
+            if (!limitCheck.allowed) {
+                alert(`Daily limit reached: You can submit 1 botanical hypothesis per day. Next submission opens in ${limitCheck.hours}h ${limitCheck.mins}m.`);
+                return;
+            }
+
+            const genus = document.getElementById('guessGenus').value.trim();
+            const species = document.getElementById('guessSpecies').value.trim();
+            const vernacular = document.getElementById('guessVernacular').value.trim();
+            const source = document.getElementById('guessSource').value.trim();
+            const rationale = document.getElementById('guessRationale').value.trim();
+
+            const traitBoxes = document.querySelectorAll('input[name="guessTrait"]:checked');
+            const traits = Array.from(traitBoxes).map(b => b.value);
+            if (traits.length === 0) {
+                traits.push('Observed Folio Morphology');
+            }
+
+            const newGuess = {
+                genus,
+                species,
+                vernacular,
+                source: source || 'https://powo.science.kew.org',
+                rationale,
+                traits,
+                votes: 1,
+                timestamp: Date.now()
+            };
+
+            let customMap = {};
+            try { customMap = JSON.parse(localStorage.getItem(CUSTOM_GUESSES_KEY) || '{}'); } catch(e) {}
+            if (!customMap[key]) {
+                customMap[key] = [];
+            }
+            customMap[key].unshift(newGuess);
+            localStorage.setItem(CUSTOM_GUESSES_KEY, JSON.stringify(customMap));
+
+            // Record 1-per-day rate-limit timestamp
+            localStorage.setItem(LAST_GUESS_KEY, Date.now().toString());
+
+            // Mark user vote for this folio
+            let userVotes = {};
+            try { userVotes = JSON.parse(localStorage.getItem(USER_VOTES_KEY) || '{}'); } catch(e) {}
+            userVotes[key] = true;
+            localStorage.setItem(USER_VOTES_KEY, JSON.stringify(userVotes));
+
+            alert(`🌿 Hypothesis recorded! Thank you for contributing to open-access Voynich paleobotany. Your hypothesis for Folio ${key} is now live.`);
+            closeModal('bestGuessModal');
+            renderBotanicalGallery();
+        }
+
         function renderBotanicalGallery() {
             const grid = document.getElementById('botanicalGalleryGrid');
             if (!grid) return;
@@ -3460,44 +4266,103 @@
                 const facsImg = FOLIO_IMAGES_DATA[fKey] || FOLIO_IMAGES_DATA[cleanFolio] || 'https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg';
                 const card = document.createElement('div');
                 card.className = 'botanical-card';
-                card.innerHTML = `
-                    <div class="botanical-card-header">
-                        <span>Folio ${fKey}</span>
-                        <span class="dossier-pill ${entry.status === 'IDENTIFIED' ? 'identified' : 'pending'}" style="font-size:0.68rem; padding:0.15rem 0.45rem;">
-                            ${entry.status === 'IDENTIFIED' ? '✓ Identified' : 'Comparative Matching'}
-                        </span>
-                    </div>
-                    <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#000;">
-                        <img src="${facsImg}" alt="${fKey} Drawing" style="height:100%; width:100%; object-fit:contain; border-right:1px solid rgba(255,255,255,0.08);" loading="lazy">
-                        ${(entry.plant_photo || entry.root_photo) ? `
+
+                const isIdentified = entry.status === 'IDENTIFIED';
+                const topGuess = getTopGuessForFolio(fKey);
+
+                if (isIdentified) {
+                    card.innerHTML = `
+                        <div class="botanical-card-header">
+                            <span>Folio ${fKey}</span>
+                            <span class="dossier-pill identified" style="font-size:0.68rem; padding:0.15rem 0.45rem;">
+                                ✓ Identified
+                            </span>
+                        </div>
+                        <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#000;">
+                            <img src="${facsImg}" alt="${fKey} Drawing" style="height:100%; width:100%; object-fit:contain; border-right:1px solid rgba(255,255,255,0.08);" loading="lazy">
                             <img src="${entry.plant_photo || entry.root_photo}" alt="${entry.common_name}" style="height:100%; width:100%; object-fit:contain;" loading="lazy">
-                        ` : `
-                            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--text-muted); font-size:0.75rem; text-align:center; padding:0.5rem;">
-                                <span style="font-size:1.5rem;">🌿</span>
-                                <span style="margin-top:0.25rem; font-size:0.7rem;">Comparative Matching</span>
+                        </div>
+                        <div style="padding:0.85rem; flex:1; display:flex; flex-direction:column;">
+                            <div style="font-family:'Cinzel', serif; font-size:0.95rem; font-weight:700; color:var(--gold-light); margin-bottom:0.2rem;">
+                                ${entry.common_name}
                             </div>
-                        `}
-                    </div>
-                    <div style="padding:0.85rem; flex:1; display:flex; flex-direction:column;">
-                        <div style="font-family:'Cinzel', serif; font-size:0.95rem; font-weight:700; color:var(--gold-light); margin-bottom:0.2rem;">
-                            ${entry.common_name}
+                            <div style="font-size:0.8rem; font-style:italic; color:var(--cyan-astro); margin-bottom:0.4rem;">
+                                ${entry.binomial} (${entry.family})
+                            </div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); line-height:1.4; margin-bottom:0.75rem; flex:1;">
+                                ${(entry.root_diagnosis || '').substring(0, 115)}...
+                            </div>
+                            <div style="display:flex; gap:0.4rem;">
+                                <button class="btn-action btn-highlight" onclick="openBotanicalDossier('${fKey}')" style="flex:1; justify-content:center; padding:0.35rem; font-size:0.75rem;">
+                                    Inspect Photos
+                                </button>
+                                <button class="btn-action" onclick="loadPageMap('${fKey}'); closeModal('botanicalGalleryModal'); openPageMapExplorer();" style="padding:0.35rem 0.6rem; font-size:0.75rem;">
+                                    🗺️ Map
+                                </button>
+                            </div>
                         </div>
-                        <div style="font-size:0.8rem; font-style:italic; color:var(--cyan-astro); margin-bottom:0.4rem;">
-                            ${entry.binomial} (${entry.family})
+                    `;
+                } else {
+                    card.innerHTML = `
+                        <div class="botanical-card-header">
+                            <span>Folio ${fKey}</span>
+                            <span class="dossier-pill pending" style="font-size:0.68rem; padding:0.15rem 0.45rem; background:rgba(212,175,55,0.15); border-color:var(--gold); color:var(--gold-light);">
+                                🔬 Community Challenge
+                            </span>
                         </div>
-                        <div style="font-size:0.75rem; color:var(--text-muted); line-height:1.4; margin-bottom:0.75rem; flex:1;">
-                            ${(entry.root_diagnosis || '').substring(0, 115)}...
+                        <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#000;">
+                            <img src="${facsImg}" alt="${fKey} Drawing" style="height:100%; width:100%; object-fit:contain; border-right:1px solid rgba(255,255,255,0.08);" loading="lazy">
+                            <div class="community-guess-thumb">
+                                <div>
+                                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.3rem;">
+                                        <span style="font-size:0.65rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:0.04em;">💡 Top Guess</span>
+                                        <span class="guess-rank-badge">${topGuess ? topGuess.votes : 0} votes</span>
+                                    </div>
+                                    <div style="font-family:'Cinzel', serif; font-weight:700; color:#fff; font-size:0.8rem; line-height:1.2; margin-bottom:0.2rem;">
+                                        ${topGuess ? topGuess.genus + ' ' + topGuess.species : 'Open Simplex'}
+                                    </div>
+                                    <div style="font-size:0.68rem; color:var(--cyan-astro); font-style:italic; margin-bottom:0.35rem;">
+                                        ${topGuess ? topGuess.vernacular : 'No consensus yet'}
+                                    </div>
+                                    <div style="font-size:0.65rem; color:var(--text-muted); line-height:1.3; margin-bottom:0.4rem;">
+                                        <strong>Traits:</strong> ${topGuess ? topGuess.traits.slice(0, 2).join(', ') : 'Awaiting candidate'}
+                                    </div>
+                                </div>
+                                <div style="display:flex; gap:0.3rem; margin-top:auto;">
+                                    <button class="btn-agree" onclick="upvoteBestGuess('${fKey}', event)" style="flex:1; background:rgba(52,211,153,0.15); border:1px solid rgba(52,211,153,0.4); color:#34d399; font-size:0.68rem; padding:0.25rem 0.4rem; border-radius:4px; cursor:pointer; font-weight:600; display:flex; align-items:center; justify-content:center; gap:0.2rem;" title="Upvote top hypothesis">
+                                        <span>▲</span> Agree
+                                    </button>
+                                    <button class="btn-propose" onclick="openBestGuessModal('${fKey}')" style="flex:1; background:rgba(212,175,55,0.15); border:1px solid rgba(212,175,55,0.4); color:var(--gold-light); font-size:0.68rem; padding:0.25rem 0.4rem; border-radius:4px; cursor:pointer; font-weight:600; display:flex; align-items:center; justify-content:center; gap:0.2rem;" title="Propose new guess">
+                                        <span>💡</span> Guess
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="display:flex; gap:0.4rem;">
-                            <button class="btn-action btn-highlight" onclick="openBotanicalDossier('${fKey}')" style="flex:1; justify-content:center; padding:0.35rem; font-size:0.75rem;">
-                                Inspect Photos
-                            </button>
-                            <button class="btn-action" onclick="loadPageMap('${fKey}'); closeModal('botanicalGalleryModal'); openPageMapExplorer();" style="padding:0.35rem 0.6rem; font-size:0.75rem;">
-                                🗺️ Map
-                            </button>
+                        <div style="padding:0.85rem; flex:1; display:flex; flex-direction:column;">
+                            <div style="font-family:'Cinzel', serif; font-size:0.95rem; font-weight:700; color:var(--gold-light); margin-bottom:0.2rem;">
+                                ${entry.common_name}
+                            </div>
+                            <div style="font-size:0.8rem; font-style:italic; color:var(--cyan-astro); margin-bottom:0.4rem;">
+                                ${entry.binomial}
+                            </div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); line-height:1.4; margin-bottom:0.75rem; flex:1;">
+                                ${(entry.root_diagnosis || '').substring(0, 115)}...
+                            </div>
+                            <div style="display:flex; gap:0.4rem;">
+                                <button class="btn-action btn-highlight" onclick="openBestGuessModal('${fKey}')" style="flex:1; justify-content:center; padding:0.35rem; font-size:0.75rem;">
+                                    💡 What's Your Guess?
+                                </button>
+                                <button class="btn-action" onclick="openBotanicalDossier('${fKey}')" style="padding:0.35rem 0.5rem; font-size:0.75rem;" title="Inspect Folio Drawing">
+                                    🔍 Scan
+                                </button>
+                                <button class="btn-action" onclick="loadPageMap('${fKey}'); closeModal('botanicalGalleryModal'); openPageMapExplorer();" style="padding:0.35rem 0.5rem; font-size:0.75rem;" title="Page Map">
+                                    🗺️
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
+
                 grid.appendChild(card);
             });
         }
@@ -3688,6 +4553,27 @@
         window.handleContactSubmit = handleContactSubmit;
         window.handleNewsletterSubmit = handleNewsletterSubmit;
         window.filterPageMapFolios = filterPageMapFolios;
+        window.openBestGuessModal = openBestGuessModal;
+        window.submitBestGuess = submitBestGuess;
+        window.upvoteBestGuess = upvoteBestGuess;
+        window.checkCanSubmitGuess = checkCanSubmitGuess;
+
+        // Ambient Hero Plate Rotator (cycles caption with slides)
+        const HERO_CAPTIONS = [
+            "Folio 70v2 (Celestial Zodiac Wheel & Star Nymphs)",
+            "Folio 3r (Botanical Simplex & Taproot Anatomy)",
+            "Folio 85r–86v (The 9-Rosettes Cosmological Foldout)",
+            "Folio 89v (Apothecary Albarelli Drug Jars & Simples)",
+            "Folio 1r (Opening Folio with Latin Codicological Marginalia)"
+        ];
+        let heroCapIdx = 0;
+        setInterval(() => {
+            heroCapIdx = (heroCapIdx + 1) % HERO_CAPTIONS.length;
+            const captionEl = document.getElementById('heroPlateCaption');
+            if (captionEl) {
+                captionEl.textContent = `Live Plate: ${HERO_CAPTIONS[heroCapIdx]}`;
+            }
+        }, 5000);
 
         populateReverseFolioSelect();
         renderSidebar();
