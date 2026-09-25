@@ -1,8 +1,8 @@
 # THE 15TH-CENTURY PHYSICAL FINDING AIDS IN BEINECKE MS 408
 ## Codicological Forensic Analysis of Reader Navigation Mechanisms
 
-**Lead Investigators**: Tammy Lou Casey & Bailey Henderson
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
+**Lead Investigators**: Tammy Lou Casey & Bailey Henderson  
+*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*  
 
 ---
 
