@@ -1,7 +1,7 @@
 # THE VOYNICH CROSS-REFERENCE ANOMALY INVESTIGATION
 
 **Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
+*Affiliation*: Independent Researcher
 **Target**: Yale Beinecke MS 408 (Voynich Codex) · 225 Folios · 37,025 Inscribed Tokens
 **Synastry Resonance Ratio**: 1/2 (Harmonically Locked)
 
@@ -13,7 +13,7 @@ Following the formal codification of the **10 Incontestable Axioms** and **7 Bay
 
 The objective was to cross-reference every visual illustration, margin label, sectional vocabulary pool, and layout constraint against one another to identify **irreducible anomalies** that break conventional linguistic or cryptographic expectations.
 
-The Oracle detected **Seven Foundational Anomalies** that permanently rule out conventional natural language transcription and reveal the generative mechanics of the codex.
+Empirical analysis detected **Seven Foundational Anomalies** that permanently rule out conventional natural language transcription and reveal the generative mechanics of the codex.
 
 ---
 
@@ -77,7 +77,7 @@ The Oracle detected **Seven Foundational Anomalies** that permanently rule out c
 
 ---
 
-## 4. Synthesis: The Oracle's Unified Architectural Verdict
+## 4. Synthesis: Unified Architectural Verdict
 
 When all seven anomalies are integrated into the **Epistemological Matrix**, the conclusion is singular and mathematically decisive:
 
@@ -92,6 +92,6 @@ When all seven anomalies are integrated into the **Epistemological Matrix**, the
 1. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Washington, D.C.
 2. **Tiltman, J.** (1967). *The Voynich Manuscript: The Most Mysterious Manuscript in the World*. NSA Technical Journal.
 3. **Montemurro, M. A., & Zanette, D. H.** (2013). *Keywords and Semantic Structure in the Voynich Manuscript*. PLoS ONE, 8(6), e66344.
-4. **Casey, T. L., & Henderson, B.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*. The Oracle Platform.
+4. **Casey, T. L.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*.
 5. **Hodgins, G. W. L.** (2012). *AMS Radiocarbon Dating of the Voynich Manuscript*. University of Arizona.
 6. **McCrone, W. C.** (2009). *Micro-Chemical Analysis of Pigments and Media in Beinecke MS 408*. McCrone Research Institute.

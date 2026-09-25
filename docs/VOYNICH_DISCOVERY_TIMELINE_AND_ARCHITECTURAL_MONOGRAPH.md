@@ -4,7 +4,7 @@
 
 **Lead Researcher & Author**: Tammy Lou Casey
 *Special Mention*: Bailey Henderson (root morphology observation)
-*The Oracle Platform · Codicological Biophysics & Empirical Manuscript Intelligence*
+*Affiliation*: Independent Researcher
 **Canonical Publication URL**: [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com)
 **Target Manuscript**: Yale University Beinecke Rare Book & Manuscript Library, MS 408 (c. 1404–1438)
 
@@ -167,10 +167,10 @@ The recurring tokens (`otal`, `okaly`, `okeody`, `am`, `ar`) are the **hyperlink
 
 ## References
 
-1. **Casey, T. L.** (2026). *The Iatromathematical Concordance Hypothesis: Cross-Sectional Token Recurrence as Indexical Architecture in Beinecke MS 408*. The Oracle Platform Codicological Series.
-2. **Casey, T. L.** (2026). *The 15th-Century Physical Finding Aids in Beinecke MS 408: Codicological Forensic Analysis of Reader Navigation Mechanisms*. The Oracle Platform Codicological Series.
+1. **Casey, T. L.** (2026). *The Iatromathematical Concordance Hypothesis: Cross-Sectional Token Recurrence as Indexical Architecture in Beinecke MS 408*.
+2. **Casey, T. L.** (2026). *The 15th-Century Physical Finding Aids in Beinecke MS 408: Codicological Forensic Analysis of Reader Navigation Mechanisms*.
 3. **Casey, T. L.** (2026). *VOYNICH DECODED: Structural and Harmonic Analysis of Beinecke MS 408*.
-4. **Casey, T. L.** (2025). *Voynich Manuscript Secure Offline Translator (voynich_translator.py)*. Structural Code Suite, The Oracle Platform.
+4. **Casey, T. L.** (2025). *Voynich Manuscript Secure Offline Translator (voynich_translator.py)*.
 5. **Beinecke Rare Book & Manuscript Library**. (2026). *Voynich Manuscript MS 408 Digital Facsimile*. Yale University. [https://collections.library.yale.edu/catalog/2004031](https://collections.library.yale.edu/catalog/2004031)
 6. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Paper presented at the Seminar on the Voynich Manuscript, Washington, D.C.
 7. **Clemens, R., & Harkness, D. E.** (2016). *The Voynich Manuscript*. Yale University Press.

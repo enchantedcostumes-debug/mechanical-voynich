@@ -562,11 +562,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-004 (Folio 103r, Lines 18-20)
 - **Operational Incipit**: `polchedy` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f58v, f50r, f48r`
+- **Botanical Simples Incorporated**: Herbal folios `f58v, f50r, f24r`
 - **Decoded Posological Regimen**: **Unspecified** (Decoded from minim marker `None`)
 - **Celestial Astrological Timing**: Governed under **Gemini**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f58v, f50r, f48r. Grind and compound in the vehicle prescribed. Administer to the patient unspecified under the astrological election of Gemini."*
+  > *"Take the designated quantities of the simples harvested on folios f58v, f50r, f24r. Grind and compound in the vehicle prescribed. Administer to the patient unspecified under the astrological election of Gemini."*
 
 ### Formulary REC-005 (Folio 103r, Lines 21-23)
 - **Operational Incipit**: `pcheam` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -578,11 +578,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-006 (Folio 103r, Lines 24-29)
 - **Operational Incipit**: `tchoky` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f66r, f58v, f17v`
+- **Botanical Simples Incorporated**: Herbal folios `f58v, f66r, f17v`
 - **Decoded Posological Regimen**: **1x Daily (semel in die)** (Decoded from minim marker `ain`)
 - **Celestial Astrological Timing**: Governed under **Taurus (Light)**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f66r, f58v, f17v. Grind and compound in the vehicle prescribed. Administer to the patient 1x daily (semel in die) under the astrological election of Taurus (Light)."*
+  > *"Take the designated quantities of the simples harvested on folios f58v, f66r, f17v. Grind and compound in the vehicle prescribed. Administer to the patient 1x daily (semel in die) under the astrological election of Taurus (Light)."*
 
 ### Formulary REC-007 (Folio 103r, Lines 30-36)
 - **Operational Incipit**: `pcholkchdy` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -594,11 +594,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-008 (Folio 103r, Lines 37-41)
 - **Operational Incipit**: `pchedy` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f66r, f43v, f58v`
+- **Botanical Simples Incorporated**: Herbal folios `f66r, f43v, f31r`
 - **Decoded Posological Regimen**: **2x Daily (bis in die)** (Decoded from minim marker `aiin`)
 - **Celestial Astrological Timing**: Governed under **Taurus (Light)**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f66r, f43v, f58v. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Taurus (Light)."*
+  > *"Take the designated quantities of the simples harvested on folios f66r, f43v, f31r. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Taurus (Light)."*
 
 ### Formulary REC-009 (Folio 103r, Lines 42-47)
 - **Operational Incipit**: `tshey` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -610,11 +610,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-010 (Folio 103r, Lines 48-51)
 - **Operational Incipit**: `polarar` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f66r, f3r, f58v`
+- **Botanical Simples Incorporated**: Herbal folios `f66r, f3r, f31r`
 - **Decoded Posological Regimen**: **1x Daily (semel in die)** (Decoded from minim marker `ain`)
 - **Celestial Astrological Timing**: Governed under **Taurus (Light)**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f66r, f3r, f58v. Grind and compound in the vehicle prescribed. Administer to the patient 1x daily (semel in die) under the astrological election of Taurus (Light)."*
+  > *"Take the designated quantities of the simples harvested on folios f66r, f3r, f31r. Grind and compound in the vehicle prescribed. Administer to the patient 1x daily (semel in die) under the astrological election of Taurus (Light)."*
 
 ### Formulary REC-011 (Folio 103r, Lines 52-54)
 - **Operational Incipit**: `pchedal` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -626,11 +626,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-012 (Folio 103v, Lines 1-4)
 - **Operational Incipit**: `pol` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f58v, f66r, f31r`
+- **Botanical Simples Incorporated**: Herbal folios `f31r, f58v, f66r`
 - **Decoded Posological Regimen**: **2x Daily (bis in die)** (Decoded from minim marker `daiin`)
 - **Celestial Astrological Timing**: Governed under **Pisces (Dark)**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f58v, f66r, f31r. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Pisces (Dark)."*
+  > *"Take the designated quantities of the simples harvested on folios f31r, f58v, f66r. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Pisces (Dark)."*
 
 ### Formulary REC-013 (Folio 103v, Lines 5-8)
 - **Operational Incipit**: `pcheor` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -666,11 +666,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-017 (Folio 103v, Lines 27-29)
 - **Operational Incipit**: `pcheody` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f31v, f43v, f39r`
+- **Botanical Simples Incorporated**: Herbal folios `f31v, f39r, f43v`
 - **Decoded Posological Regimen**: **2x Daily (bis in die)** (Decoded from minim marker `aiin`)
 - **Celestial Astrological Timing**: Governed under **Scorpio**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f31v, f43v, f39r. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Scorpio."*
+  > *"Take the designated quantities of the simples harvested on folios f31v, f39r, f43v. Grind and compound in the vehicle prescribed. Administer to the patient 2x daily (bis in die) under the astrological election of Scorpio."*
 
 ### Formulary REC-018 (Folio 103v, Lines 30-38)
 - **Operational Incipit**: `pchear` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -690,11 +690,11 @@ The Recipe section contains 223 distinct paragraphs. Applying the **Procedural G
 
 ### Formulary REC-020 (Folio 103v, Lines 46-46)
 - **Operational Incipit**: `tain` (Galenic imperative: *Recipe* / Take the ingredients)
-- **Botanical Simples Incorporated**: Herbal folios `f56v, f58v, f48v`
+- **Botanical Simples Incorporated**: Herbal folios `f56v, f58v, f50r`
 - **Decoded Posological Regimen**: **Unspecified** (Decoded from minim marker `None`)
-- **Celestial Astrological Timing**: Governed under **Libra**
+- **Celestial Astrological Timing**: Governed under **Aries (Dark)**
 - **Reconstructed Clinical Formulation Directive**:
-  > *"Take the designated quantities of the simples harvested on folios f56v, f58v, f48v. Grind and compound in the vehicle prescribed. Administer to the patient unspecified under the astrological election of Libra."*
+  > *"Take the designated quantities of the simples harvested on folios f56v, f58v, f50r. Grind and compound in the vehicle prescribed. Administer to the patient unspecified under the astrological election of Aries (Dark)."*
 
 ### Formulary REC-021 (Folio 104r, Lines 1-4)
 - **Operational Incipit**: `pchdar` (Galenic imperative: *Recipe* / Take the ingredients)
@@ -790,8 +790,8 @@ When Beinecke MS 408 is read through its true operational lens, the mystery vani
 ---
 
 ## Archival & Codicological Citations
-1. Casey, T. L., & Henderson, B. (2026). *The Universal Procedural Recipe Formulary of Yale Beinecke MS 408*. The Oracle Platform.
-2. Casey, T. L. (2026). *Master Botanical Index and Pharmacopeia of Yale Beinecke MS 408*. The Oracle Platform.
-3. Casey, T. L. (2026). *The Levantine Trade and Dried Materia Medica in Beinecke MS 408*. The Oracle Platform.
+1. Casey, T. L. (2026). *The Universal Procedural Recipe Formulary of Yale Beinecke MS 408*.
+2. Casey, T. L. (2026). *Master Botanical Index and Pharmacopeia of Yale Beinecke MS 408*.
+3. Casey, T. L. (2026). *The Levantine Trade and Dried Materia Medica in Beinecke MS 408*.
 4. Montagnana, Bartolomeo da (1497). *Consilia Medica & Antidotarium*. Venice: Bonetus Locatellus.
 5. Platearius, Mattheus (c. 1160). *Circa Instans (De Simplicibus Medicinis)*.

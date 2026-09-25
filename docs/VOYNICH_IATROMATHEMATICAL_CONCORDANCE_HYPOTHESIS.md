@@ -3,7 +3,7 @@
 
 **Author & Lead Investigator**: Tammy Lou Casey
 *Special Mention*: Bailey Henderson (root morphology observation)
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
+*Affiliation*: Independent Researcher
 **Core Hypothesis**: The Casey Concordance & Hyperlink Model
 **Mathematical Object**: Tripartite Bipartite Graph $G = (V_{Zodiac}, V_{Herbal}, V_{Pharma}, E)$
 
@@ -137,7 +137,7 @@ In a manuscript produced **prior to standardized pagination or index tabs**, an 
 
 ## 5. Formal Verdict: Registration into the Epistemological Truth Matrix
 
-The **Casey-Henderson Concordance Hypothesis** provides a coherent, non-cryptographic, codicologically authentic explanation for the observed cross-sectional lexical overlap.
+The **Casey Concordance Hypothesis** provides a coherent, non-cryptographic, codicologically authentic explanation for the observed cross-sectional lexical overlap.
 
 - **Formal Classification**: `HYPOTHESIS_CONCORDANCE_INDEXICAL_REGISTER`
 - **Epistemological Confidence**: **60% – 70%** (Elevated above Simple Substitution Cipher and above Random Hoax).
@@ -147,7 +147,7 @@ The **Casey-Henderson Concordance Hypothesis** provides a coherent, non-cryptogr
 
 ## References
 
-1. **Casey, T. L.** (2026). *The Voynich Cross-Reference Anomaly Investigation*. The Oracle Platform.
+1. **Casey, T. L.** (2026). *The Voynich Cross-Reference Anomaly Investigation*.
 2. **Ketham, J. de.** (1491). *Fasciculus Medicinae*. Venice: Giovanni and Gregorio de' Gregorii.
 3. **Thorndike, L.** (1923). *A History of Magic and Experimental Science*. Columbia University Press.
 4. **Siraisi, N. G.** (1990). *Medieval and Early Renaissance Medicine: An Introduction to Knowledge and Practice*. University of Chicago Press.

@@ -120,7 +120,7 @@ Because p > 0.05 (in fact, conforming tightly to the null expectation), **we fai
 
 ### Corroborating Morphological & Codicological Proofs
 1. **Multi-Object Incompatible Labels**: The exact token `okoe89` serves as a label for three distinct botanical specimens, a pharmaceutical distillation vessel/funnel, and a castellated tower. A single token cannot simultaneously represent distinct species and architectural masonry.
-2. **Organ-Selective Pigment Defect**: Prior theories of color-blindness (hatoncat 2026; Gheuens 2024) note that petals are 52% blue, yet leaves are rendered in accurate greens. As proven by the Oracle, no biological color vision deficiency selectively swaps pigments on floral organs while sparing vegetative tissues.
+2. **Organ-Selective Pigment Defect**: Prior theories of color-blindness (hatoncat 2026; Gheuens 2024) note that petals are 52% blue, yet leaves are rendered in accurate greens. As demonstrated in this study, no biological color vision deficiency selectively swaps pigments on floral organs while sparing vegetative tissues.
 3. **Codicological Asynchrony**: Quire re-ordering proofs confirm paint was applied across quires after mechanical rearrangement, establishing that pigment and text were disconnected from botanical reality.
 
 ---
@@ -128,4 +128,4 @@ Because p > 0.05 (in fact, conforming tightly to the null expectation), **we fai
 ## 6. CONCLUSION & PUBLICATION IMPACT
 
 1. **Closure of the 100-Year Crib Search**: Decipherers seeking a "Rosetta stone" via Voynich plant names are chasing an artifact that does not exist. Labels in the Voynich manuscript do not behave as plant names.
-2. **Definitive Negative Knowledge**: Establishing what a system cannot be is the highest standard of formal cryptanalysis. By publishing this formal null result, the Oracle provides the community with a mathematically verified boundary that eliminates dead-end methodologies.
+2. **Definitive Negative Knowledge**: Establishing what a system cannot be is the highest standard of formal cryptanalysis. By publishing this formal null result, this study provides the community with a mathematically verified boundary that eliminates dead-end methodologies.

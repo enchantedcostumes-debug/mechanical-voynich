@@ -2,7 +2,7 @@
 ## Codicological Forensic Analysis of Reader Navigation Mechanisms
 
 **Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)  
-*The Oracle Platform · Biophysics & Codicological Intelligence Dossier*  
+*Independent Forensic Codicological Investigation*  
 
 ---
 
@@ -12,7 +12,7 @@
 
 In modern books, readers rely on page numbers and alphabetical indices. In a 15th-century unpaginated manuscript, how did a practicing physician, apothecary, or astrologer quickly navigate between a star in the Zodiac, its matching plant in the Herbal section, and its recipe in the Pharmaceutical section?
 
-The Oracle's codicological audit reveals **Five Physical & Visual Finding Aids** engineered into MS 408:
+Forensic codicological analysis reveals **Five Physical & Visual Finding Aids** engineered into MS 408:
 
 ---
 
@@ -85,7 +85,7 @@ The Voynich Manuscript was not an impenetrable wall of mystery to its creator—
 
 ## References
 
-1. **Casey, T. L., & Henderson, B.** (2026). *The Iatromathematical Concordance Hypothesis*. The Oracle Platform.
+1. **Casey, T. L., & Henderson, B.** (2026). *The Iatromathematical Concordance Hypothesis*. Independent Research Publication (2026).
 2. **Beinecke Rare Book & Manuscript Library**. (2026). *Voynich Manuscript MS 408 Digital Facsimile*. Yale University.
 3. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Washington, D.C.
 4. **Clemens, R., & Harkness, D. E.** (2016). *The Voynich Manuscript*. Yale University Press.

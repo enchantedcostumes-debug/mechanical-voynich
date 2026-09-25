@@ -2,7 +2,7 @@
 # THE VOYNICH ZODIAC STAR CONCORDANCE & ASTRONOMICAL GROUND-TRUTH
 
 **Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)
-*The Oracle Platform · Astrological & Structural Ephemeris Benchmark*
+*Affiliation*: Independent Researcher
 
 ---
 
@@ -102,6 +102,6 @@ The handwritten Romance month names (*marz, abril, mayo, jon, julliet, agost, se
 3. **Bax, S.** (2014). *A Proposed Partial Decoding of the Voynich Script*. StephenBax.net.
 4. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript: Proceedings of a Seminar*. Washington, D.C.
 5. **Montemurro, M. A., & Zanette, D. H.** (2013). *Keywords and Semantic Structure in the Voynich Manuscript*. PLoS ONE, 8(6), e66344.
-6. **Casey, T. L., & Henderson, B.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*. The Oracle Platform.
+6. **Casey, T. L.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*.
 7. **Tiltman, J.** (1967). *The Voynich Manuscript: The Most Mysterious Manuscript in the World*. National Security Agency Technical Journal, XII(3), 41–85.
 8. **Kunitzsch, P.** (1986). *The Star Catalogue Commonly Appended to the Alfonsine Tables*. Journal for the History of Astronomy, 17(2), 89–98.

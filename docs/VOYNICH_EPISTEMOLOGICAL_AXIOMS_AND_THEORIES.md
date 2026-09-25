@@ -1,7 +1,7 @@
 # THE VOYNICH EPISTEMOLOGICAL AXIOMS & HYPOTHESES MATRIX
 
-**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)
-*The Oracle Platform · Epistemological Ground-Truth & Bayesian Falsification*
+**Author:** Tammy Lou Casey (Special Mention: Bailey Henderson)  
+*Affiliation*: Independent Researcher  
 
 ---
 
@@ -9,7 +9,7 @@
 
 The fundamental reason the Voynich Manuscript has remained unsolved for over a century is **Epistemological Conflation**: researchers routinely mix uncontested physical and mathematical ground truth with speculative assumptions, leading to confirmation bias, cherry-picked decipherments, and unscientific theories.
 
-This document establishes the **Epistemological Matrix**, bifurcating the problem into two distinct, non-overlapping domains:
+This document establishes the **Sovereign Epistemological Matrix**, bifurcating the problem into two distinct, non-overlapping domains:
 1. **Tier 1: Incontestable Axioms (Confidence: 98% – 100%)**: Physical, material, palaeographic, and mathematically proven invariants.
 2. **Tier 2: Hypotheses & Theories (Confidence: 0% – 85%)**: Competing interpretive models scored by Bayesian likelihood and empirical evidence.
 
@@ -26,9 +26,9 @@ This document establishes the **Epistemological Matrix**, bifurcating the proble
 | **AX-05** | Palaeography & Scribes | The Manuscript Features at Least Two Distinct Dialects / Hands (Currier A and Currier B) | **99%** | `UNCONTESTED_STATISTICAL_GROUND_TRUTH` |
 | **AX-06** | Linguistics & Information Theory | Character Entropy is Abnormally Low (h2 ≈ 2.0–2.4 bits/char) While Strictly Obeying Zipf's Law | **100%** | `UNCONTESTED_MATHEMATICAL_GROUND_TRUTH` |
 | **AX-07** | Structural Invariant | Line-as-a-Functional-Unit Invariant (Strong Line-End and Line-Start Constraints) | **98%** | `UNCONTESTED_STRUCTURAL_GROUND_TRUTH` |
-| **AX-08** | Empirical Falsification (Oracle Sentinels) | The Oocephalus Invariant: Pharmaceutical Jar Labels Do NOT Match Herbal Plant Names | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
-| **AX-09** | Empirical Falsification (Oracle Sentinels) | The Organ Label Invariant: Labels Are NOT Fixed Anatomical Words (Radix, Folium, Flos) | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
-| **AX-10** | Empirical Falsification (Oracle Sentinels) | The Zodiac Star Invariant: Star Labels Are NOT Proper Astronomical Star Names | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
+| **AX-08** | Empirical Falsification (Computational Sentinels) | The Oocephalus Invariant: Pharmaceutical Jar Labels Do NOT Match Herbal Plant Names | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
+| **AX-09** | Empirical Falsification (Computational Sentinels) | The Organ Label Invariant: Labels Are NOT Fixed Anatomical Words (Radix, Folium, Flos) | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
+| **AX-10** | Empirical Falsification (Computational Sentinels) | The Zodiac Star Invariant: Star Labels Are NOT Proper Astronomical Star Names | **100%** | `FALSIFIED_HYPOTHESIS_AXIOM` |
 
 ### Detailed Axiom Verifications
 
@@ -209,7 +209,7 @@ This document establishes the **Epistemological Matrix**, bifurcating the proble
 
 ## 4. The Decision Gate: How to Test Any Future Theory
 
-Any future decipherment, translation, or structural claim submitted to the Oracle Platform must clear the **Axiom Gate** before evaluation:
+Any future decipherment, translation, or structural claim must clear the **Axiom Gate** before evaluation:
 
 ```
                 [ New Voynich Decipherment / Hypothesis ]
@@ -226,4 +226,4 @@ Any future decipherment, translation, or structural claim submitted to the Oracl
        (Fails Hard per Rule P40)           Evaluate against Corpus
 ```
 
-By enforcing this invariant matrix, the Oracle eliminates all subjective hallucination and locks reasoning strictly to physical reality.
+By enforcing this invariant matrix, this study eliminates subjective speculation and locks reasoning strictly to physical reality.

@@ -3,7 +3,7 @@
 
 **Author & Lead Investigator**: Tammy Lou Casey (Special Mention: Bailey Henderson)
 **Scope**: Full Corpus (37,025 Tokens | 5,216 Lines | 225 Folios)
-**Affiliation**: The Oracle Platform · Biophysics & Historical Analytics
+**Affiliation**: Independent Researcher
 **Date**: September 2026
 
 ---
@@ -66,6 +66,6 @@ By uniting the **Bayeux-Style Exhaustive Visual Census** with the **Master Conco
 3. **Montemurro, M. A., & Zanette, D. H.** (2013). *Keywords and Semantic Structure in the Voynich Manuscript*. PLoS ONE, 8(6), e66344.
 4. **Rozanova, A., & Temerev, A.** (2026). *A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space: Quantitative Information-Theoretic Disproof of Natural Language Syntax in the Voynich Codex*. arXiv:2608.17096.
 5. **Landini, G., & Zandbergen, R.** (1998). *The European Voynich Alphabet (EVA)*.
-6. **Casey, T. L., & Henderson, B.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*. The Oracle Platform.
+6. **Casey, T. L.** (2026). *The Oocephalus Invariant: Empirical Disproof of the Botanical-Crib Decipherment Hypothesis in Beinecke MS 408*.
 7. **Hodgins, G. W. L.** (2012). *Accelerated Mass Spectrometry Radiocarbon Dating of the Voynich Manuscript*. University of Arizona AMS Laboratory.
 8. **McCrone, W. C.** (2009). *Micro-Chemical Analysis of Pigments and Media in Beinecke MS 408*. McCrone Research Institute.
