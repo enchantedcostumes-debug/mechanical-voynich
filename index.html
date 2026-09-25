@@ -2087,7 +2087,7 @@
         // Folio Quick-Finder & Transcribed Text Logic
         function openReverseFinder(targetFolio, highlightWord) {
             populateReverseFolioSelect();
-            if (targetFolio) {
+            if (targetFolio && typeof targetFolio === 'string') {
                 const clean = targetFolio.toLowerCase().replace('f', '').trim();
                 for (let i = 0; i < reverseFolioSelect.options.length; i++) {
                     if (reverseFolioSelect.options[i].value === clean || reverseFolioSelect.options[i].value === 'f' + clean) {
@@ -2096,7 +2096,7 @@
                     }
                 }
             }
-            if (highlightWord) {
+            if (highlightWord && typeof highlightWord === 'string') {
                 currentFinderHighlightWord = highlightWord;
                 setFinderTab('text');
             } else {
