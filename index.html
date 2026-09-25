@@ -4543,7 +4543,12 @@
             botanicalDossierModal.classList.add('active');
         }
 
+        function openBotanicalCatalog() {
+            openBotanicalGallery();
+        }
+
         // Bind exports to window
+        window.openBotanicalCatalog = openBotanicalCatalog;
         window.openPageMapExplorer = openPageMapExplorer;
         window.loadPageMap = loadPageMap;
         window.openActivePlantDossier = openActivePlantDossier;
