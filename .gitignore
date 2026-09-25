@@ -1,0 +1,7 @@
+# GOAL: Gitignore for mechanical-voynich. Mother May I.
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.vscode/
+.idea/
