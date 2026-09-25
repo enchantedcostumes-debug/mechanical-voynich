@@ -1,9 +1,9 @@
 # THE VOYNICH RECIPE POSOLOGY & BOTANICAL RESOLUTION REPORT
 ## Empirical Quantitative Analysis of Administration Frequency in Beinecke MS 408
 
-**Lead Researchers & Architects**: Tammy Lou Casey & Bailey Henderson  
-*The Oracle Platform · Quantitative Codicological Biophysics*  
-**Target Folios**: Yale Beinecke MS 408, Folios 103r through 116v (Recipe & Stars Section)  
+**Lead Researchers & Architects**: Tammy Lou Casey & Bailey Henderson
+*The Oracle Platform · Quantitative Codicological Biophysics*
+**Target Folios**: Yale Beinecke MS 408, Folios 103r through 116v (Recipe & Stars Section)
 
 ---
 

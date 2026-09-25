@@ -2,10 +2,10 @@
 # THE MECHANICAL VOYNICH
 ## The Chronological Steps of Discovery & Architectural Concordance of Beinecke MS 408
 
-**Lead Researchers & Architects**: Tammy Lou Casey & Bailey Henderson  
-*The Oracle Platform · Codicological Biophysics & Empirical Manuscript Intelligence*  
-**Canonical Publication URL**: [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com)  
-**Target Manuscript**: Yale University Beinecke Rare Book & Manuscript Library, MS 408 (c. 1404–1438)  
+**Lead Researchers & Architects**: Tammy Lou Casey & Bailey Henderson
+*The Oracle Platform · Codicological Biophysics & Empirical Manuscript Intelligence*
+**Canonical Publication URL**: [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com)
+**Target Manuscript**: Yale University Beinecke Rare Book & Manuscript Library, MS 408 (c. 1404–1438)
 
 ---
 
@@ -37,7 +37,7 @@ This monograph documents the complete chronological timeline of discovery spanni
 
 ### Phase 2: The "One Language Series" & Harmonic Syntheses (April 7, 2026)
 - **The 73-Paper Theoretical Consolidation**: In April 2026, the research expanded into the mathematical harmonizations of ancient sacred and philosophical manuscripts. In the prompt archive `dropzone/DEEPSEEK_REWRITE_73_PAPERS_INTO_ONE_BOOK.md` (dated **2026-04-07**), Voynich was designated as a core milestone:
-  > **Paper 11: VOYNICH DECODED: The Unknown Language Confirms ONE LANGUAGE**  
+  > **Paper 11: VOYNICH DECODED: The Unknown Language Confirms ONE LANGUAGE**
   > *(Category 1: One Language Series, Papers 1–12)*
 - **Mathematical & Harmonic Analysis**: Explored whether the Voynich vocabulary obeyed integer harmonic ratios, gematria equivalents, and mathematical constants found in biblical, alchemical, and cosmological treatises.
 - **Key Realization**: The vocabulary exhibited extreme mathematical clustering—specific roots recurred across disparate visual contexts, indicating that the scribe was systematically reusing functional index tokens rather than composing conversational narratives.
@@ -45,13 +45,13 @@ This monograph documents the complete chronological timeline of discovery spanni
 ---
 
 ### Phase 3: Sovereign Repository Architecture & Fleet Integration (August 12–31, 2026)
-- **August 12, 2026 (Git Commit `4109dde`)**:  
-  *Oracle Toroidal Initialization - Hexmatrix Cipher Active.*  
+- **August 12, 2026 (Git Commit `4109dde`)**:
+  *Oracle Toroidal Initialization - Hexmatrix Cipher Active.*
   The full Voynich microservice suite (`services/voynich`) was committed to the platform repository:
   - Canonical full-text transcription corpus (`voynich_full_text_new.txt`) comprising 5,215 lines, 37,025 running word tokens, and 8,493 unique vocabulary types across 225 folios.
   - Native European Voynich Alphabet (EVA) font integration for true visual glyph rendering.
   - Offline asset caching and secure API routes (`routes.py`).
-- **August 29–31, 2026 (Fleet Audit Hardening)**:  
+- **August 29–31, 2026 (Fleet Audit Hardening)**:
   Through commits `a44c72a`, `dfb0a42`, `cb2d82d`, and `2618920`, the Voynich service achieved a 100% rational score (`Fraction(70, 70)`) on the Master Fleet Auditor, guaranteeing zero mock data, zero unhandled errors, and strict architectural compliance.
 
 ---
