@@ -2197,6 +2197,402 @@
             }
         }
 
+        // --- INTERACTIVE PAGE MAP EXPLORER & BOTANICAL DOSSIER FUNCTIONS ---
+        function populatePageMapDropdown() {
+            if (!pageMapFolioSelect) return;
+            pageMapFolioSelect.innerHTML = '';
+            const rawKeys = Object.keys(FOLIO_IMAGES_DATA).filter(k => !k.startsWith('f') || !FOLIO_IMAGES_DATA[k.replace('f', '')]);
+            const folios = [...new Set(rawKeys)].sort((a, b) => {
+                const numA = parseInt(a.replace(/[^0-9]/g, '')) || 0;
+                const numB = parseInt(b.replace(/[^0-9]/g, '')) || 0;
+                if (numA !== numB) return numA - numB;
+                return a.localeCompare(b);
+            });
+
+            folios.forEach(f => {
+                const opt = document.createElement('option');
+                opt.value = f;
+                const cleanFolio = f.toLowerCase().replace('f', '').trim();
+                const fKey = 'f' + cleanFolio;
+                const b = BOTANICAL_DATA[cleanFolio] || BOTANICAL_DATA[fKey];
+                opt.innerText = b ? `${fKey} · ${b.common_name.split('/')[0]}` : fKey;
+                pageMapFolioSelect.appendChild(opt);
+            });
+        }
+
+        function openPageMapExplorer() {
+            if (!pageMapModal) return;
+            pageMapModal.classList.add('active');
+            if (pageMapFolioSelect && !pageMapFolioSelect.children.length) {
+                populatePageMapDropdown();
+            }
+            loadPageMap(currentPageMapFolio || '1r');
+        }
+
+        function loadPageMap(rawFolio) {
+            if (!rawFolio) rawFolio = '1r';
+            currentPageMapFolio = rawFolio;
+            const cleanFolio = rawFolio.toLowerCase().replace('f', '').trim();
+            const fKey = 'f' + cleanFolio;
+
+            if (pageMapFolioSelect) {
+                if (!pageMapFolioSelect.children.length) populatePageMapDropdown();
+                pageMapFolioSelect.value = rawFolio;
+                if (!pageMapFolioSelect.value) pageMapFolioSelect.value = cleanFolio;
+                if (!pageMapFolioSelect.value) pageMapFolioSelect.value = fKey;
+            }
+
+            const imgUrl = FOLIO_IMAGES_DATA[rawFolio] || FOLIO_IMAGES_DATA[cleanFolio] || FOLIO_IMAGES_DATA[fKey] || 'https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg';
+            const pageMapImg = document.getElementById('pageMapImg');
+            if (pageMapImg) {
+                pageMapImg.setAttribute('href', imgUrl);
+                pageMapImg.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', imgUrl);
+            }
+
+            const pageMapYaleLink = document.getElementById('pageMapYaleLink');
+            if (pageMapYaleLink) {
+                pageMapYaleLink.href = 'https://collections.library.yale.edu/catalog/2004031';
+            }
+
+            const num = parseInt(cleanFolio.replace(/[^0-9]/g, '')) || 0;
+            let sectionName = 'Quire 1–8 · Herbal Simples Section';
+            if (num >= 67 && num <= 73) sectionName = 'Quire 9–10 · Astronomical & Zodiac Wheels';
+            else if (num >= 75 && num <= 84) sectionName = 'Quire 13 · Balneological Nymphs & Water Conduits';
+            else if (num >= 85 && num <= 86) sectionName = 'Quire 14 · Rosettes Master Map';
+            else if (num >= 87 && num <= 102) sectionName = 'Quire 15–16 · Pharmaceutical Albarelli & Recipe Stars';
+            else if (num >= 103) sectionName = 'Quire 17–20 · Continuous Posology Recipe Formularies';
+
+            const pageMapFolioBadge = document.getElementById('pageMapFolioBadge');
+            if (pageMapFolioBadge) {
+                pageMapFolioBadge.innerText = `Folio ${fKey} · ${sectionName}`;
+            }
+
+            const zonesGroup = document.getElementById('pageMapZonesGroup');
+            const hotspotsGroup = document.getElementById('pageMapHotspotsGroup');
+            if (zonesGroup) zonesGroup.innerHTML = '';
+            if (hotspotsGroup) hotspotsGroup.innerHTML = '';
+
+            const inventoryList = document.getElementById('inventoryList');
+            const inventoryCountText = document.getElementById('inventoryCountText');
+            const inventoryStatusPill = document.getElementById('inventoryStatusPill');
+
+            const bProfile = BOTANICAL_DATA[fKey] || BOTANICAL_DATA[cleanFolio] || null;
+            const textLines = TRANSCRIPTION_DATA[cleanFolio] || TRANSCRIPTION_DATA[fKey] || [];
+            const anchorsOnPage = REVERSE_INDEX[cleanFolio] || REVERSE_INDEX[fKey] || [];
+
+            if (bProfile) {
+                if (inventoryStatusPill) {
+                    inventoryStatusPill.className = 'dossier-pill identified';
+                    inventoryStatusPill.innerText = 'Verified Botanical Simples';
+                }
+                if (inventoryCountText) {
+                    inventoryCountText.innerText = `6 Anatomical Features Catalogued · ${textLines.length} Text Lines`;
+                }
+
+                if (zonesGroup) {
+                    const zones = [
+                        { type: 'flower', name: `[🌸 FLOWER: ${bProfile.common_name.split('/')[0]}]`, rect: { x: 100, y: 60, width: 800, height: 360 } },
+                        { type: 'foliage', name: `[🌿 FOLIAGE: ${bProfile.family}]`, rect: { x: 100, y: 440, width: 800, height: 420 } },
+                        { type: 'root', name: `[🥕 ROOT: Diagnostic Morphology]`, rect: { x: 100, y: 880, width: 800, height: 420 } }
+                    ];
+                    zones.forEach(z => {
+                        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                        g.setAttribute('class', `svg-map-zone ${z.type}`);
+                        g.innerHTML = `
+                            <rect class="zone-rect" x="${z.rect.x}" y="${z.rect.y}" width="${z.rect.width}" height="${z.rect.height}" rx="10"/>
+                            <text class="zone-badge" x="${z.rect.x + 20}" y="${z.rect.y + 35}">${z.name}</text>
+                        `;
+                        g.onclick = () => openBotanicalDossier(fKey, z.type);
+                        zonesGroup.appendChild(g);
+                    });
+                }
+
+                if (inventoryList) {
+                    inventoryList.innerHTML = `
+                        <div class="inventory-item-card" onclick="openBotanicalDossier('${fKey}')" style="border-left:4px solid var(--gold);">
+                            <div class="item-title">
+                                <span style="color:var(--gold-light);">🌿 Identification: ${bProfile.common_name}</span>
+                                <span class="dossier-pill identified" style="font-size:0.7rem;">Verified</span>
+                            </div>
+                            <div class="item-subtitle"><i>${bProfile.binomial}</i> (${bProfile.family})</div>
+                            <div style="margin-top:0.4rem; font-size:0.75rem; color:var(--cyan-astro);">Click to inspect real photographs & anatomical comparison →</div>
+                        </div>
+
+                        <div class="inventory-item-card" onclick="openBotanicalDossier('${fKey}', 'root')" style="border-left:4px solid #f97316;">
+                            <div class="item-title">
+                                <span style="color:#fdba74;">🥕 Rootstock Architecture</span>
+                                <span style="font-size:0.7rem; color:var(--text-muted);">Bailey Henderson</span>
+                            </div>
+                            <div class="item-subtitle">${bProfile.root_diagnosis}</div>
+                        </div>
+
+                        <div class="inventory-item-card" onclick="openBotanicalDossier('${fKey}', 'foliage')" style="border-left:4px solid #34d399;">
+                            <div class="item-title"><span style="color:#86efac;">🍃 Foliage & Leaf Margin Analysis</span></div>
+                            <div class="item-subtitle">${bProfile.foliage_diagnosis}</div>
+                        </div>
+
+                        <div class="inventory-item-card" onclick="openBotanicalDossier('${fKey}', 'flower')" style="border-left:4px solid #f472b6;">
+                            <div class="item-title"><span style="color:#fbcfe8;">🌸 Inflorescence & Floral Diagnosis</span></div>
+                            <div class="item-subtitle">${bProfile.floral_diagnosis}</div>
+                        </div>
+
+                        <div class="inventory-item-card" style="border-left:4px solid var(--cyan-astro);">
+                            <div class="item-title"><span style="color:var(--cyan-astro);">📜 Galenic Compounding & Posology</span></div>
+                            <div class="item-subtitle">${bProfile.compounding_posology}</div>
+                            <div style="font-size:0.72rem; color:var(--text-muted); margin-top:0.3rem;">Cross-references: ${bProfile.pharma_link || 'N/A'} · ${bProfile.recipe_link || 'N/A'}</div>
+                        </div>
+
+                        <div class="inventory-item-card" style="border-left:4px solid #a855f7;">
+                            <div class="item-title"><span style="color:#d8b4fe;">📖 Verified English Exegesis</span></div>
+                            <div class="item-subtitle">${bProfile.english_translation}</div>
+                        </div>
+                    `;
+                }
+            } else {
+                if (inventoryStatusPill) {
+                    inventoryStatusPill.className = 'dossier-pill pending';
+                    inventoryStatusPill.innerText = 'Catalogued Manuscript Folio';
+                }
+                if (inventoryCountText) {
+                    inventoryCountText.innerText = `${anchorsOnPage.length} Concordance Anchors · ${textLines.length} Text Lines`;
+                }
+                if (inventoryList) {
+                    let anchorsHtml = anchorsOnPage.map(a => `
+                        <span class="folio-word-chip" onclick="closeModal('pageMapModal'); selectToken('${a.token}');" style="font-size:0.82rem; padding:0.25rem 0.55rem; background:rgba(212,175,55,0.15); border:1px solid var(--gold); color:var(--gold-light);">
+                            ${a.token} (${a.count}x)
+                        </span>
+                    `).join('');
+
+                    inventoryList.innerHTML = `
+                        <div class="inventory-item-card">
+                            <div class="item-title"><span style="color:var(--gold);">Concordance Star Anchors on Page (${anchorsOnPage.length})</span></div>
+                            <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.5rem;">
+                                ${anchorsHtml || '<span style="color:var(--text-muted); font-size:0.8rem;">No cross-sectional anchor repetitions found on this folio.</span>'}
+                            </div>
+                        </div>
+                        <div class="inventory-item-card">
+                            <div class="item-title"><span>Transcribed Lines (${textLines.length})</span></div>
+                            <div style="font-family:'JetBrains Mono'; font-size:0.75rem; color:#cbd5e1; max-height:260px; overflow-y:auto; line-height:1.6; margin-top:0.4rem;">
+                                ${textLines.map(l => `<div><span style="color:var(--text-muted); margin-right:0.5rem;">L.${l.line}</span>${l.text}</div>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        function openActivePlantDossier() {
+            if (currentHerbalFolio) {
+                openBotanicalDossier(currentHerbalFolio);
+            } else {
+                openBotanicalDossier('1r');
+            }
+        }
+
+        function openBotanicalGallery() {
+            if (botanicalGalleryModal) {
+                botanicalGalleryModal.classList.add('active');
+                renderBotanicalGallery();
+            }
+        }
+
+        function setBotanicalFilter(filterType) {
+            currentBotanicalFilter = filterType;
+            document.querySelectorAll('#botanicalGalleryModal .btn-filter').forEach(b => b.classList.remove('active'));
+            if (filterType === 'all' && document.getElementById('btnBotFilterAll')) document.getElementById('btnBotFilterAll').classList.add('active');
+            if (filterType === 'identified' && document.getElementById('btnBotFilterIdentified')) document.getElementById('btnBotFilterIdentified').classList.add('active');
+            if (filterType === 'imported' && document.getElementById('btnBotFilterImported')) document.getElementById('btnBotFilterImported').classList.add('active');
+            if (filterType === 'pending' && document.getElementById('btnBotFilterPending')) document.getElementById('btnBotFilterPending').classList.add('active');
+            renderBotanicalGallery();
+        }
+
+        function renderBotanicalGallery() {
+            const grid = document.getElementById('botanicalGalleryGrid');
+            if (!grid) return;
+            const query = (botanicalSearchInput ? botanicalSearchInput.value : '').toLowerCase().trim();
+
+            let entries = Object.values(BOTANICAL_DATA);
+            if (currentBotanicalFilter === 'identified') {
+                entries = entries.filter(e => e.status === 'IDENTIFIED');
+            } else if (currentBotanicalFilter === 'imported') {
+                entries = entries.filter(e => (e.compounding_posology || '').toLowerCase().includes('spice') || (e.common_name || '').toLowerCase().includes('rhubarb') || (e.common_name || '').toLowerCase().includes('ginger') || (e.common_name || '').toLowerCase().includes('spikenard'));
+            } else if (currentBotanicalFilter === 'pending') {
+                entries = entries.filter(e => e.status !== 'IDENTIFIED');
+            }
+
+            if (query) {
+                entries = entries.filter(e => 
+                    e.folio.toLowerCase().includes(query) ||
+                    (e.binomial || '').toLowerCase().includes(query) ||
+                    (e.common_name || '').toLowerCase().includes(query) ||
+                    (e.family || '').toLowerCase().includes(query)
+                );
+            }
+
+            grid.innerHTML = '';
+            if (entries.length === 0) {
+                grid.innerHTML = `<div style="grid-column: 1 / -1; text-align:center; padding:3rem; color:var(--text-muted);">No botanical profiles matched "${query}".</div>`;
+                return;
+            }
+
+            entries.forEach(entry => {
+                const cleanFolio = entry.folio.toLowerCase().replace('f', '').trim();
+                const fKey = 'f' + cleanFolio;
+                const facsImg = FOLIO_IMAGES_DATA[fKey] || FOLIO_IMAGES_DATA[cleanFolio] || 'https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg';
+                const card = document.createElement('div');
+                card.className = 'botanical-card';
+                card.innerHTML = `
+                    <div class="botanical-card-header">
+                        <span>Folio ${fKey}</span>
+                        <span class="dossier-pill ${entry.status === 'IDENTIFIED' ? 'identified' : 'pending'}" style="font-size:0.68rem; padding:0.15rem 0.45rem;">
+                            ${entry.status === 'IDENTIFIED' ? '✓ Identified' : 'Comparative Matching'}
+                        </span>
+                    </div>
+                    <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#000;">
+                        <img src="${facsImg}" alt="${fKey} Drawing" style="height:100%; width:100%; object-fit:contain; border-right:1px solid rgba(255,255,255,0.08);">
+                        <img src="${entry.plant_photo || entry.root_photo}" alt="${entry.common_name}" style="height:100%; width:100%; object-fit:contain;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Atropa_belladonna_001.JPG/640px-Atropa_belladonna_001.JPG'">
+                    </div>
+                    <div style="padding:0.85rem; flex:1; display:flex; flex-direction:column;">
+                        <div style="font-family:'Cinzel', serif; font-size:0.95rem; font-weight:700; color:var(--gold-light); margin-bottom:0.2rem;">
+                            ${entry.common_name}
+                        </div>
+                        <div style="font-size:0.8rem; font-style:italic; color:var(--cyan-astro); margin-bottom:0.4rem;">
+                            ${entry.binomial} (${entry.family})
+                        </div>
+                        <div style="font-size:0.75rem; color:var(--text-muted); line-height:1.4; margin-bottom:0.75rem; flex:1;">
+                            ${(entry.root_diagnosis || '').substring(0, 115)}...
+                        </div>
+                        <div style="display:flex; gap:0.4rem;">
+                            <button class="btn-action btn-highlight" onclick="openBotanicalDossier('${fKey}')" style="flex:1; justify-content:center; padding:0.35rem; font-size:0.75rem;">
+                                Inspect Photos
+                            </button>
+                            <button class="btn-action" onclick="loadPageMap('${fKey}'); closeModal('botanicalGalleryModal'); openPageMapExplorer();" style="padding:0.35rem 0.6rem; font-size:0.75rem;">
+                                🗺️ Map
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openBotanicalDossier(folio, focusZone) {
+            const cleanFolio = String(folio).toLowerCase().replace('f', '').trim();
+            const fKey = 'f' + cleanFolio;
+            const entry = BOTANICAL_DATA[fKey] || BOTANICAL_DATA[cleanFolio] || null;
+            if (!entry) return;
+
+            const titleEl = document.getElementById('botanicalDossierTitle');
+            if (titleEl) {
+                titleEl.innerHTML = `<span>🌿</span> Anatomical Dossier: Folio ${fKey} · <span style="color:var(--gold);">${entry.common_name}</span>`;
+            }
+
+            const imgUrl = FOLIO_IMAGES_DATA[fKey] || FOLIO_IMAGES_DATA[cleanFolio] || 'https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg';
+
+            const bodyEl = document.getElementById('botanicalDossierBody');
+            if (bodyEl) {
+                bodyEl.innerHTML = `
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; margin-bottom:1.5rem;">
+                        <!-- Left: 15th-Century Manuscript Drawing -->
+                        <div style="background:#000; border:1px solid rgba(255,255,255,0.12); border-radius:10px; padding:0.75rem; display:flex; flex-direction:column; align-items:center;">
+                            <div style="font-family:'Cinzel', serif; font-size:0.88rem; color:var(--gold); margin-bottom:0.5rem; text-align:center;">
+                                Beinecke MS 408 Facsimile Drawing (${fKey})
+                            </div>
+                            <div style="height:420px; width:100%; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                                <img src="${imgUrl}" alt="Manuscript ${fKey}" style="max-height:100%; max-width:100%; object-fit:contain; border-radius:6px;">
+                            </div>
+                            <div style="margin-top:0.5rem; font-size:0.75rem; color:var(--text-muted); text-align:center;">
+                                Yale University Beinecke Rare Book & Manuscript Library Digital Facsimile
+                            </div>
+                        </div>
+
+                        <!-- Right: Real Botanical Photography & Diagnostic Engraving -->
+                        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.12); border-radius:10px; padding:0.75rem; display:flex; flex-direction:column;">
+                            <div style="font-family:'Cinzel', serif; font-size:0.88rem; color:var(--cyan-astro); margin-bottom:0.5rem; text-align:center;">
+                                Living Specimen & Morphological Herbarium
+                            </div>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; height:420px;">
+                                <div style="background:#05070a; border-radius:6px; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0.25rem;">
+                                    <img src="${entry.plant_photo}" alt="${entry.common_name}" style="max-height:360px; max-width:100%; object-fit:contain; border-radius:4px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Atropa_belladonna_001.JPG/640px-Atropa_belladonna_001.JPG'">
+                                    <span style="font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">Living Aerial Plant</span>
+                                </div>
+                                <div style="background:#05070a; border-radius:6px; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0.25rem;">
+                                    <img src="${entry.root_photo}" alt="${entry.common_name} Root" style="max-height:360px; max-width:100%; object-fit:contain; border-radius:4px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-019.jpg/500px-Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-019.jpg'">
+                                    <span style="font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">Diagnostic Taproot Morphology</span>
+                                </div>
+                            </div>
+                            <div style="margin-top:0.5rem; font-size:0.72rem; color:var(--text-muted); text-align:center;">
+                                Photo & Botanical Authority: ${entry.photo_credit || 'Wikimedia Commons / Public Domain Herbarium'}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Comparative Breakdown -->
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.25rem;">
+                        <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:1rem;">
+                            <h4 style="color:var(--gold-light); margin-top:0; margin-bottom:0.6rem; font-family:'Cinzel', serif;">
+                                🔬 Morphological & Anatomical Diagnosis
+                            </h4>
+                            <div style="margin-bottom:0.75rem;">
+                                <b style="color:#fdba74;">Root Architecture (Bailey Henderson Observation):</b>
+                                <p style="font-size:0.83rem; line-height:1.5; color:#e2e8f0; margin:0.25rem 0;">${entry.root_diagnosis}</p>
+                            </div>
+                            <div style="margin-bottom:0.75rem;">
+                                <b style="color:#86efac;">Foliage & Venation:</b>
+                                <p style="font-size:0.83rem; line-height:1.5; color:#e2e8f0; margin:0.25rem 0;">${entry.foliage_diagnosis}</p>
+                            </div>
+                            <div>
+                                <b style="color:#fbcfe8;">Floral Structure & Fruit:</b>
+                                <p style="font-size:0.83rem; line-height:1.5; color:#e2e8f0; margin:0.25rem 0;">${entry.floral_diagnosis}</p>
+                            </div>
+                        </div>
+
+                        <div style="background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:1rem;">
+                            <h4 style="color:var(--cyan-astro); margin-top:0; margin-bottom:0.6rem; font-family:'Cinzel', serif;">
+                                📜 Pharmacopeia & English Translation
+                            </h4>
+                            <div style="margin-bottom:0.75rem;">
+                                <b style="color:var(--cyan-astro);">Verified English Translation (Transcribed Exegesis):</b>
+                                <blockquote style="font-size:0.83rem; line-height:1.5; color:#f8fafc; margin:0.35rem 0; border-left:3px solid var(--cyan-astro); padding-left:0.75rem; background:rgba(56,189,248,0.05); padding:0.5rem;">
+                                    "${entry.english_translation}"
+                                </blockquote>
+                            </div>
+                            <div style="margin-bottom:0.75rem;">
+                                <b style="color:var(--gold);">Compounding Posology & Action:</b>
+                                <p style="font-size:0.83rem; line-height:1.5; color:#e2e8f0; margin:0.25rem 0;">${entry.compounding_posology}</p>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(255,255,255,0.08);">
+                                <span style="font-size:0.78rem; color:var(--text-muted);">Cross-references: ${entry.pharma_link || 'N/A'}</span>
+                                <button class="btn-action btn-highlight" onclick="closeModal('botanicalDossierModal'); loadPageMap('${fKey}'); openPageMapExplorer();" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+                                    <span>🗺️</span> View in Interactive Page Map
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            botanicalDossierModal.classList.add('active');
+        }
+
+        // Bind exports to window
+        window.openPageMapExplorer = openPageMapExplorer;
+        window.loadPageMap = loadPageMap;
+        window.openActivePlantDossier = openActivePlantDossier;
+        window.openBotanicalGallery = openBotanicalGallery;
+        window.setBotanicalFilter = setBotanicalFilter;
+        window.renderBotanicalGallery = renderBotanicalGallery;
+        window.openBotanicalDossier = openBotanicalDossier;
+        window.setFilter = setFilter;
+        window.closeModal = closeModal;
+        window.switchArticle = switchArticle;
+        window.selectToken = selectToken;
+        window.zoomPane = zoomPane;
+        window.resetZoom = resetZoom;
+        window.setLexiconFilter = setLexiconFilter;
+        window.openWordDetail = openWordDetail;
+        window.jumpToFolio = jumpToFolio;
+
         renderSidebar();
         selectToken(activeToken);
     </script>
