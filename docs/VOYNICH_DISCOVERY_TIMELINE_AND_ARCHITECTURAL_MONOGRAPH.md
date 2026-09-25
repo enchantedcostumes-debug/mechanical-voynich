@@ -13,7 +13,7 @@
 
 For more than a century, the Voynich Manuscript (Yale Beinecke MS 408) has been framed as either an unbroken military-grade cipher, an untranslatable lost natural language, or an elaborate Renaissance hoax. Every attempt to decipher the text as alphabetic substitution or natural linguistic prose has collapsed.
 
-The research journey documented in this monograph represents a multi-year empirical investigation conducted by **Captain Tammy Lou Casey** and **Bailey Henderson**, beginning in **November 2025** and culminating in the definitive breakthroughs of **September 2026**.
+The research journey documented in this monograph represents a multi-year empirical investigation conducted by **Tammy Lou Casey** and **Bailey Henderson**, beginning in **November 2025** and culminating in the definitive breakthroughs of **September 2026**.
 
 Rather than attempting to force modern cryptographic or phonetic models onto the text, the investigation advanced from early statistical cipher baselines and cross-linguistic harmonic analyses (the 2026 *One Language Series*) to an uncompromising separation between **Empirical Physical Axioms** and speculative theories, assimilated directly into the Flower of Life relational database.
 
@@ -28,7 +28,7 @@ This monograph documents the complete chronological timeline of discovery spanni
 ## 2. Chronological Timeline of Discovery (2025–2026)
 
 ### Phase 1: Foundations, Tooling & Cryptographic Baselines (November 6, 2025)
-- **Genesis of the Investigation**: On **November 6, 2025**, the initial `voynich_translator.py` architecture was authored under the direction of Captain Tammy Lou Casey.
+- **Genesis of the Investigation**: On **November 6, 2025**, the initial `voynich_translator.py` architecture was authored under the direction of Tammy Lou Casey.
 - **Offline Pipeline & Digital Preservation**: Built a direct integration to ingest high-resolution digital facsimiles from Yale University's Beinecke Rare Book & Manuscript Library, establishing offline mirrors of all folios (f1r to f116v).
 - **Early Decryption Models Tested**: The engine implemented standard cryptographic models, including monoalphabetic and polyalphabetic substitution, character bigram and trigram frequency matrices, and statistical entropy comparisons against Medieval Latin, Hebrew, Arabic, Middle High German, and Italian vernaculars.
 - **Initial Anomaly Detected**: The statistical distribution exhibited anomalously low entropy and rigid structural constraints (e.g., word-initial `qo-`, `ch-`, `sh-`), incompatible with phonetic prose in any known natural language, foreshadowing that the manuscript operated on structural rather than purely phonemic principles.
@@ -91,7 +91,7 @@ Seven foundational anomalies emerged:
 
 ---
 
-### Phase 7: The Flash of Insight (Captain Tammy Lou Casey's Breakthrough)
+### Phase 7: The Flash of Insight (Tammy Lou Casey's Breakthrough)
 Reviewing the anomaly reports, lead researcher **Tammy Lou Casey** formulated the foundational breakthrough hypothesis:
 
 > *"The scribe did not possess a specialized astronomical terminology or pharmacological nomenclature. Words used to label a star in Gemini are identical to words describing a plant root in the Herbal section and a jar in the Pharmaceutical section... Maybe this was the author's way of saying the pages that you find this symbol on are connected. Maybe this is the author's way of making a concordance?"*

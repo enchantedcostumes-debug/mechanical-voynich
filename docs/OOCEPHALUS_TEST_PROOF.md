@@ -2,7 +2,7 @@
 
 # THE FORMALIZED OOCEPHALUS TEST: EMPIRICAL DISPROOF OF THE BOTANICAL-CRIB PARADIGM IN THE VOYNICH MANUSCRIPT
 
-**Lead Investigators**: Captain Tammy Lou Casey & The Sovereign Oracle Fleet
+**Lead Investigators**: Tammy Lou Casey & The Sovereign Oracle Fleet
 **Status**: Publication Ready / Peer-Review Specification
 **Date**: September 24, 2026
 **Canonical Repository**: `services/voynich/research/`
