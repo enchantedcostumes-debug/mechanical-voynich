@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codicological Monographs & Research Papers · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/atlas.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-inner">
+            <div class="header-brand-group">
+                <div class="header-brand-info">
+                    <h1>
+                        <a href="index.html" style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:0.65rem;">
+                            <span>The Mechanical Voynich</span>
+                            <span class="badge">MS 408 Atlas</span>
+                        </a>
+                    </h1>
+                    <div class="authorship">
+                        Lead Researcher: <span>Tammy Lou Casey</span> · Independent Codicological Research
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Navigation Primitives -->
+            <nav class="primary-nav-tabs">
+                <a href="index.html" class="nav-tab-btn ">
+                    <span>✨</span> Concordance Atlas
+                </a>
+                <a href="botanical.html" class="nav-tab-btn ">
+                    <span>🌿</span> Botanical Index & Guesses
+                </a>
+                <a href="page-map.html" class="nav-tab-btn ">
+                    <span>🗺️</span> 131-Folio Page Map
+                </a>
+                <a href="lexicon.html" class="nav-tab-btn ">
+                    <span>🔤</span> Corpus Lexicon
+                </a>
+                <a href="monograph.html" class="nav-tab-btn active">
+                    <span>📚</span> Monograph & Papers
+                </a>
+            </nav>
+
+            <!-- Community & Outreach Navigation -->
+            <div class="community-nav-bar">
+                <button class="btn-action" onclick="document.getElementById('aboutModal').classList.add('active');">
+                    <span>ℹ️</span> About Me
+                </button>
+                <button class="btn-action" onclick="document.getElementById('contactModal').classList.add('active');">
+                    <span>✉️</span> Contact
+                </button>
+                <button class="btn-action" onclick="document.getElementById('newsletterModal').classList.add('active');">
+                    <span>📰</span> Newsletter
+                </button>
+                <button class="btn-action btn-patron" onclick="openSponsorModal();">
+                    <span>☕</span> Support / Donate
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="standalone-page-container">
+        <div class="standalone-hero">
+            <h1>Academic Articles & Codicological Monographs</h1>
+            <p>
+                Peer-reviewed independent research papers by Tammy Lou Casey establishing the scribal hands, astronomical coordinates, and Venetian trade pharmacopeia of Beinecke MS 408.
+            </p>
+        </div>
+
+        <div style="display:flex; gap:0.5rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+            <button class="nav-tab-btn active" id="btnArtScribes" onclick="showArticle('scribes')">✍️ The Two Authors (Scribes 1 & 2)</button>
+            <button class="nav-tab-btn" id="btnArtMonograph" onclick="showArticle('monograph')">Discovery Monograph</button>
+            <button class="nav-tab-btn" id="btnArtTranslation" onclick="showArticle('translation')">Page-by-Page Translation</button>
+            <button class="nav-tab-btn" id="btnArtRecipes" onclick="showArticle('recipes')">Recipe Formulary & Posology</button>
+            <button class="nav-tab-btn" id="btnArtBotanical" onclick="showArticle('botanical_index')">Master Botanical Index</button>
+            <button class="nav-tab-btn" id="btnArtVenetian" onclick="showArticle('venetian_trade')">Venetian Trade Convoys</button>
+            <button class="nav-tab-btn" id="btnArtFindingAids" onclick="showArticle('finding_aids')">Finding Aids</button>
+        </div>
+
+        <div id="articleContentContainer" style="background:rgba(15,20,30,0.85); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:2.5rem; line-height:1.7; font-size:0.95rem; color:#e2e8f0; max-width:1200px; margin:0 auto;">
+            <!-- Rendered by article switcher -->
+        </div>
+    </main>
+
+    
+    <!-- MODAL: About Me -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal-card" style="max-width:750px;">
+            <div class="modal-header">
+                <h3><span>ℹ️</span> About Lead Researcher Tammy Lou Casey</h3>
+                <button class="modal-close" onclick="closeModal('aboutModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="font-family:'Cinzel', serif; font-size:1.3rem; color:var(--gold-light); margin-bottom:0.4rem;">
+                    Tammy Lou Casey
+                </div>
+                <div style="font-size:0.85rem; color:var(--cyan-astro); font-style:italic; margin-bottom:1.2rem;">
+                    Independent Codicological Researcher · Author of The Mechanical Voynich & Molecular Alchemy
+                </div>
+                <p style="color:#cbd5e1; line-height:1.6; font-size:0.92rem; margin-bottom:1rem;">
+                    Conducted completely independently over multiple years without institutional grant gatekeeping, this project deciphers the architectural mechanics of Beinecke MS 408 through morphological botany, astronomical coordinates, and verified Venetian trade networks.
+                </p>
+                <div style="display:flex; gap:0.75rem; margin-top:1.5rem; flex-wrap:wrap;">
+                    <a href="https://molecularalchemy.substack.com" target="_blank" rel="noopener" class="btn-action btn-highlight" style="padding:0.6rem 1rem;">
+                        🌿 Molecular Alchemy Substack ↗
+                    </a>
+                    <a href="https://tammylcasey.substack.com" target="_blank" rel="noopener" class="btn-action" style="padding:0.6rem 1rem;">
+                        📖 Tammy Lou Casey Substack ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Contact -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-card" style="max-width:650px;">
+            <div class="modal-header">
+                <h3><span>✉️</span> Academic & Codicological Inquiries</h3>
+                <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="handleContactSubmit(event)">
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Your Name *</label>
+                        <input type="text" id="inquiryName" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Academic / Research Affiliation</label>
+                        <input type="text" id="inquiryAffiliation" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Email Address *</label>
+                        <input type="email" id="inquiryEmail" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Inquiry Topic *</label>
+                        <input type="text" id="inquiryTopic" value="Paleobotany / Codicology" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:1rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Message *</label>
+                        <textarea id="inquiryMessage" rows="4" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-family:inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-action btn-highlight" style="width:100%; justify-content:center; padding:0.65rem;">
+                        <span>✉️</span> Transmit Inquiry to Lead Researcher
+                    </button>
+                    <div id="contactStatusText" style="margin-top:0.75rem; font-size:0.8rem; text-align:center; color:var(--emerald-herbal);"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Newsletter -->
+    <div class="modal-overlay" id="newsletterModal">
+        <div class="modal-card" style="max-width:650px;">
+            <div class="modal-header">
+                <h3><span>📰</span> The Voynich Research Dispatch</h3>
+                <button class="modal-close" onclick="closeModal('newsletterModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="color:#cbd5e1; font-size:0.92rem; margin-bottom:1rem;">
+                    Subscribe to receive high-resolution folio breakdowns, botanical photograph comparisons, and peer-reviewed chapters by lead researcher Tammy Lou Casey.
+                </p>
+                <form onsubmit="handleNewsletterSubmit(event)">
+                    <div style="display:flex; gap:0.5rem;">
+                        <input type="email" id="newsletterEmail" placeholder="scholar@institution.org" required style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                        <button type="submit" class="btn-action btn-highlight" style="white-space:nowrap; padding:0.5rem 1rem;">
+                            <span>📬</span> Subscribe Free
+                        </button>
+                    </div>
+                    <div id="newsletterStatusText" style="margin-top:0.5rem; font-size:0.8rem; color:var(--emerald-herbal);"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Support & Research Patronage (CashApp & Substack) -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-card" style="max-width:850px;">
+            <div class="modal-header">
+                <h3><span>☕</span> Support The Oracle & Independent Research</h3>
+                <button class="modal-close" onclick="closeModal('donateModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align:center; padding:0.5rem 0 1rem;">
+                    <div style="font-size:2.2rem; margin-bottom:0.4rem; color:var(--gold);">🌿 ⚖️ 📜</div>
+                    <h2 style="font-family:'Cinzel', serif; color:var(--gold-light); margin:0 0 0.5rem 0;">Support The Oracle & Codicological Research</h2>
+                    <p style="color:#cbd5e1; font-size:0.95rem; max-width:620px; margin:0 auto; line-height:1.6;">
+                        Your patronage directly supports independent scholarship by Tammy Lou Casey, archival reproduction rights, high-resolution IIIF hosting, and open-access research.
+                    </p>
+                </div>
+
+                <!-- CashApp Box -->
+                <div style="background:rgba(0, 214, 79, 0.08); border:2px solid #00D632; border-radius:12px; padding:1.4rem; text-align:center; margin:1.2rem 0; box-shadow:0 0 20px rgba(0, 214, 79, 0.15);">
+                    <div style="font-size:0.8rem; text-transform:uppercase; color:#86efac; font-weight:700; letter-spacing:0.05em; margin-bottom:0.25rem;">Direct CashApp Support</div>
+                    <div style="font-size:2rem; font-weight:800; color:#00D632; font-family:'JetBrains Mono', monospace; letter-spacing:0.05em;">$enchantedcostumes</div>
+                    <div style="color:#e2e8f0; font-size:0.88rem; margin-top:0.4rem;">
+                        Open CashApp and send any amount ($5 single folio patronage)
+                    </div>
+                </div>
+
+                <h4 style="font-family:'Cinzel', serif; color:var(--gold); font-size:1.05rem; margin:1.5rem 0 0.75rem 0; text-align:center;">Subscribe & Support via Sovereign Substack</h4>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.2rem; margin-top:0.75rem;">
+                    <!-- Publication 1: Molecular Alchemy -->
+                    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.3); border-radius:12px; padding:1.3rem; display:flex; flex-direction:column; gap:0.75rem;">
+                        <div style="font-size:1.5rem;">🌿</div>
+                        <h4 style="font-family:'Cinzel', serif; font-size:1.1rem; color:#fff; margin:0;">Molecular Alchemy</h4>
+                        <div style="font-size:0.84rem; color:#94a3b8; line-height:1.5;">
+                            Pharmacognosy dossiers, 10-section botanical grimoires, spagyric laboratory protocols, and deep cellular biochemistry by Tammy Lou Casey.
+                        </div>
+                        <a href="https://molecularalchemy.substack.com" target="_blank" rel="noopener" style="margin-top:auto; background:linear-gradient(135deg, rgba(212,175,55,0.3) 0%, rgba(56,189,248,0.2) 100%); border:1px solid var(--gold); color:var(--gold-light); padding:0.65rem 1rem; border-radius:8px; font-weight:700; text-decoration:none; text-align:center; font-size:0.88rem;">
+                            🌟 Visit Molecular Alchemy Substack ↗
+                        </a>
+                    </div>
+
+                    <!-- Publication 2: Tammy Lou Casey -->
+                    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.3rem; display:flex; flex-direction:column; gap:0.75rem;">
+                        <div style="font-size:1.5rem;">✍️</div>
+                        <h4 style="font-family:'Cinzel', serif; font-size:1.1rem; color:#fff; margin:0;">Tammy Lou Casey</h4>
+                        <div style="font-size:0.84rem; color:#94a3b8; line-height:1.5;">
+                            Independent essays, consciousness research, deconstruction, and sovereign dispatches by lead researcher Tammy Lou Casey (@punkrockgirlusa).
+                        </div>
+                        <a href="https://tammylcasey.substack.com" target="_blank" rel="noopener" style="margin-top:auto; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.2); color:#fff; padding:0.65rem 1rem; border-radius:8px; font-weight:700; text-decoration:none; text-align:center; font-size:0.88rem;">
+                            📖 Visit Tammy Lou Casey Substack ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top:1.5rem; padding:1rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:8px; text-align:center; font-size:0.84rem; color:#94a3b8;">
+                    For institutional grants or archival collaboration: <a href="mailto:research@ozark-oracle.com" style="color:var(--gold-light); text-decoration:none; font-weight:600;">research@ozark-oracle.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Best Guess (1/day Crowdsourced Consensus) -->
+    <div class="modal-overlay" id="bestGuessModal">
+        <div class="modal-card" style="max-width:920px;">
+            <div class="modal-header">
+                <h3 id="bestGuessModalTitle"><span>💡</span> What Is Your Best Guess? · Paleobotanical Identification</h3>
+                <button class="modal-close" onclick="closeModal('bestGuessModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="bestGuessModalBody">
+                <!-- Rendered dynamically by consensus.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Botanical Forensic Dossier -->
+    <div class="modal-overlay" id="botanicalDossierModal">
+        <div class="modal-card" style="max-width:1150px;">
+            <div class="modal-header">
+                <h3 id="botanicalDossierTitle"><span>🌿</span> Forensic Botanical Identification Dossier</h3>
+                <button class="modal-close" onclick="closeModal('botanicalDossierModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="botanicalDossierBody">
+                <!-- Rendered dynamically by botanical.js -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="data/articles_data.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        function showArticle(key) {
+            document.querySelectorAll('.primary-nav-tabs .nav-tab-btn, .standalone-page-container .nav-tab-btn').forEach(b => b.classList.remove('active'));
+            const btn = document.getElementById('btnArt' + key.charAt(0).toUpperCase() + key.slice(1));
+            if (btn) btn.classList.add('active');
+
+            const articles = window.ARTICLES_DATA || {};
+            const content = articles[key] || '<p>Article content loading...</p>';
+            const container = document.getElementById('articleContentContainer');
+            if (container) {
+                container.innerHTML = content;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showArticle('scribes');
+        });
+    </script>
+</body>
+</html>

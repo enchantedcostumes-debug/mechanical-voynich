@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-Folio Codicological Page Map & Quire Reader · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/atlas.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-inner">
+            <div class="header-brand-group">
+                <div class="header-brand-info">
+                    <h1>
+                        <a href="index.html" style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:0.65rem;">
+                            <span>The Mechanical Voynich</span>
+                            <span class="badge">MS 408 Atlas</span>
+                        </a>
+                    </h1>
+                    <div class="authorship">
+                        Lead Researcher: <span>Tammy Lou Casey</span> · Independent Codicological Research
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Navigation Primitives -->
+            <nav class="primary-nav-tabs">
+                <a href="index.html" class="nav-tab-btn ">
+                    <span>✨</span> Concordance Atlas
+                </a>
+                <a href="botanical.html" class="nav-tab-btn ">
+                    <span>🌿</span> Botanical Index & Guesses
+                </a>
+                <a href="page-map.html" class="nav-tab-btn active">
+                    <span>🗺️</span> 131-Folio Page Map
+                </a>
+                <a href="lexicon.html" class="nav-tab-btn ">
+                    <span>🔤</span> Corpus Lexicon
+                </a>
+                <a href="monograph.html" class="nav-tab-btn ">
+                    <span>📚</span> Monograph & Papers
+                </a>
+            </nav>
+
+            <!-- Community & Outreach Navigation -->
+            <div class="community-nav-bar">
+                <button class="btn-action" onclick="document.getElementById('aboutModal').classList.add('active');">
+                    <span>ℹ️</span> About Me
+                </button>
+                <button class="btn-action" onclick="document.getElementById('contactModal').classList.add('active');">
+                    <span>✉️</span> Contact
+                </button>
+                <button class="btn-action" onclick="document.getElementById('newsletterModal').classList.add('active');">
+                    <span>📰</span> Newsletter
+                </button>
+                <button class="btn-action btn-patron" onclick="openSponsorModal();">
+                    <span>☕</span> Support / Donate
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="standalone-page-container">
+        <div class="standalone-hero">
+            <h1>The 131-Folio Codicological Page Map</h1>
+            <p>
+                Complete physical layout of Beinecke MS 408 across all 16 codex quires. Side-by-side high-resolution Yale Beinecke facsimile viewing alongside line-by-line transcribed text and active star anchor tags.
+            </p>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+                <label style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Select Folio:</label>
+                <select id="pageMapFolioSelect" onchange="loadPageMap(this.value)" style="background:rgba(0,0,0,0.6); border:1px solid var(--border-glow); color:var(--gold-light); border-radius:8px; padding:0.5rem 1rem; font-family:'JetBrains Mono'; font-size:0.9rem;">
+                    <option value="1r">Folio 1r</option><option value="1v">Folio 1v</option><option value="2r">Folio 2r</option><option value="2v">Folio 2v</option><option value="3r">Folio 3r</option><option value="3v">Folio 3v</option><option value="4r">Folio 4r</option><option value="4v">Folio 4v</option><option value="5r">Folio 5r</option><option value="5v">Folio 5v</option><option value="6r">Folio 6r</option><option value="6v">Folio 6v</option><option value="7r">Folio 7r</option><option value="7v">Folio 7v</option><option value="8r">Folio 8r</option><option value="8v">Folio 8v</option><option value="9r">Folio 9r</option><option value="9v">Folio 9v</option><option value="10r">Folio 10r</option><option value="10v">Folio 10v</option><option value="11r">Folio 11r</option><option value="11v">Folio 11v</option><option value="13r">Folio 13r</option><option value="13v">Folio 13v</option><option value="14r">Folio 14r</option><option value="14v">Folio 14v</option><option value="15r">Folio 15r</option><option value="15v">Folio 15v</option><option value="16r">Folio 16r</option><option value="16v">Folio 16v</option><option value="17r">Folio 17r</option><option value="17v">Folio 17v</option><option value="18r">Folio 18r</option><option value="18v">Folio 18v</option><option value="19r">Folio 19r</option><option value="19v">Folio 19v</option><option value="20r">Folio 20r</option><option value="20v">Folio 20v</option><option value="21r">Folio 21r</option><option value="21v">Folio 21v</option><option value="22r">Folio 22r</option><option value="22v">Folio 22v</option><option value="23r">Folio 23r</option><option value="23v">Folio 23v</option><option value="24r">Folio 24r</option><option value="24v">Folio 24v</option><option value="25r">Folio 25r</option><option value="25v">Folio 25v</option><option value="26r">Folio 26r</option><option value="26v">Folio 26v</option><option value="27r">Folio 27r</option><option value="27v">Folio 27v</option><option value="28r">Folio 28r</option><option value="28v">Folio 28v</option><option value="29r">Folio 29r</option><option value="29v">Folio 29v</option><option value="30r">Folio 30r</option><option value="30v">Folio 30v</option><option value="31r">Folio 31r</option><option value="31v">Folio 31v</option><option value="32r">Folio 32r</option><option value="32v">Folio 32v</option><option value="33r">Folio 33r</option><option value="33v">Folio 33v</option><option value="34r">Folio 34r</option><option value="34v">Folio 34v</option><option value="35r">Folio 35r</option><option value="35v">Folio 35v</option><option value="36r">Folio 36r</option><option value="36v">Folio 36v</option><option value="37r">Folio 37r</option><option value="37v">Folio 37v</option><option value="38r">Folio 38r</option><option value="38v">Folio 38v</option><option value="39r">Folio 39r</option><option value="39v">Folio 39v</option><option value="40r">Folio 40r</option><option value="40v">Folio 40v</option><option value="41r">Folio 41r</option><option value="41v">Folio 41v</option><option value="42r">Folio 42r</option><option value="42v">Folio 42v</option><option value="43r">Folio 43r</option><option value="43v">Folio 43v</option><option value="44r">Folio 44r</option><option value="44v">Folio 44v</option><option value="45r">Folio 45r</option><option value="45v">Folio 45v</option><option value="46r">Folio 46r</option><option value="46v">Folio 46v</option><option value="47r">Folio 47r</option><option value="47v">Folio 47v</option><option value="48r">Folio 48r</option><option value="48v">Folio 48v</option><option value="49r">Folio 49r</option><option value="49v">Folio 49v</option><option value="50r">Folio 50r</option><option value="50v">Folio 50v</option><option value="51r">Folio 51r</option><option value="51v">Folio 51v</option><option value="52r">Folio 52r</option><option value="52v">Folio 52v</option><option value="53r">Folio 53r</option><option value="53v">Folio 53v</option><option value="54r">Folio 54r</option><option value="54v">Folio 54v</option><option value="55r">Folio 55r</option><option value="55v">Folio 55v</option><option value="56r">Folio 56r</option><option value="56v">Folio 56v</option><option value="57r">Folio 57r</option><option value="57v">Folio 57v</option><option value="58r">Folio 58r</option><option value="58v">Folio 58v</option><option value="65r">Folio 65r</option><option value="65v">Folio 65v</option><option value="66r">Folio 66r</option><option value="66v">Folio 66v</option><option value="69r">Folio 69r</option><option value="69v">Folio 69v</option><option value="71r">Folio 71r</option><option value="71v">Folio 71v</option><option value="73r">Folio 73r</option><option value="73v">Folio 73v</option><option value="75r">Folio 75r</option><option value="75v">Folio 75v</option><option value="76r">Folio 76r</option><option value="76v">Folio 76v</option><option value="77r">Folio 77r</option><option value="77v">Folio 77v</option><option value="78r">Folio 78r</option><option value="78v">Folio 78v</option><option value="79r">Folio 79r</option><option value="79v">Folio 79v</option><option value="80r">Folio 80r</option><option value="80v">Folio 80v</option><option value="81r">Folio 81r</option><option value="81v">Folio 81v</option><option value="82r">Folio 82r</option><option value="82v">Folio 82v</option><option value="83r">Folio 83r</option><option value="83v">Folio 83v</option><option value="84r">Folio 84r</option><option value="84v">Folio 84v</option><option value="87r">Folio 87r</option><option value="87v">Folio 87v</option><option value="88r">Folio 88r</option><option value="88v">Folio 88v</option><option value="93r">Folio 93r</option><option value="93v">Folio 93v</option><option value="94r">Folio 94r</option><option value="94v">Folio 94v</option><option value="96r">Folio 96r</option><option value="96v">Folio 96v</option><option value="99r">Folio 99r</option><option value="99v">Folio 99v</option><option value="100r">Folio 100r</option><option value="100v">Folio 100v</option><option value="101r">Folio 101r</option><option value="101v">Folio 101v</option><option value="103r">Folio 103r</option><option value="103v">Folio 103v</option><option value="104r">Folio 104r</option><option value="104v">Folio 104v</option><option value="105r">Folio 105r</option><option value="105v">Folio 105v</option><option value="106r">Folio 106r</option><option value="106v">Folio 106v</option><option value="107r">Folio 107r</option><option value="107v">Folio 107v</option><option value="108r">Folio 108r</option><option value="108v">Folio 108v</option><option value="111r">Folio 111r</option><option value="111v">Folio 111v</option><option value="112r">Folio 112r</option><option value="112v">Folio 112v</option><option value="113r">Folio 113r</option><option value="113v">Folio 113v</option><option value="114r">Folio 114r</option><option value="114v">Folio 114v</option><option value="115r">Folio 115r</option><option value="115v">Folio 115v</option><option value="116r">Folio 116r</option><option value="67r1">Folio 67r1</option><option value="67v1">Folio 67v1</option><option value="67r2">Folio 67r2</option><option value="67v2">Folio 67v2</option><option value="68r1">Folio 68r1</option><option value="68v1">Folio 68v1</option><option value="68r2">Folio 68r2</option><option value="68v2">Folio 68v2</option><option value="68r3">Folio 68r3</option><option value="68v3">Folio 68v3</option><option value="70r1">Folio 70r1</option><option value="70v1">Folio 70v1</option><option value="70r2">Folio 70r2</option><option value="70v2">Folio 70v2</option><option value="72r1">Folio 72r1</option><option value="72v1">Folio 72v1</option><option value="72r2">Folio 72r2</option><option value="72v2">Folio 72v2</option><option value="72r3">Folio 72r3</option><option value="72v3">Folio 72v3</option><option value="85r1">Folio 85r1</option><option value="85r2">Folio 85r2</option><option value="86v3">Folio 86v3</option><option value="86v4">Folio 86v4</option><option value="86v5">Folio 86v5</option><option value="86v6">Folio 86v6</option><option value="89r1">Folio 89r1</option><option value="89v1">Folio 89v1</option><option value="89r2">Folio 89r2</option><option value="89v2">Folio 89v2</option><option value="90r1">Folio 90r1</option><option value="90v1">Folio 90v1</option><option value="90r2">Folio 90r2</option><option value="90v2">Folio 90v2</option><option value="95r1">Folio 95r1</option><option value="95v1">Folio 95v1</option><option value="95r2">Folio 95r2</option><option value="95v2">Folio 95v2</option><option value="102r1">Folio 102r1</option><option value="102v1">Folio 102v1</option><option value="102r2">Folio 102r2</option><option value="102v2">Folio 102v2</option>
+                </select>
+            </div>
+            <div id="pageMapActiveFolioLabel" style="font-family:'Cinzel', serif; font-size:1.2rem; color:var(--gold-light); font-weight:700;">
+                Folio f1r
+            </div>
+        </div>
+
+        <!-- 2-Pane Split Explorer -->
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; min-height:750px;">
+            <!-- Left: Facsimile -->
+            <div style="background:#000; border:1px solid var(--border-glow); border-radius:12px; padding:1rem; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:0.78rem; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem; font-family:'JetBrains Mono';">
+                    Yale University Beinecke MS 408 High-Res Facsimile
+                </div>
+                <img id="pageMapFacsimileImg" src="https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg" alt="Facsimile" style="max-height:680px; max-width:100%; object-fit:contain; border-radius:6px;">
+            </div>
+
+            <!-- Right: Line-by-Line Transcription -->
+            <div style="background:rgba(15,20,30,0.9); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1.25rem; display:flex; flex-direction:column;">
+                <div style="font-size:0.78rem; text-transform:uppercase; color:var(--cyan-astro); margin-bottom:0.5rem; font-weight:700;">
+                    Line-by-Line Transcription & Active Anchors
+                </div>
+                <div id="pageMapFolioAnchors" style="margin-bottom:1rem; min-height:30px;">
+                    <!-- Rendered by pagemap.js -->
+                </div>
+                <div id="pageMapTranscriptionContainer" style="flex:1; overflow-y:auto; max-height:620px; font-family:'JetBrains Mono', monospace; font-size:0.85rem; line-height:1.7; padding-right:0.5rem;">
+                    <!-- Rendered by pagemap.js -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- MODAL: About Me -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal-card" style="max-width:750px;">
+            <div class="modal-header">
+                <h3><span>ℹ️</span> About Lead Researcher Tammy Lou Casey</h3>
+                <button class="modal-close" onclick="closeModal('aboutModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="font-family:'Cinzel', serif; font-size:1.3rem; color:var(--gold-light); margin-bottom:0.4rem;">
+                    Tammy Lou Casey
+                </div>
+                <div style="font-size:0.85rem; color:var(--cyan-astro); font-style:italic; margin-bottom:1.2rem;">
+                    Independent Codicological Researcher · Author of The Mechanical Voynich & Molecular Alchemy
+                </div>
+                <p style="color:#cbd5e1; line-height:1.6; font-size:0.92rem; margin-bottom:1rem;">
+                    Conducted completely independently over multiple years without institutional grant gatekeeping, this project deciphers the architectural mechanics of Beinecke MS 408 through morphological botany, astronomical coordinates, and verified Venetian trade networks.
+                </p>
+                <div style="display:flex; gap:0.75rem; margin-top:1.5rem; flex-wrap:wrap;">
+                    <a href="https://molecularalchemy.substack.com" target="_blank" rel="noopener" class="btn-action btn-highlight" style="padding:0.6rem 1rem;">
+                        🌿 Molecular Alchemy Substack ↗
+                    </a>
+                    <a href="https://tammylcasey.substack.com" target="_blank" rel="noopener" class="btn-action" style="padding:0.6rem 1rem;">
+                        📖 Tammy Lou Casey Substack ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Contact -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-card" style="max-width:650px;">
+            <div class="modal-header">
+                <h3><span>✉️</span> Academic & Codicological Inquiries</h3>
+                <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="handleContactSubmit(event)">
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Your Name *</label>
+                        <input type="text" id="inquiryName" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Academic / Research Affiliation</label>
+                        <input type="text" id="inquiryAffiliation" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Email Address *</label>
+                        <input type="email" id="inquiryEmail" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:0.8rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Inquiry Topic *</label>
+                        <input type="text" id="inquiryTopic" value="Paleobotany / Codicology" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                    </div>
+                    <div style="margin-bottom:1rem;">
+                        <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:0.25rem;">Message *</label>
+                        <textarea id="inquiryMessage" rows="4" required style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff; font-family:inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-action btn-highlight" style="width:100%; justify-content:center; padding:0.65rem;">
+                        <span>✉️</span> Transmit Inquiry to Lead Researcher
+                    </button>
+                    <div id="contactStatusText" style="margin-top:0.75rem; font-size:0.8rem; text-align:center; color:var(--emerald-herbal);"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Newsletter -->
+    <div class="modal-overlay" id="newsletterModal">
+        <div class="modal-card" style="max-width:650px;">
+            <div class="modal-header">
+                <h3><span>📰</span> The Voynich Research Dispatch</h3>
+                <button class="modal-close" onclick="closeModal('newsletterModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="color:#cbd5e1; font-size:0.92rem; margin-bottom:1rem;">
+                    Subscribe to receive high-resolution folio breakdowns, botanical photograph comparisons, and peer-reviewed chapters by lead researcher Tammy Lou Casey.
+                </p>
+                <form onsubmit="handleNewsletterSubmit(event)">
+                    <div style="display:flex; gap:0.5rem;">
+                        <input type="email" id="newsletterEmail" placeholder="scholar@institution.org" required style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2); border-radius:6px; padding:0.5rem; color:#fff;">
+                        <button type="submit" class="btn-action btn-highlight" style="white-space:nowrap; padding:0.5rem 1rem;">
+                            <span>📬</span> Subscribe Free
+                        </button>
+                    </div>
+                    <div id="newsletterStatusText" style="margin-top:0.5rem; font-size:0.8rem; color:var(--emerald-herbal);"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Support & Research Patronage (CashApp & Substack) -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-card" style="max-width:850px;">
+            <div class="modal-header">
+                <h3><span>☕</span> Support The Oracle & Independent Research</h3>
+                <button class="modal-close" onclick="closeModal('donateModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align:center; padding:0.5rem 0 1rem;">
+                    <div style="font-size:2.2rem; margin-bottom:0.4rem; color:var(--gold);">🌿 ⚖️ 📜</div>
+                    <h2 style="font-family:'Cinzel', serif; color:var(--gold-light); margin:0 0 0.5rem 0;">Support The Oracle & Codicological Research</h2>
+                    <p style="color:#cbd5e1; font-size:0.95rem; max-width:620px; margin:0 auto; line-height:1.6;">
+                        Your patronage directly supports independent scholarship by Tammy Lou Casey, archival reproduction rights, high-resolution IIIF hosting, and open-access research.
+                    </p>
+                </div>
+
+                <!-- CashApp Box -->
+                <div style="background:rgba(0, 214, 79, 0.08); border:2px solid #00D632; border-radius:12px; padding:1.4rem; text-align:center; margin:1.2rem 0; box-shadow:0 0 20px rgba(0, 214, 79, 0.15);">
+                    <div style="font-size:0.8rem; text-transform:uppercase; color:#86efac; font-weight:700; letter-spacing:0.05em; margin-bottom:0.25rem;">Direct CashApp Support</div>
+                    <div style="font-size:2rem; font-weight:800; color:#00D632; font-family:'JetBrains Mono', monospace; letter-spacing:0.05em;">$enchantedcostumes</div>
+                    <div style="color:#e2e8f0; font-size:0.88rem; margin-top:0.4rem;">
+                        Open CashApp and send any amount ($5 single folio patronage)
+                    </div>
+                </div>
+
+                <h4 style="font-family:'Cinzel', serif; color:var(--gold); font-size:1.05rem; margin:1.5rem 0 0.75rem 0; text-align:center;">Subscribe & Support via Sovereign Substack</h4>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.2rem; margin-top:0.75rem;">
+                    <!-- Publication 1: Molecular Alchemy -->
+                    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.3); border-radius:12px; padding:1.3rem; display:flex; flex-direction:column; gap:0.75rem;">
+                        <div style="font-size:1.5rem;">🌿</div>
+                        <h4 style="font-family:'Cinzel', serif; font-size:1.1rem; color:#fff; margin:0;">Molecular Alchemy</h4>
+                        <div style="font-size:0.84rem; color:#94a3b8; line-height:1.5;">
+                            Pharmacognosy dossiers, 10-section botanical grimoires, spagyric laboratory protocols, and deep cellular biochemistry by Tammy Lou Casey.
+                        </div>
+                        <a href="https://molecularalchemy.substack.com" target="_blank" rel="noopener" style="margin-top:auto; background:linear-gradient(135deg, rgba(212,175,55,0.3) 0%, rgba(56,189,248,0.2) 100%); border:1px solid var(--gold); color:var(--gold-light); padding:0.65rem 1rem; border-radius:8px; font-weight:700; text-decoration:none; text-align:center; font-size:0.88rem;">
+                            🌟 Visit Molecular Alchemy Substack ↗
+                        </a>
+                    </div>
+
+                    <!-- Publication 2: Tammy Lou Casey -->
+                    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.3rem; display:flex; flex-direction:column; gap:0.75rem;">
+                        <div style="font-size:1.5rem;">✍️</div>
+                        <h4 style="font-family:'Cinzel', serif; font-size:1.1rem; color:#fff; margin:0;">Tammy Lou Casey</h4>
+                        <div style="font-size:0.84rem; color:#94a3b8; line-height:1.5;">
+                            Independent essays, consciousness research, deconstruction, and sovereign dispatches by lead researcher Tammy Lou Casey (@punkrockgirlusa).
+                        </div>
+                        <a href="https://tammylcasey.substack.com" target="_blank" rel="noopener" style="margin-top:auto; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.2); color:#fff; padding:0.65rem 1rem; border-radius:8px; font-weight:700; text-decoration:none; text-align:center; font-size:0.88rem;">
+                            📖 Visit Tammy Lou Casey Substack ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top:1.5rem; padding:1rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:8px; text-align:center; font-size:0.84rem; color:#94a3b8;">
+                    For institutional grants or archival collaboration: <a href="mailto:research@ozark-oracle.com" style="color:var(--gold-light); text-decoration:none; font-weight:600;">research@ozark-oracle.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Best Guess (1/day Crowdsourced Consensus) -->
+    <div class="modal-overlay" id="bestGuessModal">
+        <div class="modal-card" style="max-width:920px;">
+            <div class="modal-header">
+                <h3 id="bestGuessModalTitle"><span>💡</span> What Is Your Best Guess? · Paleobotanical Identification</h3>
+                <button class="modal-close" onclick="closeModal('bestGuessModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="bestGuessModalBody">
+                <!-- Rendered dynamically by consensus.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Botanical Forensic Dossier -->
+    <div class="modal-overlay" id="botanicalDossierModal">
+        <div class="modal-card" style="max-width:1150px;">
+            <div class="modal-header">
+                <h3 id="botanicalDossierTitle"><span>🌿</span> Forensic Botanical Identification Dossier</h3>
+                <button class="modal-close" onclick="closeModal('botanicalDossierModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="botanicalDossierBody">
+                <!-- Rendered dynamically by botanical.js -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modular Script Primitives -->
+    <script src="data/folio_images.js"></script>
+    <script src="data/transcription_data.js"></script>
+    <script src="data/reverse_index.js"></script>
+    <script src="js/pagemap.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const target = urlParams.get('f') || '1r';
+            loadPageMap(target);
+        });
+    </script>
+</body>
+</html>
