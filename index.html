@@ -1327,6 +1327,9 @@
                         <button class="btn-filter active" id="tabFinderAnchors" onclick="setFinderTab('anchors')">Concordance Anchors</button>
                         <button class="btn-filter" id="tabFinderText" onclick="setFinderTab('text')">Transcribed Text (Click Any Word)</button>
                     </div>
+                    <button class="btn-action btn-highlight" onclick="jumpFinderToPageMap()" style="padding:0.4rem 0.85rem; font-size:0.8rem; margin-left:auto;">
+                        <span>🗺️</span> Open Folio in Page Map
+                    </button>
                 </div>
 
                 <div id="finderAnchorsContainer">
@@ -2050,24 +2053,55 @@
             floatingTooltip.style.display = 'none';
         }
 
-        // Folio Quick-Finder & Transcribed Text Logic
-        function openReverseFinder() {
+        let currentFinderHighlightWord = null;
+
+        function populateReverseFolioSelect() {
+            if (!reverseFolioSelect) return;
+            if (reverseFolioSelect.options && reverseFolioSelect.options.length > 0) return;
+            if (reverseFolioSelect.children && reverseFolioSelect.children.length > 0) return;
             reverseFolioSelect.innerHTML = '';
-            const folios = Object.keys(REVERSE_INDEX).sort((a,b) => {
+
+            const allFolios = new Set([
+                ...Object.keys(REVERSE_INDEX),
+                ...Object.keys(TRANSCRIPTION_DATA),
+                ...Object.keys(FOLIO_IMAGES_DATA).map(k => k.toLowerCase().replace('f', '').trim())
+            ]);
+
+            const folios = Array.from(allFolios).sort((a,b) => {
                 const an = parseInt(a.replace(/[^0-9]/g, '')) || 0;
                 const bn = parseInt(b.replace(/[^0-9]/g, '')) || 0;
-                return an - bn;
+                if (an !== bn) return an - bn;
+                return a.localeCompare(b);
             });
 
             folios.forEach(f => {
                 const opt = document.createElement('option');
                 opt.value = f;
-                const tokenCount = (REVERSE_INDEX[f] || []).length;
-                const lineCount = (TRANSCRIPTION_DATA[f] || []).length;
+                const tokenCount = (REVERSE_INDEX[f] || REVERSE_INDEX['f' + f] || []).length;
+                const lineCount = (TRANSCRIPTION_DATA[f] || TRANSCRIPTION_DATA['f' + f] || []).length;
                 opt.innerText = `Folio f${f} (${tokenCount} anchors · ${lineCount} text lines)`;
                 reverseFolioSelect.appendChild(opt);
             });
+        }
 
+        // Folio Quick-Finder & Transcribed Text Logic
+        function openReverseFinder(targetFolio, highlightWord) {
+            populateReverseFolioSelect();
+            if (targetFolio) {
+                const clean = targetFolio.toLowerCase().replace('f', '').trim();
+                for (let i = 0; i < reverseFolioSelect.options.length; i++) {
+                    if (reverseFolioSelect.options[i].value === clean || reverseFolioSelect.options[i].value === 'f' + clean) {
+                        reverseFolioSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            if (highlightWord) {
+                currentFinderHighlightWord = highlightWord;
+                setFinderTab('text');
+            } else {
+                currentFinderHighlightWord = null;
+            }
             renderReverseResults();
             reverseFinderModal.classList.add('active');
         }
@@ -2089,35 +2123,50 @@
         }
 
         function renderReverseResults() {
-            const f = reverseFolioSelect.value;
-            const tokens = REVERSE_INDEX[f] || [];
+            populateReverseFolioSelect();
+            const rawVal = reverseFolioSelect.value || (reverseFolioSelect.options[0] ? reverseFolioSelect.options[0].value : '1r');
+            const f = rawVal.toLowerCase().replace('f', '').trim();
+            const tokens = REVERSE_INDEX[f] || REVERSE_INDEX['f' + f] || [];
             reverseResultsGrid.innerHTML = '';
 
-            tokens.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'reverse-item-card';
-                card.onclick = () => {
-                    closeModal('reverseFinderModal');
-                    selectToken(item.token);
-                };
+            if (tokens.length === 0) {
+                reverseResultsGrid.innerHTML = '<div style="grid-column:1 / -1; color:var(--text-muted); padding:1.5rem; text-align:center;">No cross-domain concordance anchor tokens catalogued on this specific folio. Switch to "Transcribed Text" to inspect all words.</div>';
+            } else {
+                tokens.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'reverse-item-card';
+                    card.onclick = () => {
+                        closeModal('reverseFinderModal');
+                        selectToken(item.token);
+                    };
 
-                card.innerHTML = `
-                    <div class="reverse-token">${item.token}</div>
-                    <div style="font-size:0.75rem; color:var(--text-muted);">
-                        Type: <b style="color:#fff;">${item.type}</b> ${item.sign ? '· ' + item.sign : ''}
-                    </div>
-                    <div style="font-size:0.72rem; color:var(--gold); margin-top:0.25rem;">Click to teleport Triad ➔</div>
-                `;
-                reverseResultsGrid.appendChild(card);
-            });
+                    card.innerHTML = `
+                        <div class="reverse-token">${item.token}</div>
+                        <div style="font-size:0.75rem; color:var(--text-muted);">
+                            Type: <b style="color:#fff;">${item.type}</b> ${item.sign ? '· ' + item.sign : ''}
+                        </div>
+                        <div style="font-size:0.72rem; color:var(--gold); margin-top:0.25rem;">Click to teleport Triad ➔</div>
+                    `;
+                    reverseResultsGrid.appendChild(card);
+                });
+            }
 
             // Render Full Folio Transcription Lines
             const transcriptionContainer = document.getElementById('folioTranscriptionList');
             transcriptionContainer.innerHTML = '';
-            const lines = TRANSCRIPTION_DATA[f] || [];
+            const lines = TRANSCRIPTION_DATA[f] || TRANSCRIPTION_DATA['f' + f] || [];
 
             if (lines.length === 0) {
-                transcriptionContainer.innerHTML = '<p style="color:var(--text-muted); padding:1rem;">No textual lines transcribed for this folio (illustrated foldout or blank leaf).</p>';
+                transcriptionContainer.innerHTML = `
+                    <div style="color:var(--text-muted); padding:2rem; text-align:center;">
+                        <div style="font-size:2rem; margin-bottom:0.5rem;">📜</div>
+                        <div style="font-size:0.95rem; color:#e2e8f0; margin-bottom:0.4rem;">No textual lines transcribed for folio f${f}.</div>
+                        <div style="font-size:0.8rem; color:var(--text-muted);">This leaf is an illustrated foldout, astrological diagram, or vellum title page.</div>
+                        <button class="btn-action btn-highlight" onclick="jumpFinderToPageMap()" style="margin:1rem auto 0; display:inline-flex; padding:0.45rem 0.9rem;">
+                            🗺️ Open Folio Facsimile in Page Map
+                        </button>
+                    </div>
+                `;
             } else {
                 lines.forEach(lObj => {
                     const lineRow = document.createElement('div');
@@ -2125,7 +2174,9 @@
 
                     let wordsHtml = '';
                     lObj.words.forEach(w => {
-                        wordsHtml += `<span class="folio-word-chip" onclick="openWordDetail('${w}')">${w}</span>`;
+                        const isTarget = currentFinderHighlightWord && (w.toLowerCase() === currentFinderHighlightWord.toLowerCase());
+                        const highlightStyle = isTarget ? 'background:var(--gold); color:#000; font-weight:700; box-shadow:0 0 10px rgba(212,175,55,0.9); border:1px solid #fff; border-radius:4px;' : '';
+                        wordsHtml += `<span class="folio-word-chip" style="${highlightStyle}" onclick="openWordDetail('${w}')">${w}</span>`;
                     });
 
                     lineRow.innerHTML = `
@@ -2205,7 +2256,10 @@
                 <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.45rem 0.75rem; border-radius:6px; border:1px solid rgba(255,255,255,0.06);">
                     <span style="font-family:'JetBrains Mono'; color:#fff;">Folio f${fol}</span>
                     <span style="font-size:0.75rem; color:var(--cyan-astro);">${cnt} time(s)</span>
-                    <button class="ctrl-btn" style="width:auto; height:auto; padding:0.2rem 0.6rem; font-size:0.7rem;" onclick="jumpToFolio('${fol}', '${item.w}')">Jump To Folio</button>
+                    <div style="display:flex; gap:0.4rem;">
+                        <button class="ctrl-btn" style="width:auto; height:auto; padding:0.25rem 0.65rem; font-size:0.72rem; background:rgba(34,211,238,0.15); border:1px solid var(--cyan-astro); color:#fff;" onclick="jumpToFolioMap('${fol}')">🗺️ Page Map</button>
+                        <button class="ctrl-btn" style="width:auto; height:auto; padding:0.25rem 0.65rem; font-size:0.72rem; background:rgba(212,175,55,0.15); border:1px solid var(--gold); color:var(--gold-light);" onclick="jumpToFolio('${fol}', '${item.w}')">📜 Read Text</button>
+                    </div>
                 </div>
             `).join('');
 
@@ -2236,7 +2290,7 @@
 
                 <div>
                     <div style="font-size:0.8rem; font-weight:600; color:#fff; margin-bottom:0.6rem;">Full Folio Distribution (${item.d.length} folios):</div>
-                    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.5rem; max-height:35vh; overflow-y:auto; padding-right:0.4rem;">
+                    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:0.5rem; max-height:35vh; overflow-y:auto; padding-right:0.4rem;">
                         ${foliosListHtml}
                     </div>
                 </div>
@@ -2248,15 +2302,21 @@
         function jumpToFolio(folio, word) {
             closeModal('wordCardModal');
             closeModal('lexiconModal');
-            // Check if word is an anchor in ATLAS_DATA
-            const anchor = ATLAS_DATA.find(a => a.token === word);
-            if (anchor) {
-                selectToken(word);
-            } else {
-                // Open reverse finder directly on that folio with transcribed text active
-                reverseFolioSelect.value = folio;
-                setFinderTab('text');
-                reverseFinderModal.classList.add('active');
+            openReverseFinder(folio, word);
+        }
+
+        function jumpToFolioMap(folio) {
+            closeModal('wordCardModal');
+            closeModal('lexiconModal');
+            closeModal('reverseFinderModal');
+            loadPageMap(folio);
+            openPageMapExplorer();
+        }
+
+        function jumpFinderToPageMap() {
+            const f = reverseFolioSelect.value;
+            if (f) {
+                jumpToFolioMap(f);
             }
         }
 
@@ -2697,7 +2757,11 @@
         window.setLexiconFilter = setLexiconFilter;
         window.openWordDetail = openWordDetail;
         window.jumpToFolio = jumpToFolio;
+        window.jumpToFolioMap = jumpToFolioMap;
+        window.jumpFinderToPageMap = jumpFinderToPageMap;
+        window.openReverseFinder = openReverseFinder;
 
+        populateReverseFolioSelect();
         renderSidebar();
         selectToken(activeToken);
     </script>
