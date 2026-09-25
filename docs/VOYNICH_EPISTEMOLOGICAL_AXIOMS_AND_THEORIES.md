@@ -9,7 +9,7 @@
 
 The fundamental reason the Voynich Manuscript has remained unsolved for over a century is **Epistemological Conflation**: researchers routinely mix uncontested physical and mathematical ground truth with speculative assumptions, leading to confirmation bias, cherry-picked decipherments, and unscientific theories.
 
-This document establishes the **Sovereign Epistemological Matrix**, bifurcating the problem into two distinct, non-overlapping domains:
+This document establishes the **Epistemological Matrix**, bifurcating the problem into two distinct, non-overlapping domains:
 1. **Tier 1: Incontestable Axioms (Confidence: 98% – 100%)**: Physical, material, palaeographic, and mathematically proven invariants.
 2. **Tier 2: Hypotheses & Theories (Confidence: 0% – 85%)**: Competing interpretive models scored by Bayesian likelihood and empirical evidence.
 

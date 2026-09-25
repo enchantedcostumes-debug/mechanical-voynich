@@ -147,7 +147,7 @@ The **Casey-Henderson Concordance Hypothesis** provides a coherent, non-cryptogr
 
 ## References
 
-1. **Casey, T. L., & Henderson, B.** (2026). *The Sovereign Voynich Cross-Reference Anomaly Investigation*. The Oracle Platform.
+1. **Casey, T. L., & Henderson, B.** (2026). *The Voynich Cross-Reference Anomaly Investigation*. The Oracle Platform.
 2. **Ketham, J. de.** (1491). *Fasciculus Medicinae*. Venice: Giovanni and Gregorio de' Gregorii.
 3. **Thorndike, L.** (1923). *A History of Magic and Experimental Science*. Columbia University Press.
 4. **Siraisi, N. G.** (1990). *Medieval and Early Renaissance Medicine: An Introduction to Knowledge and Practice*. University of Chicago Press.

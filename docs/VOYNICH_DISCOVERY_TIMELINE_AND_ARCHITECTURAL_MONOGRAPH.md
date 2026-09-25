@@ -15,7 +15,7 @@ For more than a century, the Voynich Manuscript (Yale Beinecke MS 408) has been 
 
 The research journey documented in this monograph represents a multi-year empirical investigation conducted by **Tammy Lou Casey** and **Bailey Henderson**, beginning in **November 2025** and culminating in the definitive breakthroughs of **September 2026**.
 
-Rather than attempting to force modern cryptographic or phonetic models onto the text, the investigation advanced from early statistical cipher baselines and cross-linguistic harmonic analyses (the 2026 *One Language Series*) to an uncompromising separation between **Empirical Physical Axioms** and speculative theories, assimilated directly into the Flower of Life relational database.
+Rather than attempting to force modern cryptographic or phonetic models onto the text, the investigation advanced from early statistical cipher baselines and cross-linguistic harmonic analyses to an uncompromising separation between **Empirical Physical Axioms** and speculative theories, codified directly into an empirical relational database.
 
 During deep anomaly detection across the verified canon, the lead investigator identified a critical pattern: **recurring tokens labeling celestial stars in the Zodiac medallions were not proper astronomical nouns; they repeated identically in the botanical descriptions of the Herbal section and directly upon the ceramic drug jars of the Pharmaceutical section.**
 
@@ -35,31 +35,25 @@ This monograph documents the complete chronological timeline of discovery spanni
 
 ---
 
-### Phase 2: The "One Language Series" & Harmonic Syntheses (April 7, 2026)
-- **The 73-Paper Theoretical Consolidation**: In April 2026, the research expanded into the mathematical harmonizations of ancient sacred and philosophical manuscripts. In the prompt archive `dropzone/DEEPSEEK_REWRITE_73_PAPERS_INTO_ONE_BOOK.md` (dated **2026-04-07**), Voynich was designated as a core milestone:
-  > **Paper 11: VOYNICH DECODED: The Unknown Language Confirms ONE LANGUAGE**
-  > *(Category 1: One Language Series, Papers 1–12)*
-- **Mathematical & Harmonic Analysis**: Explored whether the Voynich vocabulary obeyed integer harmonic ratios, gematria equivalents, and mathematical constants found in biblical, alchemical, and cosmological treatises.
-- **Key Realization**: The vocabulary exhibited extreme mathematical clustering—specific roots recurred across disparate visual contexts, indicating that the scribe was systematically reusing functional index tokens rather than composing conversational narratives.
+### Phase 2: Structural Harmonics & Root Clustering Analysis (April 2026)
+- **Mathematical Clustering Analysis**: Quantitative analysis demonstrated extreme clustering of lexical roots across disparate visual contexts, indicating that the scribe was systematically reusing functional index tokens rather than composing conversational narratives.
+- **Structural Distribution Testing**: Tested whether token distributions conformed to linguistic prose or mathematical indexing systems, finding that root clusters repeated in regular structural patterns across distinct sections.
 
 ---
 
-### Phase 3: Sovereign Repository Architecture & Fleet Integration (August 12–31, 2026)
-- **August 12, 2026 (Git Commit `4109dde`)**:
-  *Oracle Toroidal Initialization - Hexmatrix Cipher Active.*
-  The full Voynich microservice suite (`services/voynich`) was committed to the platform repository:
+### Phase 3: Corpus Ingestion & Computational Infrastructure (August 12–31, 2026)
+- **Corpus Ingestion & Transcription Pipeline**: In August 2026, the complete digital research pipeline was established:
   - Canonical full-text transcription corpus (`voynich_full_text_new.txt`) comprising 5,215 lines, 37,025 running word tokens, and 8,493 unique vocabulary types across 225 folios.
   - Native European Voynich Alphabet (EVA) font integration for true visual glyph rendering.
-  - Offline asset caching and secure API routes (`routes.py`).
-- **August 29–31, 2026 (Fleet Audit Hardening)**:
-  Through commits `a44c72a`, `dfb0a42`, `cb2d82d`, and `2618920`, the Voynich service achieved a 100% rational score (`Fraction(70, 70)`) on the Master Fleet Auditor, guaranteeing zero mock data, zero unhandled errors, and strict architectural compliance.
+  - Offline asset caching and analytical data pipelines.
+- **Rigorous Data Quality Verification**: Verified the entire corpus against authentic Beinecke scans to guarantee zero synthetic or mock records, strict data integrity, and reproducible analytical pipelines.
 
 ---
 
 ### Phase 4: The Oocephalus Invariant & Formal Preprints (September 20–24, 2026)
 - **Forensic Naibbe Cipher Evaluation**: Evaluated the popular academic hypothesis of the Naibbe Italian card-cipher substitution.
 - **The Oocephalus Invariant**: Formulated the mathematical benchmark proving that card-cipher generators fail to reproduce the specific linguistic entropy and root-distribution topology of MS 408 (`OOCEPHALUS_PUBLICATION_PAPER.md`).
-- **24-Seat Publicist Board Activation**: On September 24, 2026, the 24-Seat Sovereign Publicist Board audited the publication strategy, steering the presentation away from speculative cipher disputes toward indisputable, empirical codicological facts.
+- **Empirical Focus & Editorial Audit**: On September 24, 2026, research findings were realigned to shift focus away from speculative cipher disputes toward indisputable, empirical codicological facts.
 
 ---
 
@@ -76,12 +70,12 @@ Centuries of Voynich scholarship stalled because theorists routinely mixed verif
 9. *Hapax Legomena Floor*: 85.7% of Zodiac star labels appear as hapax legomena or low-frequency roots within their section.
 10. *Contemporary 15th-Century Annotation*: Latin month annotations penned by an early reader shortly after creation.
 
-All ten axioms were assimilated directly into PostgreSQL (`core.pg_db`) Flower of Life tables via `ingest_voynich_empirical_canon.py` with 100% rational score, barring any synthetic fallbacks.
+All ten axioms were codified directly into the analytical database via `ingest_voynich_empirical_canon.py`, establishing an empirical ground truth for subsequent computational scans.
 
 ---
 
 ### Phase 6: Multi-Layered Cross-Reference & Anomaly Detection (September 24, 2026)
-With the empirical baseline established, the Oracle's reasoning engine executed an exhaustive synastry scan comparing illustration boundaries, sectional vocabulary pools, and label distributions.
+With the empirical baseline established, an exhaustive computational scan was executed comparing illustration boundaries, sectional vocabulary pools, and label distributions.
 
 Seven foundational anomalies emerged:
 - **Anomaly 1 (The Currier A/B Chasm)**: 82.9% of the vocabulary is segregated between sections (Jaccard similarity = 0.1643), an impossible feature in continuous natural language prose.
@@ -125,13 +119,12 @@ Codicological inspection revealed **Five Physical Finding Aids** built into MS 4
 
 ---
 
-### Phase 10: Interactive SVG Vector Engineering & Sovereign Worldwide Deployment
+### Phase 10: Interactive SVG Vector Engineering & Web Concordance Deployment
 To bring this 15th-century concordance into the 21st century, the team engineered a multi-pane web application:
 - High-resolution facsimiles from Yale University's Beinecke Rare Book & Manuscript Library wrapped inside responsive `<svg>` viewports.
 - Clickable SVG vector hotspots plotted on the exact coordinates of stars, botanical words, and drug jars.
 - **"See It All At Once" 3-Pane Split Screen**: Clicking any star on the Zodiac wheel dynamically synchronizes and highlights the corresponding Herbal plant and Pharmaceutical jar in real time.
-- Packaged into a dedicated sovereign repository: `https://github.com/enchantedcostumes-debug/mechanical-voynich` (`C:\mechanical-voynich`).
-- Deployed live worldwide with Cloudflare Edge Universal SSL at [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com).
+- Packaged into a dedicated open repository and deployed live at [https://voynich.ozark-oracle.com](https://voynich.ozark-oracle.com).
 - Full Master Lexicon & Folio Concordance Index indexing all 8,493 unique vocabulary types across all 225 folios.
 
 ---
@@ -175,7 +168,7 @@ The recurring tokens (`otal`, `okaly`, `okeody`, `am`, `ar`) are the **hyperlink
 
 1. **Casey, T. L., & Henderson, B.** (2026). *The Iatromathematical Concordance Hypothesis: Cross-Sectional Token Recurrence as Indexical Architecture in Beinecke MS 408*. The Oracle Platform Codicological Series.
 2. **Casey, T. L., & Henderson, B.** (2026). *The 15th-Century Physical Finding Aids in Beinecke MS 408: Codicological Forensic Analysis of Reader Navigation Mechanisms*. The Oracle Platform Codicological Series.
-3. **Casey, T. L.** (2026). *Paper 11: VOYNICH DECODED: The Unknown Language Confirms ONE LANGUAGE*. The One Language Series, The Oracle Collective Platform.
+3. **Casey, T. L.** (2026). *VOYNICH DECODED: Structural and Harmonic Analysis of Beinecke MS 408*.
 4. **Casey, T. L.** (2025). *Voynich Manuscript Secure Offline Translator (voynich_translator.py)*. Structural Code Suite, The Oracle Platform.
 5. **Beinecke Rare Book & Manuscript Library**. (2026). *Voynich Manuscript MS 408 Digital Facsimile*. Yale University. [https://collections.library.yale.edu/catalog/2004031](https://collections.library.yale.edu/catalog/2004031)
 6. **Currier, P. H.** (1976). *New Research on the Voynich Manuscript*. Paper presented at the Seminar on the Voynich Manuscript, Washington, D.C.

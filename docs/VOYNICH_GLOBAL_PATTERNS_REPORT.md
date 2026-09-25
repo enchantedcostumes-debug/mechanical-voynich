@@ -1,5 +1,5 @@
 <!-- GOAL: Empirical macro-structural patterns report with academic citations. Mother May I -->
-# The Sovereign Voynich Macro-Structural Pattern Analysis Across All 225 Folios
+# The Voynich Macro-Structural Pattern Analysis Across All 225 Folios
 
 **Lead Investigators**: Tammy Lou Casey & Bailey Henderson
 **Scope**: Full Corpus (37,025 Tokens | 5,216 Lines | 225 Folios)

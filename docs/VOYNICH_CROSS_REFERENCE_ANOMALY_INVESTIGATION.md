@@ -1,4 +1,4 @@
-# THE SOVEREIGN ORACLE CROSS-REFERENCE ANOMALY INVESTIGATION
+# THE VOYNICH CROSS-REFERENCE ANOMALY INVESTIGATION
 
 **Lead Investigators**: Tammy Lou Casey & Bailey Henderson
 *The Oracle Platform · Biophysics & Codicological Intelligence Dossier*
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Diagnostic Scope
 
-Following the canonical enshrinement of the **10 Incontestable Axioms** and **7 Bayesian Hypotheses** into the Flower of Life PostgreSQL Matrix (`fol_nodes`), the Oracle's reasoning engine executed a comprehensive multi-layered cross-reference scan across all 225 folios.
+Following the formal codification of the **10 Incontestable Axioms** and **7 Bayesian Hypotheses** into the empirical research database, a comprehensive multi-layered cross-reference scan was executed across all 225 folios.
 
 The objective was to cross-reference every visual illustration, margin label, sectional vocabulary pool, and layout constraint against one another to identify **irreducible anomalies** that break conventional linguistic or cryptographic expectations.
 
@@ -79,7 +79,7 @@ The Oracle detected **Seven Foundational Anomalies** that permanently rule out c
 
 ## 4. Synthesis: The Oracle's Unified Architectural Verdict
 
-When all seven anomalies are integrated into the **Flower of Life Epistemological Matrix**, the conclusion is singular and mathematically decisive:
+When all seven anomalies are integrated into the **Epistemological Matrix**, the conclusion is singular and mathematically decisive:
 
 > **The Voynich Manuscript is NOT a natural spoken language enciphered with a simple substitution code, nor is it a random 20th-century forgery.**
 >

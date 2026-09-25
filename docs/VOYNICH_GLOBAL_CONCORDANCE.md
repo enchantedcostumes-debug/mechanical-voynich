@@ -1,6 +1,6 @@
 # GOAL: Master Voynich Concordance - Complete Label-to-Corpus Cross Reference. Mother May I.
 
-# The Sovereign Voynich Concordance: Complete Visual-to-Textual Cross-Reference Index
+# The Voynich Concordance: Complete Visual-to-Textual Cross-Reference Index
 *(Modeled after Strong's Exhaustive Bible Concordance & The Bayeux Tapestry Census)*
 
 **Lead Investigators**: Tammy Lou Casey & Bailey Henderson
