@@ -47,10 +47,10 @@ function handleNewsletterSubmit(e) {
     e.preventDefault();
     const email = document.getElementById('newsletterEmail').value;
     const statusEl = document.getElementById('newsletterStatusText');
-    statusEl.innerText = `✓ Opening Molecular Alchemy Substack subscription...`;
+    statusEl.innerText = `✓ Opening Tammy Lou Casey Substack subscription...`;
     setTimeout(() => {
-        window.open(`https://molecularalchemy.substack.com/subscribe?email=${encodeURIComponent(email)}`, '_blank');
-        statusEl.innerText = `✓ Substack opened! Confirm your subscription to Molecular Alchemy.`;
+        window.open(`https://tammylcasey.substack.com/subscribe?email=${encodeURIComponent(email)}`, '_blank');
+        statusEl.innerText = `✓ Substack opened! Confirm your subscription to Tammy Lou Casey's Substack.`;
         document.getElementById('newsletterEmail').value = '';
     }, 600);
 }
