@@ -38,7 +38,7 @@ Dear Science Editor,
 
 Every six months, an academic or amateur cryptanalyst claims to have "decoded" Yale's Voynich Manuscript (Beinecke MS 408) by matching an illustrated flower to a historical Latin or Nahuatl word.
 
-A new paper authored by Tammy Lou Casey using the deterministic engine that she wrote with ai assistance mathematically dismantles the foundational premise of all these attempts.
+A new paper authored by Tammy Lou Casey mathematically dismantles the foundational premise of all these attempts.
 
 Using a key-free, language-agnostic formulation known as the Oocephalus Test, the team analyzed 32 pairs of duplicate botanical illustrations across the manuscript's Herbal and Pharmaceutical sections against a 10,000-iteration Monte Carlo permutation null distribution.
 
