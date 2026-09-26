@@ -5,9 +5,8 @@
 ### Empirical Study Falsifies 100-Year "Botanical-Crib" Decipherment Paradigm in the Voynich Manuscript
 
 **Date**: September 24, 2026
-**Authors**: Tammy Lou Casey 
+**Authors**: Tammy Lou Casey
 **Canonical Archive**: `services/voynich/research/OOCEPHALUS_PUBLICATION_PAPER.md`
-**Contact**: The Sovereign Oracle Collective Press Bureau
 
 **FAYETTEVILLE, AR & NEW HAVEN, CT** - In a peer-review specification released today, researchers have published the first complete mathematical falsification of the "Botanical-Crib" decipherment paradigm in the enigmatic Voynich Manuscript (Yale University, Beinecke MS 408).
 
