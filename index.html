@@ -1155,6 +1155,9 @@
                     <button class="nav-tab-btn" id="btnOpenArticles">
                         <span>📚</span> Research Articles
                     </button>
+                    <button class="nav-tab-btn" id="btnOpenAboutMe" onclick="document.getElementById('aboutMeModal').classList.add('active');" style="border-color:var(--gold); color:var(--gold-light); background:rgba(212,175,55,0.12);">
+                        <span>👤</span> About & Support
+                    </button>
                 </nav>
             </div>
 
@@ -1657,6 +1660,71 @@
             </div>
             <div class="modal-body" id="wordCardBody">
                 <!-- Populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: About Lead Researcher & Support -->
+    <div class="modal-overlay" id="aboutMeModal">
+        <div class="modal-card" style="max-width:760px; width:95vw;">
+            <div class="modal-header">
+                <h3><span>👤</span> About Lead Researcher & Direct Support</h3>
+                <button class="modal-close" onclick="closeModal('aboutMeModal')">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:1.5rem; max-height:80vh; overflow-y:auto;">
+                <div style="display:flex; gap:1.25rem; align-items:center; margin-bottom:1.5rem; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.25rem;">
+                    <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg, var(--gold), var(--cyan-astro)); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:bold; color:#000;">
+                        TLC
+                    </div>
+                    <div>
+                        <h3 style="margin:0 0 0.25rem 0; font-family:'Cinzel', serif; color:var(--gold-light); font-size:1.2rem;">Tammy Lou Casey</h3>
+                        <div style="font-size:0.85rem; color:var(--cyan-astro); font-weight:600;">Lead Codicological Researcher & Architect · The Mechanical Voynich</div>
+                        <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.35rem;">Independent Codicological Research, Mathematical Paleography & Structural Harmonics</div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom:1.5rem; line-height:1.6; font-size:0.88rem; color:#cbd5e1;">
+                    <p style="margin-top:0;">
+                        Welcome to <b>The Mechanical Voynich</b> research platform. This independent codicological suite standardizes empirical finding aids, structural harmonics, and botanical classifications across Beinecke MS 408.
+                    </p>
+                    <p style="margin-bottom:0;">
+                        If you would like to support ongoing independent research, manuscript digitization, paleobotanical consensus tools, and Hebrew language etymological analysis, you can contribute directly using the channels below:
+                    </p>
+                </div>
+
+                <h4 style="font-family:'Cinzel', serif; color:var(--gold); font-size:1rem; margin-bottom:0.85rem;">Direct Research Contributions & Subscriptions</h4>
+                
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+                    <!-- CashApp Support -->
+                    <div style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.3); border-radius:10px; padding:1.1rem; display:flex; flex-direction:column; gap:0.5rem;">
+                        <div style="font-size:1.4rem;">💚</div>
+                        <div style="font-weight:700; color:#34d399; font-size:0.95rem;">CashApp Direct</div>
+                        <div style="font-size:0.78rem; color:var(--text-muted); flex:1;">Direct support via Cashtag <b>$enchantedcostumes</b>. Instant transfer for independent research funding.</div>
+                        <a href="https://cash.app/$enchantedcostumes" target="_blank" rel="noopener" style="margin-top:0.5rem; background:#10b981; color:#000; font-weight:700; text-align:center; padding:0.45rem; border-radius:6px; text-decoration:none; font-size:0.82rem;">
+                            Pay via CashApp ($enchantedcostumes) ↗
+                        </a>
+                    </div>
+
+                    <!-- Patreon Hebrew Language -->
+                    <div style="background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.3); border-radius:10px; padding:1.1rem; display:flex; flex-direction:column; gap:0.5rem;">
+                        <div style="font-size:1.4rem;">📜</div>
+                        <div style="font-weight:700; color:var(--cyan-astro); font-size:0.95rem;">Hebrew Language Patreon</div>
+                        <div style="font-size:0.78rem; color:var(--text-muted); flex:1;">Independent Hebrew language analysis, manuscript exegesis, and semitic codicology.</div>
+                        <a href="https://www.patreon.com/c/enchantedozarks" target="_blank" rel="noopener" style="margin-top:0.5rem; background:var(--cyan-astro); color:#000; font-weight:700; text-align:center; padding:0.45rem; border-radius:6px; text-decoration:none; font-size:0.82rem;">
+                            Join Patreon (Enchanted Ozarks) ↗
+                        </a>
+                    </div>
+
+                    <!-- Substack Series -->
+                    <div style="background:rgba(212,175,55,0.06); border:1px solid rgba(212,175,55,0.3); border-radius:10px; padding:1.1rem; display:flex; flex-direction:column; gap:0.5rem;">
+                        <div style="font-size:1.4rem;">📰</div>
+                        <div style="font-weight:700; color:var(--gold-light); font-size:0.95rem;">Substack Publication Series</div>
+                        <div style="font-size:0.78rem; color:var(--text-muted); flex:1;">Full monograph series, botanical discoveries, and research papers by Tammy Lou Casey.</div>
+                        <a href="https://tammylcasey.substack.com" target="_blank" rel="noopener" style="margin-top:0.5rem; background:var(--gold); color:#000; font-weight:700; text-align:center; padding:0.45rem; border-radius:6px; text-decoration:none; font-size:0.82rem;">
+                            Subscribe on Substack ↗
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
