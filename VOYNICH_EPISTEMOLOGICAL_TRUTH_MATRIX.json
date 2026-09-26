@@ -1,0 +1,275 @@
+﻿{
+  "metadata": {
+    "title": "Voynich Epistemological Axioms & Hypotheses Matrix",
+    "authors": [
+      "Tammy Lou Casey"
+    ],
+    "special_mention": [
+      ""
+    ],
+    "version": "1.0.0",
+    "methodology": "Bayesian Epistemological Decomposition & Empirical Falsification"
+  },
+  "tier_1_axioms": [
+    {
+      "id": "AX-01",
+      "category": "Physical & Material",
+      "assertion": "Radiocarbon Dating Locks Vellum Creation to 1404\u20131438 AD",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "UNCONTESTED_PHYSICAL_GROUND_TRUTH",
+      "evidence": [
+        "University of Arizona AMS Radiocarbon laboratory (2009).",
+        "4 independent parchment samples tested across different quires.",
+        "Calibrated 95% confidence interval yields 1404\u20131438 AD.",
+        "Disproves modern forgery (Wilfrid Voynich) and Elizabethan creation (John Dee/Edward Kelley)."
+      ],
+      "falsification_risk": "Effectively 0% unless standard AMS physics is invalid."
+    },
+    {
+      "id": "AX-02",
+      "category": "Physical & Material",
+      "assertion": "Pigments and Ink Are Authentic 15th-Century European Formulations",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "UNCONTESTED_PHYSICAL_GROUND_TRUTH",
+      "evidence": [
+        "McCrone Research Institute micro-chemical analysis (2009).",
+        "Iron gall ink used throughout text and line drawings.",
+        "Azurite (blue), copper green / verdigris (green), cinnabar / red lead (red), orpiment (yellow).",
+        "Complete absence of modern titanium white, Prussian blue (post-1704), or synthetic pigments."
+      ],
+      "falsification_risk": "Effectively 0%."
+    },
+    {
+      "id": "AX-03",
+      "category": "Codicology & Structure",
+      "assertion": "The Codex Contains 225 Surviving Folios Across 16 Quires with Foldouts",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "UNCONTESTED_PHYSICAL_GROUND_TRUTH",
+      "evidence": [
+        "Physical collation at Yale Beinecke Rare Book & Manuscript Library (MS 408).",
+        "Parchment prepared from calfskin vellum.",
+        "Complex foldout sheets up to 6-panel foldouts (f85\u2013f86 Rosettes).",
+        "Sewing holes and historical foliation indicate ~14\u201316 lost folios since 15th century."
+      ],
+      "falsification_risk": "Zero."
+    },
+    {
+      "id": "AX-04",
+      "category": "Palaeography & Execution",
+      "assertion": "The Text Was Written Left-to-Right in Single Continuous Execution Without Corrections",
+      "confidence_score": 0.99,
+      "confidence_percentage": "99%",
+      "status": "UNCONTESTED_PALAEOGRAPHIC_GROUND_TRUTH",
+      "evidence": [
+        "Consistent, un-squeezed left margins; ragged, uneven right margins.",
+        "Currier, Tiltman, and D'Imperio palaeographic observations.",
+        "Ink stroke sequence confirms left-to-right ductus.",
+        "Complete absence of erasure marks, pen-knife scrapings, or crossed-out words."
+      ],
+      "falsification_risk": "Virtually zero."
+    },
+    {
+      "id": "AX-05",
+      "category": "Palaeography & Scribes",
+      "assertion": "The Manuscript Features at Least Two Distinct Dialects / Hands (Currier A and Currier B)",
+      "confidence_score": 0.99,
+      "confidence_percentage": "99%",
+      "status": "UNCONTESTED_STATISTICAL_GROUND_TRUTH",
+      "evidence": [
+        "Captain Prescott H. Currier's 1976 statistical paper.",
+        "Currier A dominates Herbal (f1\u2013f66) and Zodiac (f70\u2013f73); Currier B dominates Balneological (f75\u2013f84) and Recipes (f103\u2013f116).",
+        "Jaccard vocabulary overlap between Currier A and Currier B is only 0.1711 (82.9% disjunction).",
+        "Currier A features high 'o-' and 'd-' frequencies; Currier B features high 'ch-' and 'sh-' frequencies."
+      ],
+      "falsification_risk": "Virtually zero."
+    },
+    {
+      "id": "AX-06",
+      "category": "Linguistics & Information Theory",
+      "assertion": "Character Entropy is Abnormally Low (h2 \u2248 2.0\u20132.4 bits/char) While Strictly Obeying Zipf's Law",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "UNCONTESTED_MATHEMATICAL_GROUND_TRUTH",
+      "evidence": [
+        "Second-order conditional character entropy is drastically lower than European languages (~4.0 bits).",
+        "Word frequencies follow Zipf's Law power-law distribution identically to natural language.",
+        "Token autocorrelation decays over long ranges (20\u201330 words), proving high-level topic structuring (Montemurro & Zanette 2013).",
+        "Word order is not random (scrambling text destroys these mathematical properties)."
+      ],
+      "falsification_risk": "Zero."
+    },
+    {
+      "id": "AX-07",
+      "category": "Structural Invariant",
+      "assertion": "Line-as-a-Functional-Unit Invariant (Strong Line-End and Line-Start Constraints)",
+      "confidence_score": 0.98,
+      "confidence_percentage": "98%",
+      "status": "UNCONTESTED_STRUCTURAL_GROUND_TRUTH",
+      "evidence": [
+        "Gallows glyphs (t, k, p, f) occur at the start of lines at over 4x their expected random frequency.",
+        "Terminal glyphs (-y, -m, -am) concentrate overwhelmingly at line ends.",
+        "Near-zero word hyphenation or word-splitting across line breaks.",
+        "Suggests the scribe composed or fit words specifically within line boundaries."
+      ],
+      "falsification_risk": "Virtually zero."
+    },
+    {
+      "id": "AX-08",
+      "category": "Empirical Falsification (Oracle Sentinels)",
+      "assertion": "The Oocephalus Invariant: Pharmaceutical Jar Labels Do NOT Match Herbal Plant Names",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "FALSIFIED_HYPOTHESIS_AXIOM",
+      "evidence": [
+        "The Oocephalus Test (Casey & Henderson 2026).",
+        "Direct binomial test against the 80% crib rate expectation yields p = 2.54e-12.",
+        "Monte Carlo permutation yields Z = +0.631 (p = 0.528, identical to random chance).",
+        "Morphological tolerance (edit distance <= 1) yields Z = -0.41 (p = 0.738).",
+        "Disproves that pharmaceutical jar labels represent plant names of corresponding herbal folios."
+      ],
+      "falsification_risk": "Zero (Reproducible on canonical dataset)."
+    },
+    {
+      "id": "AX-09",
+      "category": "Empirical Falsification (Oracle Sentinels)",
+      "assertion": "The Organ Label Invariant: Labels Are NOT Fixed Anatomical Words (Radix, Folium, Flos)",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "FALSIFIED_HYPOTHESIS_AXIOM",
+      "evidence": [
+        "Organ Label Benchmark (Casey & Henderson 2026).",
+        "93.3% of pharmaceutical labels (139/149) are completely unique words.",
+        "Chi-squared test of prefix vs. drawn organ yields chi2 = 8.42, p = 0.751 (identical to random noise).",
+        "Disproves that labels represent generic plant organs or processing instructions."
+      ],
+      "falsification_risk": "Zero."
+    },
+    {
+      "id": "AX-10",
+      "category": "Empirical Falsification (Oracle Sentinels)",
+      "assertion": "The Zodiac Star Invariant: Star Labels Are NOT Proper Astronomical Star Names",
+      "confidence_score": 1.0,
+      "confidence_percentage": "100%",
+      "status": "FALSIFIED_HYPOTHESIS_AXIOM",
+      "evidence": [
+        "Zodiac Star Concordance (Casey & Henderson 2026).",
+        "359 star labels across 12 medallions share tokens across completely distinct signs (e.g. 'otal' appears 6 times in Pisces, Aries, Taurus, Scorpio).",
+        "Proper star names (Aldebaran, Regulus, Spica) cannot physically wander across constellations.",
+        "41.5% of star labels recur in the Herbal body text; 37.4% recur in Recipe Stars.",
+        "Disproves Stephen Bax's nominal star cribs."
+      ],
+      "falsification_risk": "Zero."
+    }
+  ],
+  "tier_2_theories": [
+    {
+      "id": "TH-01",
+      "theory": "Iatromathematical / Medical-Astrological Regimen Manual",
+      "confidence_score": 0.85,
+      "confidence_percentage": "85%",
+      "tier": "VERY_HIGH_PROBABILITY",
+      "supporting_evidence": [
+        "Sectional progression matches 15th-century Tacuina Sanitatis: Simples -> Zodiac -> Baths -> Jars -> Recipes.",
+        "Balneological section depicts female hydrotherapy consistent with Galenic uterine fumigations and mineral spa regimens.",
+        "Zodiac medallions align with medieval medical astrology (bloodletting, planetary rulership of treatments)."
+      ],
+      "counter_evidence": [
+        "Illustrations depict idiosyncratic, non-standard plants unlike contemporary printed herbals.",
+        "Complete failure of text to match standard Latin or German pharmacological vocabulary."
+      ]
+    },
+    {
+      "id": "TH-02",
+      "theory": "A Priori Constructed / Philosophical Language (Proto-Wilkins)",
+      "confidence_score": 0.75,
+      "confidence_percentage": "75%",
+      "tier": "HIGH_PROBABILITY",
+      "supporting_evidence": [
+        "Abnormally low character entropy (h2 \u2248 2.0\u20132.4) is a hallmark of artificial taxonomy systems.",
+        "Rigid morphemic slots (prefix-root-suffix) where prefixes categorize domains and suffixes denote states.",
+        "High token predictability and absence of irregular phonetic mutations found in natural spoken languages."
+      ],
+      "counter_evidence": [
+        "Pre-dates John Wilkins (1668) and George Dalgarno (1661) by more than two centuries.",
+        "Requires an unprecedented early 15th-century linguistic pioneer."
+      ]
+    },
+    {
+      "id": "TH-03",
+      "theory": "Procedural Table Generation with Scribe Memory (Markovian Device)",
+      "confidence_score": 0.6,
+      "confidence_percentage": "60%",
+      "tier": "MODERATE_PROBABILITY",
+      "supporting_evidence": [
+        "Explains frequent immediate word self-repetitions ('word crumbles' like chol.chol, daiin.daiin).",
+        "Explains strict line-length and margin constraints.",
+        "Explains how scribes could write thousands of words fluidly without pauses or corrections."
+      ],
+      "counter_evidence": [
+        "Fails to cleanly explain Montemurro's long-range semantic keyword clustering (20\u201330 word horizons).",
+        "Pure mechanical generation rarely preserves cross-quire topical cohesion."
+      ]
+    },
+    {
+      "id": "TH-04",
+      "theory": "Enciphered Natural Language via Homophonic Polyalphabetic Cipher",
+      "confidence_score": 0.35,
+      "confidence_percentage": "35%",
+      "tier": "LOW_PROBABILITY",
+      "supporting_evidence": [
+        "Fifteenth-century Italian humanists (Alberti, Trithemius) were developing cipher systems.",
+        "Could theoretically generate artificial statistical profiles if cipher keys were complex."
+      ],
+      "counter_evidence": [
+        "Homophonic ciphers increase entropy toward randomness (approaching 4.5+ bits); they do NOT lower entropy to 2.2 bits.",
+        "Fails every known cipher attack attempted by NSA, William Friedman, and modern supercomputers."
+      ]
+    },
+    {
+      "id": "TH-05",
+      "theory": "Steganographic Cardan Grille Hoax (Gordon Rugg)",
+      "confidence_score": 0.25,
+      "confidence_percentage": "25%",
+      "tier": "UNLIKELY",
+      "supporting_evidence": [
+        "Rugg demonstrated that a Cardan grille over a syllable table can produce Voynich-like prefixes and suffixes.",
+        "Requires zero linguistic knowledge from the scribe."
+      ],
+      "counter_evidence": [
+        "Disproven by Montemurro & Zanette (2013): Grille generation cannot create long-range topic clustering or legitimate Zipfian term-frequency networks.",
+        "Fails to explain the systematic Currier A vs Currier B dialect divergence across quires."
+      ]
+    },
+    {
+      "id": "TH-06",
+      "theory": "Phonetic Dialect Transcription (Proto-Romance / Nahuatl / Hebrew / Turkic)",
+      "confidence_score": 0.05,
+      "confidence_percentage": "5%",
+      "tier": "NEARLY_IMPOSSIBLE",
+      "supporting_evidence": [
+        "Superficial visual resemblances between isolated words and various foreign languages."
+      ],
+      "counter_evidence": [
+        "Decisively disproven by the Oocephalus Test and Zodiac Star Concordance.",
+        "Every claimed phonetic translation (Bax, Cheshire, Tucker-Talbert) relies on cherry-picked words and violates internal grammar.",
+        "Natural spoken languages have character entropy ~4.0 bits, double that of Voynichese."
+      ]
+    },
+    {
+      "id": "TH-07",
+      "theory": "Modern / 20th-Century Forgery (Wilfrid Voynich / John Dee)",
+      "confidence_score": 0.0,
+      "confidence_percentage": "0%",
+      "tier": "MATHEMATICALLY_DISPROVEN",
+      "supporting_evidence": [],
+      "counter_evidence": [
+        "Disproven by AMS Radiocarbon dating (1404\u20131438 AD).",
+        "Disproven by McCrone micro-chemical pigment analysis.",
+        "Disproven by historical documentation in the 1639 Baresch letter and 1665 Marci letter to Kircher."
+      ]
+    }
+  ]
+}

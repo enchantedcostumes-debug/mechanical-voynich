@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Oocephalus Invariant: Key-Free Empirical Falsification of the Botanical-Crib Decipherment Paradigm</title>
+<style>
+@page {
+    size: letter;
+    margin: 2.5cm 2.2cm 2.5cm 2.2cm;
+    @top-right {
+        content: "Casey & Henderson · The Oocephalus Invariant (2026)";
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8.5pt;
+        font-style: italic;
+        color: #555;
+    }
+    @bottom-center {
+        content: counter(page);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 9.5pt;
+    }
+}
+body {
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1a1a1a;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 24px;
+    text-rendering: optimizeLegibility;
+}
+h1, .paper-title {
+    font-size: 18.5pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    line-height: 1.25;
+    color: #0b1a30;
+    letter-spacing: -0.01em;
+}
+.author-block {
+    text-align: center;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.author-name {
+    font-size: 12.5pt;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 3px;
+}
+.author-affiliation {
+    font-size: 10pt;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 2px;
+}
+.author-date {
+    font-size: 9.5pt;
+    color: #666;
+}
+h2 {
+    font-size: 13pt;
+    font-weight: bold;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 3px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: #0b1a30;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+h3 {
+    font-size: 11.5pt;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #1d3557;
+}
+h4 {
+    font-size: 10.5pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 10px;
+}
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+li {
+    margin-bottom: 3px;
+}
+table, .academic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 9.5pt;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f6f9;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7f7f7;
+    padding: 1px 3px;
+    font-size: 9pt;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e4e8;
+    padding: 10px 12px;
+    overflow-x: auto;
+    font-size: 8.5pt;
+    line-height: 1.4;
+    border-radius: 3px;
+    margin: 14px 0;
+}
+blockquote {
+    border-left: 2.5px solid #0b1a30;
+    padding-left: 14px;
+    margin: 14px 0 14px 10px;
+    font-style: italic;
+    color: #2b2b2b;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #bbb;
+    margin: 20px 0;
+}
+</style>
+</head>
+<body>
+<h1>The Oocephalus Invariant: Key-Free Empirical Evaluation of the Botanical-Crib Decipherment Hypothesis in the Voynich Manuscript</h1>
+<p><strong>Author</strong>: Tammy Lou Casey<br />
+<em>Special Mention</em>:  (root morphology observation)<br />
+<strong>Affiliation</strong>: Advanced Structural Cryptanalysis<br />
+<strong>Date</strong>: September 2026<br />
+<strong>Classification</strong>: Historical Cryptanalysis / Quantitative Codicology / Computational Philology</p>
+<hr />
+<h2>Abstract</h2>
+<p>For nearly a century, proposed decipherments of the Voynich Manuscript (Yale University, Beinecke MS 408) have predominantly relied upon the <strong>Botanical-Crib Hypothesis</strong>: the premise that identifying illustrated plant specimens will yield historical plant names, which in turn furnish phonetic cribs to decode the unidentified script. Drawing an explicit analogy to Michael Ventris’s decipherment of Linear B via Cretan toponyms, decipherment proposals from Theodore Petersen (1930s) and Stephen Bax (2014) to Arthur Tucker (2018) have attempted to establish phonetic grids using botanical anchors.</p>
+<p>In this study, we report the complete formal execution of <strong>The Oocephalus Invariant</strong>—a key-free, language-agnostic empirical test requiring no linguistic assumptions, no phonetic values, and no contested botanical identifications. Leveraging the Petersen-Stolfi-Knowles catalog of duplicate drawings, in which miniature illustrations in the Pharmaceutical section (folios f87r–f102v) represent direct copies of large full-page illustrations in the Herbal section (folios f1r–f66v), we evaluate whether pharmaceutical labels denote the botanical names of the depicted flora. Under any consistent lexical nomenclature model, a label token designating a plant specimen must reliably recur in the continuous herbal monograph dedicated to that same plant.</p>
+<p>Evaluating <em>n</em> = 32 unambiguous duplicate illustration pairs against the canonical European Voynich Alphabet (EVA) transcriptions, we observe only 7 recurrences (21.88%). An exact binomial test against a conservative name-recurrence baseline (<em>p</em>₀ = 0.80) decisively rejects the botanical-crib hypothesis (<em>p</em> = 2.54 × 10⁻¹²; against <em>p</em>₀ = 0.50, <em>p</em> = 1.05 × 10⁻³). A 10,000-trial Monte Carlo permutation null control indicates that the observed 7 matches are statistically indistinguishable from random page pairings (null mean <em>μ</em> = 5.862, <em>σ</em> = 1.803, <em>Z</em> = +0.631, empirical one-tailed <em>p</em> = 0.3517, normal two-tailed <em>p</em> = 0.528). Furthermore, a morphological sensitivity analysis allowing inflectional variation (Levenshtein edit distance ≤ 1) yields 17 matches (53.12%), which precisely mirrors the permuted random null expectation (<em>μ</em> = 17.94, <em>Z</em> = −0.41, <em>p</em> = 0.7380). Coupled with the observation that identical label tokens (such as <code>okoe89</code>) concurrently designate disparate botanical taxa, distillation glassware, and architectural masonry, our findings demonstrate that pharmaceutical labels do not function as lexical plant names.</p>
+<hr />
+<h2>1. Introduction: The Botanical Rosetta Stone Hypothesis</h2>
+<p>The Voynich Manuscript (Beinecke MS 408) has resisted cryptanalysis since its acquisition by Wilfrid Voynich in 1912. Comprising roughly 240 extant parchment folios written in an unidentified script accompanied by botanical, astronomical, balneological, and pharmaceutical illustrations, the codex represents an enduring problem in historical cipher theory.</p>
+<p>In the absence of bilingual parallel texts, researchers have repeatedly looked to the <strong>Botanical Section</strong> as an internal "Rosetta Stone." The underlying rationale appears straightforward:<br />
+1. Illustrated plants possess physical morphology depicted in ink and pigment.<br />
+2. If an illustration can be taxonomically identified with a historical species (e.g., <em>Centaurea</em>, <em>Nigella sativa</em>, <em>Ricinus communis</em>), the corresponding text is presumed to record the vernacular or Latin name of that plant.<br />
+3. Aligning the phonetic structure of the candidate plant name with adjacent Voynich glyphs is hypothesized to reveal sound values.<br />
+4. These initial values then serve as phonetic cribs to unlock the remainder of the text.</p>
+<p>This methodological template was modeled explicitly after Michael Ventris’s 1952 decipherment of Linear B, wherein the identification of Cretan place names (<em>Knossos</em>, <em>Amnisos</em>, <em>Tulissos</em>) anchored the syllabic grid. Arthur Tucker and Jules Janick reflected this objective in their 2018 volume, <em>The Rosetta Stone of the Voynich Codex: Phytomorphs of the Pharmaceutical Section</em>.</p>
+<p>Despite numerous published monographs proposing readings under this model, no proposed botanical decipherment has replicated or gained broad scholarly consensus. In this paper, we examine whether the foundational premise—that text labels adjacent to plant drawings denote the names of those plants—is supported by internal codicological and textual evidence.</p>
+<hr />
+<h2>2. Codicological Asymmetry of the Botanical Corpus</h2>
+<p>An important codicological characteristic of Beinecke MS 408 is the distributional asymmetry between illustrations and text labels across its botanical sections:</p>
+<ol>
+<li><strong>The Herbal Section (folios f1r–f66v)</strong>:</li>
+<li>Contains approximately 130 large, detailed, full-page plant illustrations.</li>
+<li>Offers the richest morphological features for potential taxonomic identification.</li>
+<li><strong>Text Structure</strong>: Contains <strong>zero individual labels</strong>. Each folio consists of a full-page drawing accompanied by continuous paragraphs of running prose. The only candidate for a discrete label is the initial word of each page.</li>
+<li>
+<p><strong>The Gallows Constraint</strong>: As noted by Tiltman (1967), the opening word on nearly every Herbal page begins with an ornamental "gallows" glyph (EVA <code>p</code> 53×, <code>t</code> 24×, <code>k</code> 21×, <code>f</code> 10×). If initial words were plant names, an implausible proportion of medieval flora would share identical initial consonants in the author’s dialect.</p>
+</li>
+<li>
+<p><strong>The Pharmaceutical Section (folios f87r–f102v)</strong>:</p>
+</li>
+<li>Contains approximately 152 miniature drawings depicting isolated plant organs: roots, leaf clusters, stalks, and apothecarial jars.</li>
+<li>These partial drawings provide substantially fewer diagnostic features for taxonomic determination.</li>
+<li><strong>Text Structure</strong>: This is the <strong>exclusive botanical section containing discrete text labels</strong> placed adjacent to individual plant drawings.</li>
+</ol>
+<p>This creates a methodological dilemma: the illustrations that can be most reliably examined for botanical features have no discrete labels, while the illustrations accompanied by labels are fragmentary miniatures.</p>
+<hr />
+<h2>3. Prior Decipherment Proposals &amp; Methodological Challenges</h2>
+<h3>3.1 Stephen Bax (2014)</h3>
+<p>Linguist Stephen Bax proposed a partial decipherment based on 10 putative botanical identifications (including juniper, coriander, hellebore, and <em>Centaurea</em>). Bax derived 14 letter values, arguing for a Semitic or Turkic plaintext. However, as demonstrated by Pelling (2014):<br />
+- Bax treated all four distinct gallows glyphs (<code>p</code>, <code>t</code>, <code>k</code>, <code>f</code>) as identical phonetic realizations (/k/ or /c/) to match target names.<br />
+- Candidate words were selected from running paragraphs without pre-registered selection criteria.<br />
+- The resulting phonetic values did not yield coherent lexical readings when applied systematically across unselected folios.</p>
+<h3>3.2 Edith Sherwood (2016)</h3>
+<p>Edith Sherwood reported deciphering 111 out of 130 herbal plants (86% of the botanical section) by reading Voynich words as Italian anagrams. Sherwood's method permitted arbitrary character reordering within a token, splitting names across adjacent tokens, and omitting extraneous syllables. A procedure possessing such extensive degrees of freedom has minimal discriminating power: it can generate matches from arbitrary noise, limiting its utility as empirical evidence.</p>
+<h3>3.3 Tucker &amp; Janick (2018)</h3>
+<p>Tucker and Janick argued for a 16th-century Mesoamerican origin, asserting that the illustrated plants represented New World taxa (e.g., <em>Ipomoea murucoides</em>, <em>Mirabilis jalapa</em>) written in Classical Nahuatl. Subsequent independent botanical reviews indicated that the morphological correspondences were non-diagnostic and that Old World Mediterranean and European taxa matched the drawings equally well or better.</p>
+<hr />
+<h2>4. The Experimental Method: The Formalized Oocephalus Invariant</h2>
+<p>In July 2016, an independent researcher operating under the pseudonym <strong>Oocephalus</strong> on the <em>voynich.ninja</em> forum (thread-196) proposed an empirical test that circumvents linguistic, phonetic, and taxonomic debate by examining internal cross-references.</p>
+<h3>4.1 The Duplicate Drawing Phenomenon</h3>
+<p>In the 1930s, Father Theodore Petersen observed that numerous small pharmaceutical plant drawings on folios f87r–f102v represent condensed duplicates of the large plants illustrated in the Herbal section (f1r–f66v). In the 1990s, Jorge Stolfi independently corroborated this cross-referencing. Mark Knowles subsequently compiled a systematic catalog identifying duplicate miniature-to-herbal pairings based on shared diagnostic morphology.</p>
+<h3>4.2 The Invariant Condition</h3>
+<p>The test establishes a necessary condition for any botanical nomenclature hypothesis:</p>
+<blockquote>
+<p><strong>The Invariant Condition:</strong><br />
+If Label(<em>Pᵢ</em>) = Name(Plant<em>ᵢ</em>), and <em>Hᵢ</em> is the dedicated monograph for Plant<em>ᵢ</em>,<br />
+then Label(<em>Pᵢ</em>) ∈ Vocabulary(<em>Hᵢ</em>).</p>
+</blockquote>
+<p>If a label token in the pharmaceutical section denotes the name of the depicted plant, that identical token must reliably recur in the continuous text describing that same plant on its primary herbal folio.</p>
+<h3>4.3 Methodological Properties</h3>
+<ol>
+<li><strong>Language-Agnostic</strong>: Does not depend on whether the underlying language is Latin, German, Greek, Arabic, Nahuatl, or an invented cipher.</li>
+<li><strong>Alphabet-Agnostic</strong>: Does not depend on whether the script is alphabetic, syllabic, or polyphonous.</li>
+<li><strong>Taxonomy-Independent</strong>: Does not require consensus on whether folio f18r depicts <em>Calendula officinalis</em> or <em>Convolvulus arvensis</em>. The illustrator rendered the same morphological specimen in both sections.</li>
+<li><strong>Falsifiability</strong>: If labels function as plant names, recurrence must approach a high baseline rate. If labels serve an unrelated function (e.g., organ designations, processing stages, or non-lexical annotations), recurrence will not exceed background word distribution.</li>
+</ol>
+<hr />
+<h2>5. The Petersen-Stolfi-Knowles Corpus &amp; Replication Data</h2>
+<p>We evaluated <em>n</em> = 32 verified duplicate illustration pairs exhibiting unambiguous morphological consensus across the Petersen, Stolfi, and Knowles catalogs. Pair evaluations were conducted against the canonical European Voynich Alphabet (EVA) transcription:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: center;">Pharma Folio</th>
+<th style="text-align: center;">Label Token</th>
+<th style="text-align: center;">Herbal Folio</th>
+<th style="text-align: center;">Herbal Word Count</th>
+<th style="text-align: center;">Label Found on Page?</th>
+<th style="text-align: center;">Line Occurrence (Hits)</th>
+<th style="text-align: left;">Diagnostic Feature Shared</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">f88r</td>
+<td style="text-align: center;"><code>otory</code></td>
+<td style="text-align: center;">f17r</td>
+<td style="text-align: center;">214</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f17r.P.11</td>
+<td style="text-align: left;">Trefoil / clover leaflets</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">f88r</td>
+<td style="text-align: center;"><code>opchor</code></td>
+<td style="text-align: center;">f13r</td>
+<td style="text-align: center;">188</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Serrated leaf margin</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">f88v</td>
+<td style="text-align: center;"><code>okeoly</code></td>
+<td style="text-align: center;">f49r</td>
+<td style="text-align: center;">267</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Branched tuberous root</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">f88v</td>
+<td style="text-align: center;"><code>chckhey</code></td>
+<td style="text-align: center;">f25r</td>
+<td style="text-align: center;">195</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Bulbous segmented root</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">f89r</td>
+<td style="text-align: center;"><code>okor</code></td>
+<td style="text-align: center;">f32r</td>
+<td style="text-align: center;">312</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Basal rosette leaves</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">f89r</td>
+<td style="text-align: center;"><code>cthar</code></td>
+<td style="text-align: center;">f34v</td>
+<td style="text-align: center;">176</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f34v.P.8</td>
+<td style="text-align: left;">Pinnate leaf arrangement</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">f89v</td>
+<td style="text-align: center;"><code>otol</code></td>
+<td style="text-align: center;">f41r</td>
+<td style="text-align: center;">240</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Swollen caudex / base</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">f89v</td>
+<td style="text-align: center;"><code>kchor</code></td>
+<td style="text-align: center;">f54r</td>
+<td style="text-align: center;">182</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Asteraceous composite flower</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">f90r</td>
+<td style="text-align: center;"><code>cthey</code></td>
+<td style="text-align: center;">f2r</td>
+<td style="text-align: center;">290</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f2r.P.14</td>
+<td style="text-align: left;">Multi-lobed root system</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">f90r</td>
+<td style="text-align: center;"><code>otear</code></td>
+<td style="text-align: center;">f22v</td>
+<td style="text-align: center;">225</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Segmented rhizome</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">f90v</td>
+<td style="text-align: center;"><code>dair</code></td>
+<td style="text-align: center;">f3v</td>
+<td style="text-align: center;">198</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f3v.P.6</td>
+<td style="text-align: left;">Opposite paired leaflets</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">f90v</td>
+<td style="text-align: center;"><code>okol</code></td>
+<td style="text-align: center;">f6v</td>
+<td style="text-align: center;">245</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Radially symmetric corolla</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">f99r</td>
+<td style="text-align: center;"><code>sory</code></td>
+<td style="text-align: center;">f4r</td>
+<td style="text-align: center;">210</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f4r.P.3</td>
+<td style="text-align: left;">Clustered terminal berries</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">f99r</td>
+<td style="text-align: center;"><code>cphodaiin</code></td>
+<td style="text-align: center;">f15v</td>
+<td style="text-align: center;">185</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Fibrous taproot with tendrils</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">f99v</td>
+<td style="text-align: center;"><code>dal</code></td>
+<td style="text-align: center;">f11r</td>
+<td style="text-align: center;">230</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f11r.P.19</td>
+<td style="text-align: left;">Scalloped / dentate foliage</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">f99v</td>
+<td style="text-align: center;"><code>okaiir</code></td>
+<td style="text-align: center;">f29r</td>
+<td style="text-align: center;">205</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Whorled leaf phyllotaxy</td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">f100r</td>
+<td style="text-align: center;"><code>dar</code></td>
+<td style="text-align: center;">f36v</td>
+<td style="text-align: center;">190</td>
+<td style="text-align: center;"><strong>YES (Hit)</strong></td>
+<td style="text-align: center;">f36v.P.2</td>
+<td style="text-align: left;">Campanulate (bell) flower</td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">f100r</td>
+<td style="text-align: center;"><code>ykeor</code></td>
+<td style="text-align: center;">f45v</td>
+<td style="text-align: center;">240</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Lanceolate foliage</td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">f100v</td>
+<td style="text-align: center;"><code>otaiin</code></td>
+<td style="text-align: center;">f51r</td>
+<td style="text-align: center;">215</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Dichotomous branching stem</td>
+</tr>
+<tr>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">f100v</td>
+<td style="text-align: center;"><code>cphar</code></td>
+<td style="text-align: center;">f55v</td>
+<td style="text-align: center;">170</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Umbelliferous flower head</td>
+</tr>
+<tr>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">f101r</td>
+<td style="text-align: center;"><code>shodaiin</code></td>
+<td style="text-align: center;">f8r</td>
+<td style="text-align: center;">280</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Tripartite taproot</td>
+</tr>
+<tr>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">f101r</td>
+<td style="text-align: center;"><code>kchey</code></td>
+<td style="text-align: center;">f21v</td>
+<td style="text-align: center;">205</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Ovate dentate margin</td>
+</tr>
+<tr>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">f101v</td>
+<td style="text-align: center;"><code>cthol</code></td>
+<td style="text-align: center;">f31r</td>
+<td style="text-align: center;">220</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Cluster bulb system</td>
+</tr>
+<tr>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">f101v</td>
+<td style="text-align: center;"><code>chody</code></td>
+<td style="text-align: center;">f39v</td>
+<td style="text-align: center;">260</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Tiered whorl inflorescence</td>
+</tr>
+<tr>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">f102r</td>
+<td style="text-align: center;"><code>ytchor</code></td>
+<td style="text-align: center;">f47r</td>
+<td style="text-align: center;">195</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Flexuous climbing stem</td>
+</tr>
+<tr>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">f102r</td>
+<td style="text-align: center;"><code>shol</code></td>
+<td style="text-align: center;">f52v</td>
+<td style="text-align: center;">210</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Creeping stolon / rhizome</td>
+</tr>
+<tr>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">f102v</td>
+<td style="text-align: center;"><code>daiin</code></td>
+<td style="text-align: center;">f10r</td>
+<td style="text-align: center;">250</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Fleshy root tubers</td>
+</tr>
+<tr>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">f102v</td>
+<td style="text-align: center;"><code>chol</code></td>
+<td style="text-align: center;">f18v</td>
+<td style="text-align: center;">235</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Composite disk flower</td>
+</tr>
+<tr>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">f94r</td>
+<td style="text-align: center;"><code>okshy</code></td>
+<td style="text-align: center;">f24r</td>
+<td style="text-align: center;">180</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Braided rhizome</td>
+</tr>
+<tr>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">f94v</td>
+<td style="text-align: center;"><code>cthaiin</code></td>
+<td style="text-align: center;">f35r</td>
+<td style="text-align: center;">210</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Hastate leaf base</td>
+</tr>
+<tr>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">f95r</td>
+<td style="text-align: center;"><code>daraiin</code></td>
+<td style="text-align: center;">f42v</td>
+<td style="text-align: center;">245</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Radical basal leaves</td>
+</tr>
+<tr>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">f95v</td>
+<td style="text-align: center;"><code>kor</code></td>
+<td style="text-align: center;">f56r</td>
+<td style="text-align: center;">190</td>
+<td style="text-align: center;">No (Miss)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Terminal corymb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Statistical Analysis &amp; Dual Hypothesis Testing</h2>
+<h3>6.1 Direct Test of the Botanical-Crib Hypothesis (Binomial Evaluation)</h3>
+<p>Under the Botanical-Crib Hypothesis (<em>H</em><sub>crib</sub>), if a label token denotes the name of the plant depicted, that name must appear in the dedicated herbal monograph for that plant. Even allowing for scribal omissions, orthographic drift, or recipe-only folios, a valid nomenclature system predicts a high recurrence probability (e.g., <em>p</em>₀ ≥ 0.80).</p>
+<p>Across <em>n</em> = 32 trials, we observe <em>X</em> = 7 successes (21.88%). An exact binomial test yields:<br />
+- Against <em>p</em>₀ = 0.90: <em>p</em> = 1.66 × 10⁻¹⁹<br />
+- Against <em>p</em>₀ = 0.80: <em>p</em> = 2.54 × 10⁻¹²<br />
+- Against <em>p</em>₀ = 0.70: <em>p</em> = 2.65 × 10⁻⁸<br />
+- Against <em>p</em>₀ = 0.50: <em>p</em> = 1.05 × 10⁻³</p>
+<p>Under all reasonable operationalizations of a name-recurrence model, the empirical data reject the hypothesis that labels serve as dedicated plant names.</p>
+<h3>6.2 Monte Carlo Permutation Control (Background Noise Model)</h3>
+<p>To determine whether the observed 7 hits represent weak semantic correlation or random background word frequency, we constructed a Monte Carlo permutation experiment:<br />
+1. All 225 folios from the canonical EVA transcription (<code>voynich_full_text_new.txt</code>) were indexed.<br />
+2. For <em>N</em> = 10,000 iterations, the 32 pharmaceutical label tokens were held constant while target herbal folios were randomly permuted across the manuscript corpus (random seed = 42).<br />
+3. The resulting permutation null distribution exhibited classic normal properties:<br />
+   - <strong>Sample Size (<em>n</em>)</strong>: 32 matched pairs<br />
+   - <strong>Observed Hits (<em>X</em>)</strong>: 7 (21.88%)<br />
+   - <strong>Null Distribution Mean (<em>μ</em><sub>null</sub>)</strong>: 5.862<br />
+   - <strong>Null Distribution Standard Deviation (<em>σ</em><sub>null</sub>)</strong>: 1.803<br />
+   - <strong>Standardized Score (<em>Z</em>)</strong>:<br />
+<em>Z</em> = (<em>X</em> − <em>μ</em><sub>null</sub>) / <em>σ</em><sub>null</sub> = (7 − 5.862) / 1.803 = +0.631<br />
+   - <strong>Empirical One-Tailed Upper Probability</strong>: <em>P</em>(<em>X</em> ≥ 7) = 0.3517<br />
+   - <strong>Normal Approximation Two-Tailed <em>p</em>-Value</strong>: <em>p</em> = 0.528 (empirical two-tailed <em>p</em> ≈ 0.703)</p>
+<p>The observed recurrence rate of 21.88% is statistically indistinguishable from chance pairings across the manuscript.</p>
+<h3>6.3 Frequency Analysis of Observed Matches</h3>
+<p>Qualitative inspection of the 7 hits clarifies why they occurred:<br />
+- Tokens such as <code>dar</code>, <code>dal</code>, <code>dair</code>, <code>cthey</code>, and <code>cthar</code> are high-frequency functional particles appearing across dozens of folios manuscript-wide (e.g., <code>daiin</code> occurs &gt; 800×, <code>dar</code> occurs &gt; 180×).<br />
+- In contrast, for distinctive, lower-frequency pharmaceutical labels (corpus frequency <em>f</em> ≤ 6, such as <code>opchor</code>, <code>okeoly</code>, <code>chckhey</code>, and <code>cphodaiin</code>), recurrence on the corresponding herbal page is <strong>0 out of 14 (0.0%)</strong>.</p>
+<h3>6.4 Sensitivity Analysis: Inflectional Morphology &amp; Fuzzy Matching</h3>
+<p>A potential critique of exact token matching is that natural languages inflect: a plant name in a label (e.g., nominative case) might appear in running prose in an inflected form (genitive, accusative) or with orthographic variance.</p>
+<p>To test the robustness of our findings against morphological variation, we conducted two sensitivity analyses:<br />
+1. <strong>Levenshtein Distance Threshold (≤ 1)</strong>: Allowing an insertion, deletion, or substitution of one character between label and herbal tokens yields 17 matches out of 32 (53.12%). However, evaluating this metric against a 1,000-trial permutation null distribution yields a null mean of 17.94 matches (<em>σ</em> = 2.32, <em>Z</em> = −0.41, <em>p</em> = 0.7380). The fuzzy match rate on the designated herbal folio is slightly below the rate observed on randomly selected folios.<br />
+2. <strong>Stem / Prefix Matching (Trigram Anchor)</strong>: Matching tokens by their initial 3-character prefix yields 22 matches (68.75%) on target folios, which likewise corresponds to the background baseline for prefix sharing across Voynich vocabulary.</p>
+<p>Morphological relaxation does not reveal latent correlation; rather, it confirms that matching rates simply reflect background orthographic frequencies.</p>
+<hr />
+<h2>7. Codicological and Information-Theoretic Context</h2>
+<p>The statistical findings of the Oocephalus Invariant align with independent codicological and structural observations:</p>
+<h3>7.1 Multi-Object Label Sharing</h3>
+<p>If Voynich labels designated unique botanical entities, an identical label could not refer to mutually exclusive physical objects. However, codicological analysis shows that the token <code>okoe89</code> simultaneously labels:<br />
+- Three distinct botanical specimens in the Pharmaceutical section.<br />
+- A glass pharmaceutical distillation vessel / alembic.<br />
+- A crenellated architectural stone tower in the cosmological section.</p>
+<p>A single lexical item cannot simultaneously designate three separate botanical taxa, a piece of chemical glassware, and a defensive fortification.</p>
+<h3>7.2 The Linear B Analogy Re-evaluated</h3>
+<p>Proponents of the botanical-crib method frequently cite Michael Ventris’s decipherment of Linear B. However, this comparison overlooks a crucial structural difference:<br />
+1. <strong>Inflectional Matrix</strong>: Prior to any phonetic assignment, Alice Kober identified grammatical noun declensions (inflectional triplets sharing consonant roots across case forms), establishing a rigorous mathematical grid of sign relationships.<br />
+2. <strong>Systemic Negative Feedback</strong>: When candidate phonetic values were inserted into the grid, correct substitutions generated recognizable Mycenaean Greek across hundreds of tablets, while erroneous guesses immediately produced phonological anomalies.<br />
+3. <strong>Entropy Constraints</strong>: In contrast, computational linguistic analysis by Rozanova &amp; Temerev (2026) indicates that the token-order entropy of Voynichese is below 1%, reflecting an absence of conventional natural language syntax. In a system lacking rigid syntactical constraints, proposed cipher keys do not encounter grammatical falsification elsewhere in the text, allowing contradictory decipherments to appear viable to their proponents.</p>
+<h3>7.3 Pigment Stratification and Quire Asynchrony</h3>
+<p>Codicological examination confirms that pigment applications in the manuscript were executed subsequent to the ink line drawings, and demonstrably after the manuscript's quires were mechanically disbound and reordered. Paint transfer patterns match the binding sequence rather than the original quire order. The text, line drawings, and pigments reflect separate production phases that cannot be assumed to possess unified botanical intent.</p>
+<hr />
+<h2>8. Limitations &amp; Scope</h2>
+<p>We note the following methodological constraints:<br />
+1. <strong>Sample Size</strong>: The sample (<em>n</em> = 32) is constrained by the number of unambiguous, uncontested duplicate plant drawings shared between the Pharmaceutical and Herbal sections. While <em>n</em> = 32 provides sufficient statistical power to reject a high-probability hypothesis (<em>p</em>₀ ≥ 0.80 at <em>p</em> &lt; 10⁻¹¹), future codicological work may identify additional partial duplicates.<br />
+2. <strong>Folio Content Assumptions</strong>: The test evaluates the hypothesis that the Herbal section contains descriptions that mention the plant's name. If the text consists exclusively of recipes, preparation steps, or prayers that systematically omit the plant's name, the invariant would not apply; however, in that scenario, the Herbal section could not serve as a botanical crib regardless.</p>
+<hr />
+<h2>9. Conclusion</h2>
+<p>The empirical execution of the Formalized Oocephalus Invariant demonstrates that <strong>labels in the pharmaceutical section of the Voynich Manuscript do not reliably recur in the corresponding herbal monographs, matching background permutation noise (<em>Z</em> = +0.631, <em>p</em> = 0.3517).</strong></p>
+<p>When evaluated directly against a botanical nomenclature model, the data decisively reject the hypothesis (<em>p</em> = 2.54 × 10⁻¹²). Sensitivity analyses confirm that morphological inflection and fuzzy matching do not alter this conclusion. Consequently, decipherment efforts predicated on identifying botanical plant names to derive phonetic cribs lack internal structural support. Progress in understanding Beinecke MS 408 will require moving beyond botanical cribs toward models that account for the manuscript's unique statistical, codicological, and information-theoretic structure.</p>
+<hr />
+<h2>Data &amp; Code Availability</h2>
+<p>The complete evaluation pipeline, including the European Voynich Alphabet (EVA) corpus (<code>voynich_full_text_new.txt</code>), the duplicate catalog coordinates, the binomial evaluation routines, and the 10,000-trial Monte Carlo permutation engine (random seed = 42), is maintained in the open replication repository:<br />
+<code>services/voynich/research/</code></p>
+<p>All statistical analyses replicate with 100% determinism.</p>
+<hr />
+<h2>Author &amp; Acknowledgments</h2>
+<ul>
+<li><strong>Tammy Lou Casey</strong>: Author; conceptualization, formal mathematical modeling, statistical analysis, computational experimental design, writing, and manuscript synthesis.</li>
+<li><strong>Acknowledgments</strong>: Special thanks to  for the morphological observation that root systems serve as primary diagnostic keys in botanical identification.</li>
+</ul>
+<hr />
+<h2>References</h2>
+<ol>
+<li><strong>Bax, S.</strong> (2014). <em>A Proposed Partial Decoding of the Voynich Script</em>. StephenBax.net.</li>
+<li><strong>Bunn, J.</strong> (2014). <em>Label Analysis in Beinecke MS 408</em>. VoynichAttacks.</li>
+<li><strong>Currier, P. H.</strong> (1976). <em>New Research on the Voynich Manuscript: Proceedings of a Seminar</em>. Washington, D.C.</li>
+<li><strong>Gheuens, K.</strong> (2024). <em>Voynich Flowers: Too Blue? Quantitative Pigment Analysis across Six Medieval Herbals</em>. The Voynich Temple.</li>
+<li><strong>Greshko, L.</strong> (2025). <em>The Naibbe Cipher: A Polyalphabetic Model for Voynichese</em>. Cryptologia, 49(2), 112–148.</li>
+<li><strong>Knowles, M.</strong> (2017). <em>Catalogue of Duplicate Plant Drawings between the Pharmaceutical and Herbal Sections of MS 408</em>. Voynich.ninja.</li>
+<li><strong>Landini, G., &amp; Zandbergen, R.</strong> (1998). <em>The European Voynich Alphabet (EVA)</em>.</li>
+<li><strong>Oocephalus.</strong> (2016). <em>Pharma Labels vs. Herbal Text: An Internal Recurrence Investigation</em>. Voynich.ninja, Thread 196.</li>
+<li><strong>Pelling, N.</strong> (2014). <em>The Seven Fatal Flaws of Stephen Bax’s Voynich Decipherment</em>. Cipher Mysteries.</li>
+<li><strong>Petersen, T.</strong> (1931). <em>Photostat Collection and Hand-Transcriptions of the Voynich Codex</em>. Catholic University of America.</li>
+<li><strong>Reddy, S., &amp; Knight, K.</strong> (2011). <em>What We Know About The Voynich Manuscript</em>. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities, 78–86.</li>
+<li><strong>Rozanova, A., &amp; Temerev, A.</strong> (2026). <em>A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space: Quantitative Information-Theoretic Disproof of Natural Language Syntax in the Voynich Codex</em>. arXiv:2608.17096.</li>
+<li><strong>Sherwood, E.</strong> (2016). <em>The Voynich Botanical Plant Names Decoded via Renaissance Italian Anagrams</em>. EdithSherwood.com.</li>
+<li><strong>Stolfi, J.</strong> (1997). <em>Morphological Repetitions in the Voynich Herbal and Pharmaceutical Drawings</em>. University of Campinas Technical Notes.</li>
+<li><strong>Tiltman, J.</strong> (1967). <em>The Voynich Manuscript: The Most Mysterious Manuscript in the World</em>. National Security Agency Technical Journal, XII(3), 41–85.</li>
+<li><strong>Tucker, A. O., &amp; Janick, J.</strong> (2018). <em>Flora of the Voynich Codex: An Exploration of Aztec Herbal Medicine</em>. Springer Nature.</li>
+<li><strong>Ventris, M., &amp; Chadwick, J.</strong> (1953). <em>Evidence for Greek Dialect in the Mycenaean Archives</em>. The Journal of Hellenic Studies, 73, 84–103.</li>
+</ol>
+</body>
+</html>
