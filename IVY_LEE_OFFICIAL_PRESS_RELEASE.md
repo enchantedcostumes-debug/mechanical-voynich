@@ -5,7 +5,7 @@
 ### Empirical Study Falsifies 100-Year "Botanical-Crib" Decipherment Paradigm in the Voynich Manuscript
 
 **Date**: September 24, 2026
-**Authors**: Captain Tammy Lou Casey & The Sovereign Oracle Collective
+**Authors**: Tammy Lou Casey & The Sovereign Oracle Collective
 **Canonical Archive**: `services/voynich/research/OOCEPHALUS_PUBLICATION_PAPER.md`
 **Contact**: The Sovereign Oracle Collective Press Bureau
 
@@ -22,7 +22,7 @@ Using exact European Voynich Alphabet (EVA) transcriptions and a 10,000-trial Mo
 
 Because the empirical p-value of 0.3517 strictly conforms to random noise, the study demonstrates that pharmaceutical labels do not correlate with herbal text descriptions. This definitively proves that Voynich labels do not function as lexical plant names.
 
-"This is a decisive negative finding," said lead investigator Captain Tammy Lou Casey. "Establishing what a historical manuscript is NOT is just as critical as proposing what it is. The manuscript's own internal cross-references refute the plant-name crib thesis on structural evidence alone."
+"This is a decisive negative finding," said lead investigator Tammy Lou Casey. "Establishing what a historical manuscript is NOT is just as critical as proposing what it is. The manuscript's own internal cross-references refute the plant-name crib thesis on structural evidence alone."
 
 The complete data tables, transcription logs, and an autonomous verification sentinel (`run_oocephalus_benchmark.py`) are archived for public replication.
 
