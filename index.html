@@ -4657,6 +4657,19 @@
         populateReverseFolioSelect();
         renderSidebar();
         selectToken(activeToken);
+
+        // Check URL query params for direct modal opening
+        const urlParams = new URLSearchParams(window.location.search);
+        const modalParam = urlParams.get('modal');
+        if (modalParam === 'botanical' || modalParam === 'botanicalGalleryModal') {
+            openBotanicalCatalog();
+        } else if (modalParam === 'pagemap' || modalParam === 'pageMapModal') {
+            openPageMapExplorer();
+        } else if (modalParam === 'lexicon') {
+            openLexicon();
+        } else if (modalParam === 'monograph') {
+            openMonograph();
+        }
     </script>
 </body>
 </html>
