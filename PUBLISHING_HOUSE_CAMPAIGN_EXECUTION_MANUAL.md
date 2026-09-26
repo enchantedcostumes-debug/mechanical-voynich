@@ -165,6 +165,42 @@ https://voynich.ozark-oracle.com
 
 ---
 
+### Post 2.5: Voynich.ninja Forum Post (`voynich.ninja`)
+
+- **Forum**: `https://www.voynich.ninja/`
+- **Category**: `General Discussion` or `Analysis & Decipherment`
+- **Title**: `Empirical Falsification of the Botanical-Crib Hypothesis: The Oocephalus Test (p = 0.3517)`
+- **Body Copy**:
+
+```markdown
+Hi everyone,
+
+I wanted to share a key-free empirical test focused on internal manuscript consistency across duplicate plant drawings rather than phonetic alphabet translation.
+
+**The Methodology**:
+1. We identified 32 duplicate plant illustrations where small pharmaceutical drawings (f87r–f102v) correspond to large herbal drawings (f1r–f66v).
+2. We extracted the EVA transcription labels for each pharmaceutical drawing.
+3. We searched for exact label recurrence within the continuous text on the corresponding herbal page.
+4. We generated a 10,000-trial Monte Carlo permutation null distribution to calculate expected chance matches.
+
+**The Results**:
+* **Observed Matches**: 7 out of 32 duplicate pairs (21.88%).
+* **Expected Baseline**: 5.86 matches (SD: 1.80).
+* **Statistical Divergence**: Z = +0.631, p = 0.3517.
+
+Because p = 0.3517 strictly matches random noise, pharmaceutical labels do not correlate with herbal text descriptions. This indicates that Voynich labels do not function as lexical plant names or phonetic cribs.
+
+The complete paper, reproducible verification script, and interactive concordance atlas mapping all 225 folios and 8,517 EVA tokens are archived here:
+https://voynich.ozark-oracle.com
+
+Feedback on the dataset and Monte Carlo permutation script is welcome.
+
+Best,
+Tammy Lou Casey
+```
+
+---
+
 ### Post 3: 5-Part X / Twitter Thread
 
 1. **Tweet 1**:
