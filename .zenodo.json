@@ -1,0 +1,46 @@
+{
+  "title": "The Mechanical Voynich: Interactive SVG Concordance Atlas and Iatromathematical Exegesis of Beinecke MS 408",
+  "description": "Comprehensive 18-monograph codicological decipherment, paleobotanical consensus identification, and iatromathematical analysis of Yale University Beinecke Rare Book & Manuscript Library MS 408 (1404-1438). Authored by Lead Researcher Tammy Lou Casey.",
+  "creators": [
+    {
+      "name": "Casey, Tammy Lou",
+      "affiliation": "Independent Codicological Research / The Mechanical Voynich Research Platform"
+    }
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "monograph",
+  "keywords": [
+    "Voynich Manuscript",
+    "Beinecke MS 408",
+    "Codicology",
+    "Paleobotany",
+    "Decipherment",
+    "Iatromathematics",
+    "Salernitan Antidotaria",
+    "Venetian Maritime Trade",
+    "Medieval Pharmacognosy",
+    "Tammy Lou Casey"
+  ],
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://voynich.ozark-oracle.com",
+      "relation": "isDocumentedBy",
+      "resource_type": "website"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://tammylcasey.substack.com",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-other"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://www.patreon.com/c/rightinghistory",
+      "relation": "isSupportedBy",
+      "resource_type": "other"
+    }
+  ]
+}
