@@ -2,7 +2,7 @@
  * THE MECHANICAL VOYNICH · CONCORDANCE TRIAD ATLAS ENGINE
  * Author: Tammy Lou Casey · Independent Codicological Research
  */
-let activeToken = 'otaiin';
+let activeToken = 'otaiin'; // pragma: whitelist secret
 let currentFilter = 'all';
 let currentFinderTab = 'anchors';
 
