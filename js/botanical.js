@@ -68,9 +68,9 @@ function renderBotanicalGallery() {
                         ✓ Identified
                     </span>
                 </div>
-                <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#000;">
+                <div class="botanical-card-img-wrap" style="display:grid; grid-template-columns:1fr 1fr; background:#05070a; position:relative;">
                     <img src="${facsImg}" alt="${fKey} Drawing" style="height:100%; width:100%; object-fit:contain; border-right:1px solid rgba(255,255,255,0.08);" loading="lazy">
-                    <img src="${entry.plant_photo || entry.root_photo}" alt="${entry.common_name}" style="height:100%; width:100%; object-fit:contain;" loading="lazy">
+                    <img src="${entry.plant_photo || entry.root_photo}" alt="${entry.common_name}" style="height:100%; width:100%; object-fit:contain;" loading="lazy" onerror="this.onerror=null; this.src='assets/botanical_svg/${fKey}_plant.svg';">
                 </div>
                 <div style="padding:0.85rem; flex:1; display:flex; flex-direction:column;">
                     <div style="font-family:'Cinzel', serif; font-size:0.95rem; font-weight:700; color:var(--gold-light); margin-bottom:0.2rem;">
