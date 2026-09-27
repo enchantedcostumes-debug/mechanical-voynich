@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Empirical Evaluation: The "Naibbe Cipher" Voynich Claim · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #090d16;
+            --bg-card: #111827;
+            --border-color: #1f2937;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --gold: #d4af37;
+            --cyan: #38bdf8;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.75;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-top: 1.5em;
+        }
+        h1.paper-title {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        p { margin-bottom: 1.2em; }
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0,0,0,0.3);
+            color: var(--cyan);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+        }
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        table.academic-table th {
+            background: #1e293b;
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 16px;
+            border: 1px solid #334155;
+        }
+        table.academic-table td {
+            padding: 10px 16px;
+            border: 1px solid #334155;
+        }
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Independent Empirical Evaluation: The "Naibbe Cipher" Voynich Claim</h1>
+<h2>Analysis of Greshko's Generative Cryptographic Model</h2>
+<p><strong>Author</strong>: Tammy Lou Casey<br />
+<strong>Affiliation</strong>: Independent Researcher<br />
+<strong>Date</strong>: September 2026</p>
+<hr />
+<p>## 1. WHO — VERIFIED</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td><strong>Michael Anthony Greshko</strong> (sole author)</td>
+<td>VERIFIED — Zenodo API record 17219445, ORCID <code>0000-0001-8253-6543</code></td>
+</tr>
+<tr>
+<td>Affiliation</td>
+<td><strong>Independent Researcher, Washington, D.C., USA</strong></td>
+<td>VERIFIED — title page of his own Supplementary Materials PDF; Unpaywall <code>raw_affiliation_strings: ["Independent Researcher"]</code>. Zenodo <code>affiliation: null</code></td>
+</tr>
+<tr>
+<td>Day job</td>
+<td>Science journalist (ex-National Geographic)</td>
+<td>REPORTED — Sci.News, Live Science, Archaeology Mag</td>
+</tr>
+<tr>
+<td>Venue</td>
+<td><strong>Cryptologia</strong> (Taylor &amp; Francis), DOI <code>10.1080/01611194.2025.2566408</code></td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>First publication</td>
+<td><strong>26 November 2025</strong> (online)</td>
+<td>VERIFIED — Unpaywall <code>oa_date</code> / <code>published_date</code>; confirmed by Rozanova &amp; Temerev's bibliography</td>
+</tr>
+<tr>
+<td>Preprint</td>
+<td>Circulated ~3 Aug 2025 via Dropbox, discussed on voynich.ninja thread-4848 (author posts as <strong>"magnesium"</strong>); Zenodo supplement v2.1 dated 28 Sep 2025</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>Peer review</td>
+<td><strong>Yes — peer-reviewed journal article.</strong> Greshko: "a peer-reviewed academic paper published in the cryptology journal <em>Cryptologia</em>"</td>
+<td>VERIFIED — michaelgreshko.com</td>
+</tr>
+<tr>
+<td>Code/data</td>
+<td><code>github.com/greshko/naibbe-cipher</code> (modified MIT); Zenodo <code>10.5281/zenodo.16415087</code> (CC-BY-4.0, 62.2 MB, Excel + PDF)</td>
+<td>VERIFIED</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note on the dates in the task brief:</strong> the press URLs are Jan 2026, but the paper is <strong>November 2025</strong>. This is ~10-month-old work, not a new 2026 claim.</p>
+<hr />
+<p>## 2. WHAT THEY CLAIM — <strong>CATEGORY (b), UNAMBIGUOUSLY</strong></p>
+<p>This is the single most important finding and the press framing in the task brief is wrong.</p>
+<p><strong>It is a generative model that produces Voynich-LIKE text from Latin/Italian. It does NOT claim to read the actual manuscript. Not one word of the Voynich Manuscript is translated anywhere in this work.</strong></p>
+<p>The author says so himself, repeatedly and unprompted:</p>
+<blockquote>
+<p>"The Naibbe cipher is not a solution to the manuscript in and of itself, but it proves that a meaningful message can be hidden within text that has many of the Voynich Manuscript's puzzling properties."<br />
+— VERIFIED, https://www.michaelgreshko.com/naibbe-cipher</p>
+<p>"The Naibbe cipher is almost certainly not the way that the manuscript was constructed. But what it does provide is a fully documented way to reliably go between Latin and something that behaves kind of like the Voynich manuscript."<br />
+— VERIFIED verbatim, Greshko to Live Science</p>
+<p>"My hope is that this becomes adopted as a computational benchmark. The points of difference between the cipher and the manuscript may point the way to how the text was actually created."<br />
+— VERIFIED verbatim, Live Science</p>
+</blockquote>
+<p>Abstract (VERIFIED verbatim — identical text on Zenodo, GitHub README, and Schneier):</p>
+<blockquote>
+<p>"In this article, I investigate the hypothesis that the Voynich Manuscript (MS 408, Yale University Beinecke Library) <strong>is compatible with being a ciphertext</strong> by attempting to develop a historically plausible cipher that can replicate the manuscript's unusual properties. The resulting cipher—a verbose homophonic substitution cipher I call the Naibbe cipher—can be done entirely by hand with 15th-century materials, and when it encrypts a wide range of Latin and Italian plaintexts, the resulting ciphertexts remain fully decipherable and also reliably reproduce many key statistical properties of the Voynich Manuscript at once. My results suggest that the so-called 'ciphertext hypothesis' for the Voynich Manuscript remains viable, <strong>while also placing constraints on plausible substitution cipher structures.</strong>"</p>
+</blockquote>
+<p>And his own stated limitation (VERIFIED, Sci.News quoting him):</p>
+<blockquote>
+<p>"However, the Naibbe cipher's <strong>incomplete replication of Voynich B's properties</strong> underscores the difficulty of achieving a comprehensive cipher-based model for Voynich manuscript text generation."</p>
+</blockquote>
+<p>The Art Newspaper headline ("Can a new cipher help to explain…") is accurate; the Archaeology Magazine piece is also accurate ("does not claim to solve the mystery"). <strong>The framing that this is a "decipherment" is not in any primary source.</strong></p>
+<hr />
+<p>## 3. METHOD — VERIFIED (independently re-implemented from published tables)</p>
+<p>A <strong>verbose homophonic substitution cipher</strong>, hand-executable with 15th-century materials (pen, paper, dice, playing cards). Mechanism, from the independent re-implementation by Rozanova &amp; Temerev (who transcribed the published table file and verified it by re-deriving <strong>all 34,764 tokens</strong> of Greshko's shipped Pliny sample from its aligned plaintext, <strong>no failures</strong>):</p>
+<blockquote>
+<p>"Plaintext spaces are deleted and the letter stream is respaced into single letters (probability <strong>17/36</strong>) and pairs; a single letter becomes one of six table-specific EVA strings, a pair becomes a prefix string for its first letter followed by a suffix string for its second (<strong>23 letters, six tables, three states, strings of one to eight glyphs</strong>), and the table for each draw is [card-weighted]."<br />
+— VERIFIED, arXiv:2608.17096 Appendix A.5</p>
+</blockquote>
+<p>Supporting mechanics:<br />
+  - Die roll → respacing into unigram/bigram chunks. Card draw → which of <strong>six</strong> substitution tables. Card weighting makes table selection frequencies match VMS glyph frequencies. (VERIFIED — Greshko to The Art Newspaper and Live Science.)<br />
+  - Two deck variants: <strong>78-card tarocchi</strong> and <strong>52-card standard</strong>. (VERIFIED — Greshko via Sci.News.)<br />
+  - Bigrams use <strong>disjoint prefix and suffix glyph pools</strong>, adapted from <strong>Zattera's (2022) 12-slot positional model</strong> of Voynich word structure. (VERIFIED — Parisel arXiv:2604.19762 §2.)<br />
+  - "A Naibbe letter is spread over about <strong>3.4 glyphs and eighteen homophones</strong>." (VERIFIED — arXiv:2608.17096.) The 18 homophones are a deliberate design choice citing <strong>Pelling (2016)</strong>'s argument that frequency analysis was not known in the 15th-century West.<br />
+  - Average verbosity ~<strong>2.5 glyphs/letter</strong> for bigram word types. (VERIFIED — Greshko, voynich.ninja thread-4848 p.2.)<br />
+  - "naibbe" = a Florentine prohibition of <strong>1377</strong> on a foreign card game, term likely from Arabic. (VERIFIED — Greshko via Sci.News.)<br />
+  - A separate tool, <strong>"Voynichesque"</strong>, is a parameterised generator used to explore the space of such ciphers (Supplementary Material 2).</p>
+<hr />
+<p>## 4. EVIDENCE — figures with provenance</p>
+<p>### Greshko's own reported figures<br />
+  - <strong>EVA alphabet:</strong> Naibbe ciphertexts achieve character entropy <strong>3.86 ± 0.01</strong> and conditional character entropy <strong>2.00 ± 0.01</strong> at token level. <strong>VERIFIED in primary journal paper</strong> (<em>Cryptologia</em>, 2025, Table 2 &amp; Section 3).<br />
+  - <strong>Cuva alphabet:</strong> Naibbe <strong>3.92 ± 0.01</strong> / <strong>2.32 ± 0.01</strong>, vs Voynich B <strong>3.90</strong> / <strong>2.25</strong>. <strong>VERIFIED in primary journal paper</strong> (<em>Cryptologia</em>, 2025, Section 3).<br />
+  - Hapax: "about half of all Naibbe cipher word types in ciphertexts approaching the length of Voynich B appear only once, consistent with the VMS (Zandbergen 2024)." <strong>VERIFIED</strong> — Supplementary Material S1.1. <em>(Note: two independent groups measured 41% vs the manuscript's 70% — see §6.)</em><br />
+  - Word-type similarity network on a Latin "alchemical herbal" ciphertext: "four broad domains of word types and a <strong>longest network path of 21, identical to the VMS</strong>" (cf. Timm &amp; Schinner 2020). <strong>VERIFIED</strong> — S1, p.7.<br />
+  - Token autocorrelation: an 8,000-token 78-card Naibbe ciphertext of Dante's <em>Divina Commedia</em> "replicates the observed token autocorrelation of the VMS" and reproduces the <strong>absence</strong> of the periodic peaks a Trithemius-Polygraphia-III-style cipher would produce. <strong>VERIFIED</strong> — S1, Figure 4.<br />
+  - Topic recovery: TF-IDF separates a four-part plaintext (Dante / Pliny / Grosseteste <em>De sphaera</em> / alchemical herbal); e.g. the 4 most informative word types in the Dante section are <code>&lt;lcheedal&gt;, &lt;lcher&gt;, &lt;lcheeoy&gt;, &lt;lcheaiin&gt;</code>, all rare encodings of <strong>CH</strong> (abundant in Italian, rare in Latin). <strong>VERIFIED</strong> — S1. LDA <strong>fails</strong> on both Voynich B and Naibbe alike. <strong>VERIFIED</strong>.<br />
+  - Acknowledged failure, in his own words: "the big statistical limitation of the original Naibbe cipher is that each draw … is <strong>memoryless and independent</strong>. This was a known limitation from the beginning; <strong>I reported the absence of long-range correlations in Naibbe ciphertext</strong> for a reason. To get the VMS's long-range correlations and other observed features, there has to be some kind of memory at play." <strong>VERIFIED verbatim</strong> — Greshko, voynich.ninja thread-4848 p.9, 02-09-2026.</p>
+<p>### Independent re-measurements (both VERIFIED from arXiv full text)</p>
+<p><strong>Parisel (arXiv:2604.19762, 26 Mar 2026, v2 16 Jun 2026)</strong> — 20 runs each over Pliny <em>Naturalis Historia</em> (Latin) and <em>Moby Dick</em> (English), ~37,000 tokens per run, four-signature joint criterion:</p>
+<blockquote>
+<p>"<strong>Naibbe scores 1/4</strong>, the same as Rugg's original Cardan grille (G0) … failing on E→S, MI, and Zipfian shape, for structural reasons intrinsic to its card-independent encryption mechanism. The VMS holds all four simultaneously; no tested generator achieves this combination."</p>
+<p>"47% unigram tokens … systematically dilute the E→S rate; the theoretical ceiling is well below the VMS's <strong>80.6%</strong>. Second, each card draw is statistically independent, so no sequential dependency exists between the end of one cipher word and the start of the next, producing <strong>near-zero cross-boundary MI</strong> regardless of source language."</p>
+<p>"This finding is <strong>not a criticism</strong> of the Naibbe cipher hypothesis, which was not designed to reproduce these specific metrics. It is a <strong>constraint</strong>: any cipher-based model of the VMS must account for the joint profile, and the Naibbe architecture as currently specified does not satisfy it."</p>
+</blockquote>
+<p><strong>Rozanova &amp; Temerev (arXiv:2608.17096, 17 Aug 2026)</strong> — 33 pages, Zandbergen-Landini transliteration, quire-level resampling:</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Voynich</th>
+<th>Naibbe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conditional glyph entropy</td>
+<td>~2.7 bits (Latin/Italian/English ~3.5)</td>
+<td>2.71 (Caesar), 2.71 (Pliny)</td>
+</tr>
+<tr>
+<td>Singleton (hapax) word types</td>
+<td><strong>70%</strong></td>
+<td><strong>41%</strong></td>
+</tr>
+<tr>
+<td>Vocabulary size</td>
+<td>stable across quires/Currier languages</td>
+<td>5.2–5.5 thousand types (more closed)</td>
+</tr>
+<tr>
+<td>Edge-glyph mutual information (last glyph ↔ next first glyph)</td>
+<td><strong>0.2 bits</strong></td>
+<td>"essentially none"</td>
+</tr>
+<tr>
+<td>Token-identity predictiveness</td>
+<td>&lt;1% of token entropy</td>
+<td>slightly more order than the manuscript</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>"What such a cipher must still earn is the strong coupling between the last glyph of one token and the first of the next (0.2 bits in the manuscript, essentially none in Naibbe text, whose token boundaries fall between unrelated plaintext chunks) and the open, hapax-rich vocabulary (Naibbe: 41% singleton types against 70%). Both are natural targets for a next cipher design; <strong>both are also exactly the properties a decipherer should check before reading a proposed plaintext.</strong>"</p>
+</blockquote>
+<p><strong>Forum re-measurement (VERIFIED, voynich.ninja thread-4848 p.9, post #85, 31-08-2026, by a member in Almaty, Kazakhstan — plausibly one of the arXiv:2608.17096 authors but I did NOT verify that identity):</strong></p>
+<p>Where Naibbe succeeds: h2 (digraph-merged) Voynich 2.682 / Naibbe 2.581 (4% off); mean word length 4.95 / 5.23 (6% off); Zipf slope −0.973 / −0.895 (8% off); TTR/types 0.309/3706 vs 0.277/3322 (10% off).</p>
+<p>Where it fails:<br />
+  - Adjacent word repetition vs within-line shuffle: Voynich 274 obs / 269.8 exp = <strong>1.02×</strong> [95% CI 0.92–1.13]; Naibbe 45 / 101.5 = <strong>0.44×</strong> [0.38–0.53]; Latin 0.02×.<br />
+  - Word-junction MI excess, k=1: Voynich <strong>0.194</strong> | Latin 0.048 | English 0.071 | <strong>Naibbe 0.0021</strong>. One pair (word-final <code>y</code> → word-initial <code>q</code>) carries ~<strong>48%</strong> of the junction information.<br />
+  - Word-length autocorrelation lag 1: Voynich <strong>+0.134</strong> [+0.122,+0.145]; <strong>Naibbe −0.031</strong> [−0.043,−0.020]; Latin −0.029, German −0.040, English −0.137, Greek −0.151, Italian −0.161. <strong>Strongest in the Stars section (+0.186), weakest in the Herbal (+0.082).</strong><br />
+  - Length budget: "your 9,243 plaintext words give 34,764 ciphertext words, so the manuscript's <strong>34,167</strong> would carry roughly <strong>9,000 words of Latin, about twenty book pages across 225 leaves</strong>."</p>
+<p>That last number is the most important sanity check anyone has published on this hypothesis. It is raised as an open question, not an objection.</p>
+<hr />
+<p>## 5. WHAT THEY ACTUALLY READ — <strong>NOTHING. HONEST EMPTY RESULT.</strong></p>
+<p><strong>There is no claimed plaintext translation of any Voynich folio anywhere in this body of work.</strong> I searched the author's website, GitHub README, 48-page Supplementary Materials PDF, Zenodo record, all 10 pages of the voynich.ninja thread, and all press coverage. No folio is read.</p>
+<p>The plaintexts named are ones Greshko <strong>encrypted himself</strong> to generate synthetic ciphertext:<br />
+  - a 14th-century Latin "alchemical herbal" (Ponzi 2023 transcription)<br />
+  - Grosseteste, <em>De sphaera</em> (King 2008)<br />
+  - Pliny, <em>Naturalis Historia</em><br />
+  - Dante, <em>Divina Commedia</em><br />
+  - Caesar, <em>De bello Gallico</em> (opening)</p>
+<p>Folios are mentioned only as <strong>statistical or layout</strong> references, never as decipherments: f75v (two lines of text cutting through the bathing illustration, cited as an example of text-around-illustration behaviour the cipher can mimic), f68r2 (24 star labels, floated as possibly readable left-to-right as 8 rows), f103r–f116r (the "Stars" section, used as the autocorrelation comparison corpus), f104r (a decorative image on his website).</p>
+<p>On labels, Greshko concedes the hypothesis is in trouble (VERIFIED verbatim, thread-4848 p.2):</p>
+<blockquote>
+<p>"I agree that through the lens of the Naibbe cipher, the labels in the VMS look weirdly short and uninformative (see Section 4.4 of the paper). … <strong>I freely admit that this is not a complete solution.</strong>"</p>
+</blockquote>
+<hr />
+<p>## 6. CRITIQUE FROM THE NAMED SCHOLARS</p>
+<p><strong>Nick Pelling — HAS SAID NOTHING. VERIFIED NEGATIVE.</strong><br />
+  A site search of ciphermysteries.com for "Naibbe" returns <strong>"Nothing Found — Apologies, but no results were found for the requested archive."</strong> (https://ciphermysteries.com/?s=Naibbe). A forum member wrote on 06-08-2025: <em>"This is really interesting. Would love to hear Nick Pelling's thoughts on this."</em> — no reply from Pelling in the thread. Pelling appears in Greshko's paper only as a <strong>cited source</strong> (Pelling 2016, on 15th-century frequency analysis), not as a commenter.</p>
+<p><strong>⚠ THE BRIEF'S THIRD URL IS MIS-IDENTIFIED.</strong> <code>https://ciphermysteries.com/2026/01/22/finally-i-can-read-the-voynich-manuscript</code> is <strong>not about the Naibbe cipher at all</strong>. It is Pelling's own unrelated claim about the <strong>f17r marginalia</strong>. I fetched it in full. Whoever assembled the brief conflated two stories. His actual claim (VERIFIED verbatim):</p>
+<blockquote>
+<p>"I am now pretty sure that it is Occitan, and that it reads (using a Latin abbreviation style to render the Occitan 'lucent'): <strong>meilhor aller lucent ben balsamina [….]</strong>"<br />
+"So, my argument here is that the marginalia at the top of Voynich manuscript page f17r is written in Occitan."</p>
+</blockquote>
+<p><strong>René Zandbergen — commented, mildly positive, explicitly endorses the (b) framing. VERIFIED verbatim (Live Science, email to Tom Metcalfe):</strong></p>
+<blockquote>
+<p>"[Greshko] also makes it clear that he is <strong>not suggesting that this is how the manuscript text was generated</strong>. He just demonstrates that such a method <strong>can</strong> be found, and we may assume that there may be others."</p>
+<p>"[I am] essentially undecided [about whether the text is meaningful or a hoax]. Some people argue that 'nobody would do that,' but I think that argument is too simplistic. A more problematic point is that I find it very hard to imagine how it could have been done."</p>
+</blockquote>
+<p>Zandbergen's only posts in the voynich.ninja Naibbe thread are technical help with <code>ivtt</code> flags for extracting Currier B — no substantive critique.</p>
+<p><strong>Claire Bowern — NO STATEMENT FOUND. VERIFIED NEGATIVE.</strong> Bowern appears throughout only as <strong>cited prior work</strong> (Bowern &amp; Lindemann 2021 on the flat frequency-rank distribution; Gaskell &amp; Bowern 2022 "Gibberish after all?" on positive word-length autocorrelation; Sterneck, Polish &amp; Bowern 2021 on topic modelling). Greshko explicitly built the cipher's unigram-as-whole-word design <strong>to hit Bowern &amp; Lindemann's flat frequency-rank curve</strong>. No published response from Bowern located.</p>
+<p><strong>Lisa Fagin Davis — NO STATEMENT FOUND. VERIFIED NEGATIVE.</strong> Referenced only for scribal-hand attribution: Greshko notes Voynich B is "mostly Scribes 2 and 3 in Lisa Fagin Davis's analysis."</p>
+<p><strong>Substantive critique instead comes from two arXiv papers</strong> (§4), both of which frame it as a <em>constraint</em> rather than a refutation. Nobody in the retrieved record calls this work overreach — largely because the author's own framing is already modest.</p>
+<hr />
+<p>## 7. SECTION COVERAGE — PARTIAL, AND NOT ICONOGRAPHIC AT ALL</p>
+<p><strong>The work is purely text-statistical. It does not analyse, interpret, or make any claim about the content of the botanical, astronomical, balneological, or pharmaceutical illustrations.</strong> It has nothing to say about what any section depicts.</p>
+<p>On text coverage it is narrower still:<br />
+  - The target corpus is <strong>Voynich B (Currier B)</strong> throughout — explicitly, per Greshko's own supplementary text and his forum posts about <code>ivtt +LB</code> extraction. <strong>Voynich A / Currier A is not modelled.</strong> Since Currier A dominates the Herbal A and much of the pharmaceutical quires, a large fraction of the manuscript is outside the claim.<br />
+  - Only one section is tested as a named section: the <strong>"Stars"/recipes section, f103r–f116r</strong>, for token autocorrelation. (VERIFIED — S1 Figure 4.)<br />
+  - <strong>f75v</strong> (balneological) is cited once, only as an example of text wrapping through an illustration.<br />
+  - The zodiac/astrological roundels, the nine-rosette foliate, and the pharmaceutical jar labels are <strong>not addressed</strong> — and Greshko concedes labels are where the model is weakest.</p>
+<hr />
+<p>## 8. OVERLAP WITH INDEPENDENT EMPIRICAL FINDINGS</p>
+<p>Scope caution: I audited the Naibbe literature, not the whole Voynich field. "Not addressed" below means <em>not addressed in the Naibbe corpus I retrieved</em>, not <em>unsupported in the literature generally</em>.</p>
+<p><strong>1. "Voynichese is NOT a natural language; positional notation, fixed character position (<code>4</code>/<code>q</code> word-initial), closer to chemical formulas than speech."</strong><br />
+<strong>PARTIAL AGREEMENT ON THE SURFACE FACT, DIRECT CONTRADICTION ON THE INFERENCE.</strong><br />
+  Agreement that the surface is positional and non-linguistic is now strongly supported independently: Zattera's 12-slot model; Parisel arXiv:2604.19762 finds "a character-level <strong>right-to-left</strong> optimization in word-internal sequences and a <strong>left-to-right</strong> dependency at word boundaries, a directional dissociation not observed in any of our four comparison languages (English, French, Hebrew, Arabic)"; Rozanova &amp; Temerev's title is literally "A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space" and they conclude "the order in Voynichese sits at the <strong>edges</strong> of tokens and at graded boundaries between them, not in the succession of tokens themselves." The forum measurement isolates <code>y</code>→<code>q</code> as carrying ~48% of word-junction information — direct empirical support for a fixed-position constraint on <code>q</code>.<br />
+<strong>But Naibbe's entire thesis is the opposite of "not a natural language":</strong> it holds that beneath the positional surface sits ordinary running Latin/Italian prose. Notation-vs-prose is exactly the live disagreement. Notably, the framework's side is <em>helped</em> by the strongest published objection to Naibbe: at Naibbe's verbosity, 34,167 tokens buy only <strong>~9,000 words of Latin across 225 leaves</strong> — implausibly thin for prose, entirely reasonable for a notation/formulary.</p>
+<p><strong>2. Iatromathematical pharmacopoeia by planetary ruler; Venus herbs 31.9%, χ² p&lt;0.05.</strong> <strong>NOT ADDRESSED — no agreement, no contradiction.</strong> Nothing in the Naibbe corpus engages content, iconography, or any statistical test on plant attribution. Weak indirect consonance only: Greshko's chosen plaintexts are a Latin alchemical herbal and <em>De sphaera</em>, and he notes the VMS sits "firmly within the tradition of late medieval herbals found within northern Italy and Germany (Zandbergen 2024c)" — consistent with a herbal/astrological milieu, but that is a background assumption, not a finding.</p>
+<p><strong>3. Illustrator deuteranomaly; plant ID by morphology only.</strong> <strong>NOT ADDRESSED.</strong> No overlap in either direction. Independent framework claim.</p>
+<p><strong>4. Four-phase cycle: astronomical (f67–73) → botanical (f1–57) → pharmaceutical (f88–116) → balneological (f75–84).</strong> <strong>NOT ADDRESSED and mildly in tension with the operative sectioning.</strong> The Naibbe literature partitions the manuscript by <strong>Currier language (A/B)</strong> and by the conventional Stars/Herbal/Bio labels, not by any reordered cycle. One datum worth noting: word-length autocorrelation differs by section (<strong>Stars +0.186, Herbal +0.082</strong>), which is evidence that sections are statistically distinct objects — it neither supports nor refutes the proposed <em>ordering</em>.</p>
+<p><strong>5. Balneological "nymphs/pipes" as Galenic anatomical diagrams; women's medicine.</strong> <strong>NOT ADDRESSED.</strong> Greshko touches f75v only as a text-layout example. No overlap.</p>
+<p><strong>6. Zodiac month names in Occitan / Franco-Provençal / N. Italian dialect.</strong> <strong>STRONG INDEPENDENT AGREEMENT — but from Pelling, not from Naibbe.</strong> Pelling, 22 Jan 2026 (VERIFIED verbatim): <em>"Back in 2006, I argued long and hard that the Voynich zodiac roundel month names (which also appear to be marginalia) were </em><em>also in Occitan</em><em>. So this should, in theory, be the least surprising marginalia language identification ever."</em> He now extends Occitan to the f17r marginalia (<code>meilhor aller lucent ben balsamina</code>). This is a <strong>20-year-old, independently-arrived-at</strong> position that the framework converges with — which is worth knowing precisely because it means the framework is <em>not</em> first here and should cite Pelling (2006, <em>The Curse of the Voynich</em>, pp. 24–25) rather than present it as novel. The Naibbe work itself says nothing about the month names. <strong>The "30 nymphs per sign = decan subdivisions" sub-claim I did not attempt to verify — UNVERIFIED, outside the scope I audited.</strong></p>
+<p><strong>Net:</strong> the framework overlaps the Naibbe literature meaningfully on exactly <strong>one</strong> point (positional structure, where it agrees with the surface finding and disagrees with the prose inference), converges with <strong>Pelling rather than Greshko</strong> on a second (Occitan), and is orthogonal on the remaining four. There is no collision requiring resolution — but the Occitan priority and the ~9,000-word length budget are both worth folding in.</p>
+<hr />
+<p>## 9. BOTTOM LINE</p>
+<p>The "Naibbe cipher claim" is <strong>not a decipherment claim and was never presented as one</strong>. It is a peer-reviewed, fully open-sourced, deliberately falsifiable <strong>benchmark generator</strong>: a hand-doable 15th-century-plausible cipher that converts Latin/Italian into text matching several Voynich B statistics, offered explicitly so that the places where it <em>fails</em> constrain future hypotheses. The author states unprompted that it is "almost certainly not the way the manuscript was constructed." Within ten months two independent groups re-implemented it from his published tables and quantified exactly where it breaks (edge-glyph coupling ~0.2 vs ~0.002 bits; hapax 70% vs 41%; word-length autocorrelation +0.134 vs −0.031; 1/4 on a four-signature joint criterion) — which is the benchmark working as designed. <strong>Any framing of this as "the Voynich Manuscript has been deciphered" is a press-and-aggregator artifact with no basis in any primary source.</strong></p>
+<hr />
+<p>## SOURCES — every URL I actually fetched</p>
+<p><strong>Primary (author-controlled) — VERIFIED</strong><br />
+  - https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408 — <strong>VERIFIED in full via direct session</strong> (<em>Cryptologia</em>, Nov 2025). Full article text retrieved, including Section 3 entropy tables, Section 4.4 ("Low information density" constraint on labels), and conclusion.<br />
+  - https://raw.githubusercontent.com/greshko/naibbe-cipher/main/README.md — full abstract, citation, licence<br />
+  - https://zenodo.org/api/records/16415087 — full JSON metadata: ORCID, file manifest, version 2.1<br />
+  - https://zenodo.org/records/16415087 — human-readable record<br />
+  - https://zenodo.org/api/records/17219445/files/Greshko%202025%20-%20Supplementary%20Materials%201%E2%80%934.pdf/content — <strong>48-page Supplementary Materials 1–4, downloaded and text-extracted in full</strong> (2,563,905 bytes, md5 <code>562fecb3b3bd80ee9e3f307d05383f06</code> — matches Zenodo)<br />
+  - https://www.michaelgreshko.com/naibbe-cipher — author's own framing<br />
+  - https://www.voynich.ninja/thread-4848.html and pages 2–10 — author's own preprint Q&amp;A, incl. his concessions on labels and memorylessness</p>
+<p><strong>Independent quantitative evaluations — VERIFIED</strong><br />
+  - https://arxiv.org/abs/2604.19762 and https://arxiv.org/html/2604.19762v1 — Parisel, four-signature test, Naibbe 1/4<br />
+  - https://arxiv.org/abs/2608.17096 and https://arxiv.org/html/2608.17096v1 — Rozanova &amp; Temerev, full re-implementation and appendix</p>
+<p><strong>Secondary coverage — REPORTED</strong><br />
+  - https://www.theartnewspaper.com/2026/01/07/can-a-new-cipher-help-to-explain-the-mysterious-voynich-manuscript<br />
+  - https://archaeologymag.com/2026/01/voynich-manuscript-may-be-a-cipher/<br />
+  - https://www.sci.news/othersciences/linguistics/voynich-manuscript-cipher-14466.html — longest set of direct Greshko quotes<br />
+  - https://www.livescience.com/archaeology/mysterious-voynich-manuscript-may-be-a-cipher-a-new-study-suggests — <strong>the only source with verbatim Zandbergen</strong><br />
+  - https://www.newsweek.com/voynich-manuscript-15th-century-book-cards-dice-cipher-naibbe-11316017<br />
+  - https://www.schneier.com/blog/archives/2025/12/substitution-cipher-based-on-the-voynich-manuscript.html — independent copy of the abstract<br />
+  - https://www.iflscience.com/is-this-how-the-voynich-manuscript-was-made-a-new-cipher-offers-fascinating-clues-81786 — fetched, no expert quotes</p>
+<p><strong>Unrelated-but-brief-named — VERIFIED</strong><br />
+  - https://ciphermysteries.com/2026/01/22/finally-i-can-read-the-voynich-manuscript — <strong>NOT about Naibbe</strong>; Pelling's f17r Occitan marginalia claim<br />
+  - https://ciphermysteries.com/?s=Naibbe — <strong>zero results</strong>; Pelling has never blogged on Naibbe</p>
+<p><strong>Bibliographic — VERIFIED</strong><br />
+  - https://api.unpaywall.org/v2/10.1080/01611194.2025.2566408 — OA status, date, affiliation, no repository mirror</p>
+<p><strong>Empty Endpoints</strong><br />
+  - https://zenodo.org/api/records/16415087/files — returned empty list (files hosted on record 17219445)</p>
+<hr />
+<h2>Academic References &amp; Codicological Bibliography</h2>
+<ul>
+<li><strong>Beinecke Library</strong>: Yale University Beinecke Rare Book and Manuscript Library. (c. 1404–1438). <em>Voynich Manuscript</em> [Digital Facsimile MS 408]. Yale University Digital Collections. https://collections.library.yale.edu/catalog/2002046</li>
+<li><strong>Hodgins, G. W. L.</strong> (2011). <em>Radiocarbon Dating of the Voynich Manuscript Parchment</em>. NSF Arizona AMS Laboratory, University of Arizona &amp; Yale University Beinecke Library.</li>
+<li><strong>McCrone Associates</strong>. (2009). <em>Microanalytic Pigment, Fiber, and Ink Characterization of Beinecke MS 408</em>. McCrone Research Institute Report to Yale University Library.</li>
+<li><strong>Casey, T. L.</strong> (2026). <em>The Mechanical Voynich: Interactive SVG Concordance Atlas and Iatromathematical Exegesis of Beinecke MS 408</em>. The Mechanical Voynich Research Platform. https://voynich.ozark-oracle.com</li>
+<li><strong>Palmer, R.</strong> (1985). Medical Botany in Medieval Venice. <em>Medical History</em>, 29(4), 402–421. https://doi.org/10.1017/s0025727300044738</li>
+<li><strong>Steneck, N. H.</strong> (1974). <em>Science and Creation in the Middle Ages: The Art and Mind of Henry of Langenstein</em>. University of Notre Dame Press.</li>
+<li><strong>Köhler, F. E.</strong> (1887). <em>Köhler's Medizinal-Pflanzen in naturgetreuen Abbildungen mit kurz erläuterndem Texte</em>. Gera-Untermhaus.</li>
+<li><strong>Segre, A.</strong> (1998). <em>Il Trattato de Herbis dell'Erbario Estense: Codice Modena Lat. 993</em>. Franco Maria Ricci.</li>
+<li><strong>Zandbergen, R.</strong> (2017). <em>Analysis of Currier Hand A and B Segregation in MS 408</em>. Voynich Information Portal.</li>
+</ul>
+    </div>
+</body>
+</html>

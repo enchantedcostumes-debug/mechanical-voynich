@@ -73,14 +73,23 @@
             </p>
         </div>
 
+<!-- GOAL: Render full monograph navigation tabs and robust article switcher. Mother May I. -->
         <div style="display:flex; gap:0.5rem; margin-bottom:1.5rem; flex-wrap:wrap;">
-            <button class="nav-tab-btn active" id="btnArtScribes" onclick="showArticle('scribes')">✍️ The Two Authors (Scribes 1 & 2)</button>
-            <button class="nav-tab-btn" id="btnArtMonograph" onclick="showArticle('monograph')">Discovery Monograph</button>
-            <button class="nav-tab-btn" id="btnArtTranslation" onclick="showArticle('translation')">Page-by-Page Translation</button>
-            <button class="nav-tab-btn" id="btnArtRecipes" onclick="showArticle('recipes')">Recipe Formulary & Posology</button>
-            <button class="nav-tab-btn" id="btnArtBotanical" onclick="showArticle('botanical_index')">Master Botanical Index</button>
-            <button class="nav-tab-btn" id="btnArtVenetian" onclick="showArticle('venetian_trade')">Venetian Trade Convoys</button>
-            <button class="nav-tab-btn" id="btnArtFindingAids" onclick="showArticle('finding_aids')">Finding Aids</button>
+            <button class="nav-tab-btn active" data-article="scribes" onclick="showArticle('scribes')">✍️ The Two Authors (Scribes 1 & 2)</button>
+            <button class="nav-tab-btn" data-article="paleobotany" onclick="showArticle('paleobotany')">🌿 Paleobotany & Forgotten Crops</button>
+            <button class="nav-tab-btn" data-article="morphology" onclick="showArticle('morphology')">🔬 Morphological Growth Patterns</button>
+            <button class="nav-tab-btn" data-article="user_manual" onclick="showArticle('user_manual')">📖 System User Manual & Lexicon</button>
+            <button class="nav-tab-btn" data-article="monograph" onclick="showArticle('monograph')">🏛️ Discovery Monograph</button>
+            <button class="nav-tab-btn" data-article="translation" onclick="showArticle('translation')">📜 Page-by-Page Translation</button>
+            <button class="nav-tab-btn" data-article="recipes" onclick="showArticle('recipes')">🧪 Recipe Formulary & Posology</button>
+            <button class="nav-tab-btn" data-article="botanical_index" onclick="showArticle('botanical_index')">🌿 Master Botanical Index</button>
+            <button class="nav-tab-btn" data-article="venetian_trade" onclick="showArticle('venetian_trade')">🚢 Venetian Trade Convoys</button>
+            <button class="nav-tab-btn" data-article="organ_labels" onclick="showArticle('organ_labels')">🫀 Organ Label Hypothesis</button>
+            <button class="nav-tab-btn" data-article="finding_aids" onclick="showArticle('finding_aids')">🧭 Finding Aids</button>
+            <button class="nav-tab-btn" data-article="oocephalus" onclick="showArticle('oocephalus')">🧪 The Oocephalus Test</button>
+            <button class="nav-tab-btn" data-article="exotic_drugs" onclick="showArticle('exotic_drugs')">🏺 Imported Pharmacognosy</button>
+            <button class="nav-tab-btn" data-article="hypothesis" onclick="showArticle('hypothesis')">📐 Iatromathematical Hypothesis</button>
+            <button class="nav-tab-btn" data-article="anomalies" onclick="showArticle('anomalies')">🔍 Cross-Reference Anomalies</button>
         </div>
 
         <div id="articleContentContainer" style="background:rgba(15,20,30,0.85); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:2.5rem; line-height:1.7; font-size:0.95rem; color:#e2e8f0; max-width:1200px; margin:0 auto;">
@@ -270,8 +279,8 @@
     <script src="js/app.js"></script>
     <script>
         function showArticle(key) {
-            document.querySelectorAll('.primary-nav-tabs .nav-tab-btn, .standalone-page-container .nav-tab-btn').forEach(b => b.classList.remove('active'));
-            const btn = document.getElementById('btnArt' + key.charAt(0).toUpperCase() + key.slice(1));
+            document.querySelectorAll('.standalone-page-container .nav-tab-btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.standalone-page-container [data-article="${key}"]`);
             if (btn) btn.classList.add('active');
 
             const articles = window.ARTICLES_DATA || {};

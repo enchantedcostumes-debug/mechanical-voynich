@@ -65,7 +65,123 @@
     </header>
 
 
-    
+    <main>
+        <!-- Sidebar Token Concordance Index -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span>CONCORDANCE ANCHORS</span>
+                <span id="anchorCountBadge" class="badge">294</span>
+            </div>
+            <div class="token-list" id="tokenList">
+                <!-- Rendered dynamically -->
+            </div>
+        </aside>
+
+        <!-- Main Interactive Workspace -->
+        <section class="workspace">
+            <!-- Active Anchor Hero HUD -->
+            <div class="hero-banner">
+                <div class="hero-banner-title">
+                    <h2 id="activeTokenTitle">
+                        <span>Active Anchor:</span>
+                        <span style="color:var(--gold); font-family:'JetBrains Mono';">otal</span>
+                        <span class="badge" id="triadStatusBadge">Full Triad</span>
+                    </h2>
+                    <div class="hero-banner-desc" id="activeTokenDesc">
+                        Connecting 6 Celestial Stars in Pisces, Aries, Taurus, and Scorpio to 16 Herbal Botanical Species and 6 Apothecary Formulations.
+                    </div>
+                </div>
+                <div class="badge" id="activeTokenTotalBadge" style="font-size:0.85rem; padding:0.4rem 0.8rem;">
+                    137 Corpus Occurrences
+                </div>
+            </div>
+
+            <!-- 3-Pane Simultaneous Split Container ("See It All At Once") -->
+            <div class="triad-panes-container">
+                <!-- PANE 1: Celestial Zodiac Star Wheel -->
+                <div class="pane-card astro" id="paneAstro">
+                    <div class="pane-header">
+                        <div class="pane-title astro">
+                            <span>✨ 1. Celestial Star Wheel</span>
+                        </div>
+                        <div class="pane-meta" id="astroFolioMeta">f70v2 · Pisces (Dark)</div>
+                    </div>
+                    <div class="pane-tabs-bar" id="astroTabsBar"></div>
+                    <div class="svg-viewport-wrapper" id="astroSvgWrapper">
+                        <svg id="astroSvg" class="svg-canvas" viewBox="0 0 1000 1350" preserveAspectRatio="xMidYMid meet">
+                            <image id="astroImg" href="https://collections.library.yale.edu/iiif/2/1006203/full/1024,/0/default.jpg" x="0" y="0" width="1000" height="1350"/>
+                            <g id="astroHotspotsGroup"></g>
+                        </svg>
+                        <div class="viewport-controls">
+                            <button class="ctrl-btn" onclick="zoomPane('astro', 1.25)">+</button>
+                            <button class="ctrl-btn" onclick="zoomPane('astro', 0.8)">-</button>
+                            <button class="ctrl-btn" onclick="resetZoom('astro')">⟲</button>
+                        </div>
+                    </div>
+                    <div style="padding:0.6rem 1rem; background:rgba(0,0,0,0.3); font-size:0.75rem; color:var(--text-muted); display:flex; justify-content:space-between;">
+                        <span>Click star to link herbal/pharma</span>
+                        <a href="#" target="_blank" id="astroYaleLink" style="color:var(--cyan-astro); text-decoration:none;">Yale IIIF Scan ↗</a>
+                    </div>
+                </div>
+
+                <!-- PANE 2: Botanical Plant Species -->
+                <div class="pane-card herbal" id="paneHerbal">
+                    <div class="pane-header">
+                        <div class="pane-title herbal">
+                            <span>🌿 2. Botanical Plant Species</span>
+                        </div>
+                        <div class="pane-meta" id="herbalFolioMeta">f3r · Plant 3</div>
+                        <button class="btn-action" id="btnPaneInspectPlant" onclick="openActivePlantDossier()" style="padding:0.25rem 0.65rem; font-size:0.75rem; margin-left:auto; background:rgba(52,211,153,0.18); border-color:var(--emerald-herbal); color:#34d399;">
+                            🌿 Inspect Plant & Real Photos
+                        </button>
+                    </div>
+                    <div class="pane-tabs-bar" id="herbalTabsBar"></div>
+                    <div class="svg-viewport-wrapper" id="herbalSvgWrapper">
+                        <svg id="herbalSvg" class="svg-canvas" viewBox="0 0 1000 1350" preserveAspectRatio="xMidYMid meet">
+                            <image id="herbalImg" href="https://collections.library.yale.edu/iiif/2/1006076/full/1024,/0/default.jpg" x="0" y="0" width="1000" height="1350"/>
+                            <g id="herbalZonesGroup"></g>
+                            <g id="herbalHotspotsGroup"></g>
+                        </svg>
+                        <div class="viewport-controls">
+                            <button class="ctrl-btn" onclick="zoomPane('herbal', 1.25)">+</button>
+                            <button class="ctrl-btn" onclick="zoomPane('herbal', 0.8)">-</button>
+                            <button class="ctrl-btn" onclick="resetZoom('herbal')">⟲</button>
+                        </div>
+                    </div>
+                    <div style="padding:0.6rem 1rem; background:rgba(0,0,0,0.3); font-size:0.75rem; color:var(--text-muted); display:flex; justify-content:space-between;">
+                        <span>Botanical Harvest Identifier</span>
+                        <a href="#" target="_blank" id="herbalYaleLink" style="color:var(--emerald-herbal); text-decoration:none;">Yale IIIF Scan ↗</a>
+                    </div>
+                </div>
+
+                <!-- PANE 3: Pharmaceutical Albarello Jars -->
+                <div class="pane-card pharma" id="panePharma">
+                    <div class="pane-header">
+                        <div class="pane-title pharma">
+                            <span>🏺 3. Apothecary Compounding Jar</span>
+                        </div>
+                        <div class="pane-meta" id="pharmaFolioMeta">f89v · Albarello Jar</div>
+                    </div>
+                    <div class="pane-tabs-bar" id="pharmaTabsBar"></div>
+                    <div class="svg-viewport-wrapper" id="pharmaSvgWrapper">
+                        <svg id="pharmaSvg" class="svg-canvas" viewBox="0 0 1000 1350" preserveAspectRatio="xMidYMid meet">
+                            <image id="pharmaImg" href="https://collections.library.yale.edu/iiif/2/1006240/full/1024,/0/default.jpg" x="0" y="0" width="1000" height="1350"/>
+                            <g id="pharmaHotspotsGroup"></g>
+                        </svg>
+                        <div class="viewport-controls">
+                            <button class="ctrl-btn" onclick="zoomPane('pharma', 1.25)">+</button>
+                            <button class="ctrl-btn" onclick="zoomPane('pharma', 0.8)">-</button>
+                            <button class="ctrl-btn" onclick="resetZoom('pharma')">⟲</button>
+                        </div>
+                    </div>
+                    <div style="padding:0.6rem 1rem; background:rgba(0,0,0,0.3); font-size:0.75rem; color:var(--text-muted); display:flex; justify-content:space-between;">
+                        <span>Albarello Formulation Label</span>
+                        <a href="#" target="_blank" id="pharmaYaleLink" style="color:var(--amethyst-pharma); text-decoration:none;">Yale IIIF Scan ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     
     <!-- MODAL: About Me -->

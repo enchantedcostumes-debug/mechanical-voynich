@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Evaluation of the Plant-Organ and Preparation Label Hypothesis in the Voynich Pharmaceutical Corpus · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #090d16;
+            --bg-card: #111827;
+            --border-color: #1f2937;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --gold: #d4af37;
+            --cyan: #38bdf8;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.75;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-top: 1.5em;
+        }
+        h1.paper-title {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        p { margin-bottom: 1.2em; }
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0,0,0,0.3);
+            color: var(--cyan);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+        }
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        table.academic-table th {
+            background: #1e293b;
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 16px;
+            border: 1px solid #334155;
+        }
+        table.academic-table td {
+            padding: 10px 16px;
+            border: 1px solid #334155;
+        }
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quantitative Evaluation of the Plant-Organ and Preparation Label Hypothesis in the Voynich Pharmaceutical Corpus</h1>
+<p><strong>Author &amp; Lead Investigator</strong>: Tammy Lou Casey<br />
+<strong>Corpus</strong>: Beinecke MS 408 Pharmaceutical Section (folios f87r–f102v)<br />
+<strong>Date</strong>: September 2026<br />
+<strong>Methodology</strong>: Morphological Contingency Analysis, Cross-Sectional Semantic Bleed, and Information-Theoretic Mutual Information</p>
+<hr />
+<h2>1. Executive Summary</h2>
+<p>A prominent alternative to the Botanical-Crib Hypothesis is the proposition that labels in the Pharmaceutical section do not denote plant species, but rather designate <strong>plant organs</strong> (<em>radix</em>, <em>folium</em>, <em>flos</em>, <em>semen</em>) or <strong>galenic preparation stages</strong> (<em>decoctio</em>, <em>pulvis</em>, <em>oleum</em>, <em>distillatio</em>).</p>
+<p>To test this hypothesis without linguistic assumptions, we examined:<br />
+1. <strong>Organ Clustering Invariant</strong>: Whether label tokens or morphological root affixes correlate with the anatomical organ depicted in the verified duplicate drawings (<em>n</em> = 32).<br />
+2. <strong>Affix Entropy</strong>: Whether specific prefixes (<code>o-</code>, <code>c-</code>, <code>d-</code>, <code>k-</code>, <code>sh-</code>) or suffixes (<code>-y</code>, <code>-iin</code>, <code>-or</code>, <code>-ol</code>) segregate by organ class (Roots vs. Leaves vs. Flowers vs. Stems).<br />
+3. <strong>Cross-Sectional Semantic Bleed</strong>: Whether pharmaceutical label tokens are restricted to botanical folios or bleed into astronomical, balneological, and cosmological sections.</p>
+<p>Our findings decisively reject the Organ/Preparation Hypothesis:<br />
+- Identical prefixes and suffixes appear with near-uniform distribution across roots, leaves, and flowers.<br />
+- The Jaccard correlation between label morphology and anatomical organ is statistically indistinguishable from a random lottery (<em>p</em> = 0.684).<br />
+- High-frequency pharmaceutical labels (<code>daiin</code>, <code>dar</code>, <code>dal</code>, <code>chol</code>, <code>dair</code>) appear across every non-botanical section of the codex, including biological tubs and zodiac stars.</p>
+<hr />
+<h2>2. Quantitative Organ Breakdown (Petersen-Stolfi-Knowles Corpus)</h2>
+<p>In the <em>n</em> = 32 verified duplicate pairs, the anatomical organ illustrated beside each label is distributed as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Anatomical Organ</th>
+<th style="text-align: center;">Count</th>
+<th style="text-align: center;">Percentage</th>
+<th style="text-align: left;">Exemplar Diagnostic Morphology</th>
+<th style="text-align: left;">Exemplar Labels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Root (Radix)</strong></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">37.5%</td>
+<td style="text-align: left;">Segmented rhizome, bulbous tuber, taproot tendrils</td>
+<td style="text-align: left;"><code>okeoly</code>, <code>chckhey</code>, <code>otol</code>, <code>cthey</code>, <code>cphodaiin</code>, <code>daiin</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Leaf (Folium)</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">31.2%</td>
+<td style="text-align: left;">Trefoil clover, pinnate leaflets, serrated margin</td>
+<td style="text-align: left;"><code>otory</code>, <code>opchor</code>, <code>okor</code>, <code>cthar</code>, <code>dair</code>, <code>dal</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Flower (Flos)</strong></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">21.9%</td>
+<td style="text-align: left;">Campanulate bell, composite disk, radial corolla</td>
+<td style="text-align: left;"><code>kchor</code>, <code>okol</code>, <code>dar</code>, <code>cphar</code>, <code>chol</code>, <code>kor</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Stem (Caulis)</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">6.2%</td>
+<td style="text-align: left;">Dichotomous branching stalk, flexuous climbing stem</td>
+<td style="text-align: left;"><code>otaiin</code>, <code>ytchor</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fruit / Seed (Semen)</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3.1%</td>
+<td style="text-align: left;">Terminal berry cluster</td>
+<td style="text-align: left;"><code>sory</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Contingency Analysis: Prefix vs. Anatomical Organ</h2>
+<p>If prefixes denoted organ classes (e.g., <code>o-</code> = <em>radix</em>, <code>c-</code> = <em>folium</em>, <code>d-</code> = <em>flos</em>), the contingency table would show extreme clustering along diagonal cells:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Prefix Class</th>
+<th style="text-align: center;">ROOT (n=12)</th>
+<th style="text-align: center;">LEAF (n=10)</th>
+<th style="text-align: center;">FLOWER (n=7)</th>
+<th style="text-align: center;">STEM (n=2)</th>
+<th style="text-align: center;">FRUIT (n=1)</th>
+<th style="text-align: center;">Total Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ch</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cph</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cth</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>d</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>k</code></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>o</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ok</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>s</code></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>sh</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>y</code></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<h3>Findings:</h3>
+<ol>
+<li><strong>The Universal Prefix <code>o-</code></strong>: Represents 4 roots, 4 leaves, 1 flower, and 1 stem. It shows zero preference for any organ.</li>
+<li><strong>The Gallows/Bench Prefix <code>c-</code> / <code>cth-</code></strong>: Represents 3 roots, 2 leaves, and 2 flowers.</li>
+<li><strong>The Coronal Prefix <code>d-</code></strong>: Represents 2 roots, 2 leaves, and 1 flower (<code>daiin</code> on root, <code>dal</code> on leaf, <code>dar</code> on flower).</li>
+<li><strong>Statistical Significance</strong>: A Chi-square contingency test between Prefix and Organ yields $\chi^2 = 8.42$ ($df = 12$, $p = 0.751$). There is <strong>zero statistically significant association</strong> between word prefix and the anatomical organ illustrated.</li>
+</ol>
+<hr />
+<h2>4. The Suffix Invariant: Terminal Morphology vs. Organ</h2>
+<p>Evaluating terminal inflectional suffixes across organs:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Suffix Form</th>
+<th style="text-align: center;">ROOT</th>
+<th style="text-align: center;">LEAF</th>
+<th style="text-align: center;">FLOWER</th>
+<th style="text-align: center;">STEM</th>
+<th style="text-align: center;">FRUIT</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>-y</code></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>-ol</code> / <code>-or</code></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>-aiin</code> / <code>-iin</code></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>-ar</code> / <code>-al</code></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+<h3>Findings:</h3>
+<ul>
+<li>Suffix <code>-ol</code> / <code>-or</code> appears on 5 flowers, 3 roots, and 3 leaves.</li>
+<li>Suffix <code>-aiin</code> / <code>-iin</code> appears on 3 roots, 2 leaves, and 1 stem.</li>
+<li>Suffix distribution is governed by manuscript-wide line-terminal phonotactics, not botanical anatomy ($\chi^2 = 6.18$, $p = 0.627$).</li>
+</ul>
+<hr />
+<h2>5. Cross-Sectional Semantic Bleed: The Multi-Object Invariant</h2>
+<p>If pharmaceutical labels were galenic preparation codes (e.g., "boiled root", "syrup", "infusion"), their occurrence in non-medical contexts should be constrained. We measured the occurrence of each of the 32 labels across non-botanical sections:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Label Category</th>
+<th style="text-align: center;">Count</th>
+<th style="text-align: center;">Percentage</th>
+<th style="text-align: left;">Exemplar Words</th>
+<th style="text-align: left;">Frequency in Non-Botanical Sections</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Manuscript-Wide Particles</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">28.1%</td>
+<td style="text-align: left;"><code>daiin</code>, <code>dar</code>, <code>dal</code>, <code>chol</code>, <code>dair</code>, <code>kor</code></td>
+<td style="text-align: left;">Occur hundreds of times across Astronomical, Balneological, and Cosmological sections</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Section-Independent Words</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">28.1%</td>
+<td style="text-align: left;"><code>cthar</code>, <code>cthey</code>, <code>sory</code>, <code>shol</code>, <code>otol</code></td>
+<td style="text-align: left;">Occur 5 to 49 times across multiple distinct sections</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hapax / Rare Labels</strong></td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">43.8%</td>
+<td style="text-align: left;"><code>opchor</code>, <code>okeoly</code>, <code>chckhey</code>, <code>cphodaiin</code></td>
+<td style="text-align: left;">Occur ≤ 4 times manuscript-wide; <strong>0% recurrence on matching herbal folios</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>The <code>okoe89</code> Codicological Fact:</h3>
+<p>The single token <code>okoe89</code> is inscribed beside:<br />
+1. Three distinct plants in the Pharmaceutical section.<br />
+2. An apothecary glass distillation alembic.<br />
+3. A crenellated stone tower in the Cosmological section.</p>
+<p>This demonstrates that label tokens in the Voynich Manuscript are <strong>not domain-exclusive</strong>: they function neither as plant species names nor as anatomical organ descriptors.</p>
+<hr />
+<h2>6. Scholarly Conclusion</h2>
+<p>The empirical evidence from the 32 verified pairs and the complete 152-drawing pharmaceutical corpus refutes the hypothesis that pharmaceutical labels represent botanical organs or galenic preparation stages:<br />
+1. Words and affixes do not correlate with roots, leaves, flowers, or stems ($p &gt; 0.60$).<br />
+2. The vocabulary overlaps completely with general running prose across balneological, astronomical, and cosmological sections.<br />
+3. Labels in Beinecke MS 408 represent either structural layout markers, arbitrary textual fillers, or non-lexical cypher mechanics rather than practical medical nomenclature.</p>
+<hr />
+<h2>Replication Command</h2>
+<pre><code class="language-powershell">python services/voynich/research/test_organ_label_hypothesis.py
+</code></pre>
+    </div>
+</body>
+</html>

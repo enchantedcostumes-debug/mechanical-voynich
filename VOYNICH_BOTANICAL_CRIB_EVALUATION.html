@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voynich Botanical-Crib Thesis: Formal Evaluation Report · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #090d16;
+            --bg-card: #111827;
+            --border-color: #1f2937;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --gold: #d4af37;
+            --cyan: #38bdf8;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.75;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-top: 1.5em;
+        }
+        h1.paper-title {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        p { margin-bottom: 1.2em; }
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0,0,0,0.3);
+            color: var(--cyan);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+        }
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        table.academic-table th {
+            background: #1e293b;
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 16px;
+            border: 1px solid #334155;
+        }
+        table.academic-table td {
+            padding: 10px 16px;
+            border: 1px solid #334155;
+        }
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voynich Botanical-Crib Thesis: Formal Evaluation Report</h1>
+<p><strong>Author</strong>: Tammy Lou Casey<br />
+<strong>Affiliation</strong>: Independent Researcher<br />
+<strong>Date</strong>: September 2026</p>
+<p><strong>Executive Summary</strong>: The botanical-crib thesis is not viable as stated, and it fails for four independent reasons, any one of which is sufficient. It has been tried repeatedly since the 1940s and every attempt encountered the same fundamental breakdown. The single most damaging fact is structural, not statistical: the folios whose plants can be identified mostly have no discrete titles or labels at all.</p>
+<p>Verification tags: <strong>[V]</strong> = read in primary source; <strong>[R]</strong> = secondary/reported; <strong>[U]</strong> = unverified.</p>
+<hr />
+<p>## 1. HAS THIS BEEN TRIED? — Yes. Continuously, for ~80 years, by at least eight named people.</p>
+<p><strong>Stephen Bax (2014).</strong> <strong>[V]</strong> His method was exactly the thesis under test: identify the plant, then treat the page's distinctive word as the plant's name, then back out glyph values. He got ten "words" — Taurus, juniper, coriander, hellebore, Centaurea, Nigella sativa, cotton, crocus, Kaur — and 14 glyph/cluster values, explicitly invoking the Linear B and hieroglyph precedents ("bottom-up"). <strong>[R]</strong> He proposed a Near Eastern/Asian (Turkic-leaning) plaintext.</p>
+<p>What killed it — Pelling's critique is the primary document and it is devastating on the specific mechanics <strong>[V]</strong>:<br />
+  - Bax assumed the first word of each herbal page is the plant name. But almost every Herbal A page begins with a gallows glyph: EVA <code>p</code> 53×, <code>t</code> 24×, <code>k</code> 21×, <code>f</code> 10×. To keep his readings, Bax had to map <em>all four</em> gallows to plaintext C/K — so nearly every plant name he "found" begins with C. Pelling: "directly contradicted by the immediate statistical evidence." Tiltman made essentially this observation ~50 years earlier.<br />
+  - Bax's alphabet assigns three separate glyphs (EVA <code>r</code>, <code>m</code>, <code>n</code>) to the letter R.<br />
+  - <code>oror</code> = Hebrew <em>arar</em> (juniper) on f15v — but f15v also carries "oror or" and "or or oro r" on consecutive lines, and <code>arar</code> itself is twice as frequent in the MS as <code>oror</code>. The "crib" is a fragment of an extremely common string.<br />
+  - <code>kydain</code> = "centaur" — but <code>dain</code>/<code>aiin</code> is one of the most ubiquitous strings in the manuscript.<br />
+  - <code>keerodal</code> = coriander — <code>eer</code> is very rare while <code>ar</code>/<code>or</code> are very common; almost certainly a scribal error for <code>karodal</code>.<br />
+  - Bax leaned on Edith Sherwood's plant IDs, which Pelling notes real herbal authorities (he names Karen Reeds) do not accept at anything like her rate.</p>
+<p>Pelling's summary <strong>[V]</strong>: "of the nine words Bax claims... I disagree with the evidence, reasoning, and linguistic rationale for every single one." <strong>[R]</strong> Bax died 22 November 2017 with no translation and no successor programme; his site survives only in archive.</p>
+<p><strong>Edith Sherwood (with Erica Sherwood).</strong> <strong>[V]</strong> — and this is the most important document I found, because Sherwood states the thesis verbatim and then demonstrates exactly how it self-destructs. From her "The Voynich Botanical Plant Names Decoded" (retrieved via Wayback; her live site is down):</p>
+<blockquote>
+<p>"This would require decoding the plant's name in the accompanying text to establish identity with certainty."</p>
+<p>"<strong>These drawings of single plants or parts of plants are labeled presumably with the plant's name, i.e. the VM's Rosetta stone.</strong>"</p>
+</blockquote>
+<p>Her method: assume Italian; assume glyphs mean the Latin letters they superficially resemble ("AVA" alphabet, derived partly "by trial and error"); then allow <strong>anagrams</strong> — free reordering of letters within a word, plus splitting one name across two or three words, plus absorbing stray prepositions and articles into the name. Acceptance criterion, in her own words: "if the drawing, a picture of the plant cited in Florio's dictionary, its Italian name and the decoded anagram are a reasonable match."</p>
+<p>She concedes the fatal property herself: anagrams "have the disadvantage of being degenerate and when decoded may produce spurious results."</p>
+<p>Result: she "identifies" 111–112 plants, <strong>86% of the botanical section</strong>. A method that succeeds on 86% of cases has no discriminating power — it cannot fail, therefore it cannot be evidence. She then concludes the manuscript is Leonardo da Vinci's first codex. That is the reductio.</p>
+<p>Note also <strong>[V]</strong>: Sherwood <em>rejects</em> the first-word-is-the-name assumption, citing Pelling's gallows statistic — i.e. the two leading proponents of the crib approach contradict each other on where the crib even is.</p>
+<p><strong>Arthur Tucker &amp; Rexford Talbert (HerbalGram 100, 2013).</strong> <strong>[R]</strong> 37 plants, 7 animals and the mineral boleite identified as New World/Nueva España; Voynichese read as a Nahuatl/Spanish/Taino/Mixtec polyglot; f1v matched to <em>xiuhamolli</em> in the 1552 Codex Cruz-Badianus; plant 8 on f100r read as a prickly-pear pad with the label transliterated <em>nashtli</em> ≈ Nahuatl <em>nochtli</em>. <strong>[V]</strong> This escalated into Tucker &amp; Janick (2018), whose Chapter 5 is literally titled <strong>"Phytomorphs in the Pharmaceutical Section: The Rosetta Stone of the Voynich Codex"</strong> (DOI 10.1007/978-3-319-77294-3_5, confirmed via Crossref). Your thesis is that chapter's thesis.</p>
+<p>What killed it <strong>[V]</strong> (Pelling, Jan 2014; the paper PDF itself was UNRETRIEVED — Purdue WAF and herbalgram.org both blocked):<br />
+  - It brackets out radiocarbon dating of the vellum, 15th-c. digit and number forms in the quire marks, 15th-c. contractions in the zodiac hand, and 15th-c. parallel hatching — i.e. codicology, palaeography and art history are all set aside to preserve a post-1519 date.<br />
+  - It treats all pigment as original, unaware of the light-painter/heavy-painter debate, and treats the current foliation as original, unaware of the bifolio reordering evidence.<br />
+  - Pelling: "Selective abductivity is the disease, not the cure."<br />
+  - Zandbergen in the same thread <strong>[V]</strong>: <em>"other botanical scholars have positively identified Asian species in the MS, so a very critical attitude towards both seems fully warranted."</em><br />
+  - A commenter identifying as a working botanist <strong>[V]</strong>: "of the plant identifications that I've tentatively made match what are presented in this new paper. I don't necessarily think they should have made conclusions related to the 'cipher' though... no delusion that my potential plant identification will lead to a decipherment."</p>
+<p><strong>Oocephalus, voynich.ninja thread-196 (2 July 2016) — the best-designed attempt I found, and it failed. [V]</strong> This is the one test that needs no language assumption and no key. Petersen (1930s) and Stolfi (1990s) independently noticed that a number of small pharma-section drawings are copies of large herbal drawings <strong>[V]</strong>; Mark Knowles has since compiled a comprehensive match list <strong>[V]</strong>. So: if the pharma label is the plant's name, that same token should recur in the running text of the corresponding herbal page.</p>
+<p>Oocephalus checked rare labels (≤6 occurrences MS-wide). Result: essentially nothing. <code>opchor</code> (6 occurrences) appears as a pharma label and in f13r's text — but the plants are only vaguely similar and the word also appears on two herbal pages with completely different plants. <code>otory</code> (4 occurrences) is the one halfway-decent hit. <code>okeoly</code> appears as a label and in the text immediately above it. That is the entire yield.</p>
+<p><strong>-JKP- in the same thread [V]</strong>, on why this matters:</p>
+<blockquote>
+<p>"these two approaches have probably been tried tens of thousands of times by historic persons and amateur Internet cryptographers. And no one has succeeded even though the VMS is packed full of 'labels'... That tells me they might not be labels in the traditional sense."</p>
+</blockquote>
+<p><strong>Julian Bunn ("Computational Attacks on the Voynich Manuscript") [V].</strong> Systematic crib attempts against star labels using Alfonso X's <em>Lapidario</em> stone names: "I drew a blank." His one interesting positive is an <code>ok-</code> = <code>ca-</code> hypothesis yielding plausible Castor/Pollux/Capella placements on f68r3. But the same work records the killer negative: the label <code>okoe89</code> labels <strong>five</strong> different objects — three plants/roots, a funnel from the balneological pages, <strong>and a castle</strong>. Labels are not unique object names.</p>
+<p><strong>Koen Gheuens and Marco Ponzi [V]</strong> — I found no crib attempt by either. Their published work is iconographic and statistical, not decipherment: Gheuens &amp; Cary Rapaport's 2024 study established that herbal drawing details correlate with Currier A/B language assignment (incorporated into voynich.nu's page descriptions), and Gheuens &amp; Ponzi jointly transcribed Ethel Voynich's Beinecke notebooks. Notably, neither has proposed using labels as cribs, which is itself informative about what serious researchers in the image side think the approach is worth.</p>
+<p><strong>Rene Zandbergen [V]</strong> — has never attempted this and states the constraint that makes it hard: the herbal identifications "are always subjective, but many are highly convincing." He also records that O'Neill's 1944 sunflower and pepper — the entire foundation of the New World line — "are no longer generally accepted."</p>
+<p><strong>Earliest layer [V]:</strong> Ethel Lilian Voynich and Fr. Theodore Petersen, 1920s–30s, per her Beinecke notebooks as transcribed by Ponzi and Gheuens.</p>
+<hr />
+<p>## 2. THE STATE OF THE LABEL PROBLEM — the crib has almost no surface to attack.</p>
+<p><strong>This is the decisive structural fact and it is rarely stated plainly: the large-plant herbal folios do not have labels.</strong> <strong>[V]</strong> Zandbergen: "Herbal pages typically contain one, in a few cases also two, page-filling pictures of herbs with some paragraphs of text that carefully avoids the drawings." Labels, as a category, occur elsewhere <strong>[V]</strong>:</p>
+<blockquote>
+<p>"Short words (the so-called 'labels') near stars in the astronomical and astrological sections strongly suggest that the names of the stars are written here. Labels near leaves and roots in the pharmaceutical section strongly suggest that the names of the plants are written here."</p>
+</blockquote>
+<p>So the arithmetic of the available crib corpus:<br />
+  - <strong>~130–134 large plant drawings</strong> (Zandbergen ~131 <strong>[R]</strong>; Gheuens uses 134 <strong>[V]</strong>) spanning about half the manuscript — <strong>running text only, no labels.</strong> The only "crib slot" is the first word of the page, and Pelling's gallows distribution (p 53 / t 24 / k 21 / f 10) kills that outright <strong>[V]</strong>.<br />
+  - <strong>Pharmaceutical section: 12 pages (f99v–f102v), ~179 illustrated plants/plant parts/minerals, of which ~152 carry names.</strong> <strong>[R]</strong> — this figure originates in Tucker &amp; Talbert and I could not reach the primary PDF; treat as reported, not verified. <strong>[V]</strong> JKP notes some pharma rows have no labels at all, which he reads as evidence the MS is unfinished.<br />
+  - Zodiac: <strong>298 unique star labels, 269 unique to a sign</strong> <strong>[R]</strong> (Bunn). Not botanical.</p>
+<p><strong>So the entire botanical crib budget is ~152 label tokens, all of them in a 12-page section of small, partial, often root-or-leaf-only drawings</strong> — the drawings <em>hardest</em> to identify, not easiest. The 130 good full-plant portraits contribute nothing.</p>
+<p><strong>The Greshko quote — located and verified in full context. [V]</strong> It is voynich.ninja thread-4848 ("The Naibbe cipher"), archive page 2, poster handle <code>magnesium</code>, dated 04-08-2025 (forum date format is ambiguous between 8 April and 4 August 2025; flagging rather than guessing). Full passage:</p>
+<blockquote>
+<p>"Thanks! I agree that through the lens of the Naibbe cipher, <strong>the labels in the VMS look weirdly short and uninformative</strong> (see Section 4.4 of the paper). One potential workaround is that at least some sets of labels are meant to be read as single interspersed messages. Consider, for example, the star chart on f68r2, whose 24 star labels can be theoretically read left-to-right as 8 rows of text... I freely admit that this is not a complete solution."</p>
+<p>"I should also note: <strong>If memory serves, most labels are uncommon word types.</strong>"</p>
+</blockquote>
+<p>And the quantitative version, from <code>oshfdk</code> in the same exchange, which Greshko accepts <strong>[V]</strong>:</p>
+<blockquote>
+<p>"for the labels to make sense, I would expect the verbosity not exceeding something like ~1.5-2.5 glyphs per plaintext character"</p>
+<p>"Assuming... the token and type length distributions of labels are consistent with the rest of the manuscript, <strong>well more than half of labels would have to be &lt;5 letters long</strong> given your suggested verbosity ranges, which in many cases would still imply a weirdly short label."</p>
+</blockquote>
+<p><code>oshfdk</code>'s alternative <strong>[V]</strong>: "There is of course a chance that labels are only indices (fig. A, fig. B), referenced in the texts, in which case they can be as short as needed." Note that if labels are indices, the crib programme yields exactly nothing.</p>
+<p>Greshko's Naibbe paper §4.4 is UNRETRIEVED — Taylor &amp; Francis returned 403 and I found no preprint on arXiv, OSF or Zenodo.</p>
+<p><strong>Quantitative label-length work [R, unverified at primary source]:</strong> Stolfi's word-length-distribution page (ic.unicamp.br) now 404s. Search-surfaced summary of it reports that "the word length distribution of labels and running text show a surprising coincidence, even though the sample sizes differ by an order of magnitude and the token distributions are quite different," with a near-binomial distribution centred on ~5.5 glyphs. I could not verify this at source and it should be re-checked. If true it is double-edged: labels are <em>not</em> a distinct register by length, so they can't be treated as a special short-name class — they are just ordinary Voynichese tokens sitting next to pictures.</p>
+<p><strong>Pelling's "labelese" article [V]</strong> documents that zodiac labels <em>are</em> structurally different in other ways: disproportionately <code>ot-</code>/<code>ok-</code>/<code>yk-</code> initial, almost never <code>qo-</code> initial, frequently <code>-y</code> final, strongly "paired" (<code>otolal</code> = <code>ot-ol-al</code>), and — critically — <strong>"a good number of zodiac labels occur multiple times. [This perhaps argues against their obviously being unique names.]"</strong> He also observes labels expand or contract to fit available space, which is fatal to treating a label as a fixed lexical item. His own speculation is that <code>ok-</code>/<code>ot-</code> may carry no extrinsic meaning at all — pure metadomain markers, "not unlike adding two crosses to the start of each word."</p>
+<p><strong>Rozanova &amp; Temerev, arXiv:2608.17096 (17 Aug 2026) — what it does to the crib strategy specifically. [V]</strong> (abstract via arXiv Atom API, full text via arxiv.org/html).</p>
+<p>Their findings, and the specific damage each does:</p>
+<table>
+<thead>
+<tr>
+<th>Finding <strong>[V]</strong></th>
+<th>Effect on the crib strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conditional entropy 2.7 bits vs ~3.5 for Latin/Italian/English; "glyph regularity is too strong for one-to-one substitution of any tested plaintext"</td>
+<td>A label's glyph string is not a letter string. Even a perfect plant ID gives you a plaintext with nothing to map it onto letter-by-letter.</td>
+</tr>
+<tr>
+<td>Order resolves onto "a quire-stable scale of recurrent multi-symbol units," not single glyphs</td>
+<td>The unit you would have to match your plant name against is not the glyph and not obviously the token.</td>
+</tr>
+<tr>
+<td>Token identity predicts the next token by <strong>&lt;1% of token entropy</strong>, vs 2–10% in every matched control</td>
+<td><strong>This is the deepest problem.</strong> See below.</td>
+</tr>
+<tr>
+<td>Edge glyphs share 0.2 bits MI — more than any prose control; order lives at token <em>edges</em>, not in token succession</td>
+<td>Token-internal structure is positional/morphological, not lexical.</td>
+</tr>
+<tr>
+<td>70% singleton types (vs 41% and 59–60% in controls)</td>
+<td>Consistent with Greshko's "most labels are uncommon word types," and means a label match cannot be cross-validated against other occurrences — there usually are none.</td>
+</tr>
+<tr>
+<td><strong>Calibrated substitution attack returns a null</strong>, rejecting "the calibrated family of simple concatenative homophonic prose ciphers at the one-to-three-symbol scale"</td>
+<td>The cipher class in which a short label could plausibly encode a short plant name is the class that has just been rejected.</td>
+</tr>
+</tbody>
+</table>
+<p>One honest point in the crib strategy's favour, which I want to state rather than suppress. R&amp;T's most novel result is that transcribed blanks fall into two regimes, and the ones transcribers flagged uncertain behave like word-<em>internal</em> junctures — physically narrower on the page (AUC 0.905 from independent image coordinates, 83.4% label recovery from geometry alone). That result attacks <em>running text</em> segmentation. <strong>A label is spatially isolated by page layout, so its boundaries are the one place in the manuscript where the token boundary is physically unambiguous.</strong> If anywhere in the MS is a clean crib surface, it is the labels. That is the strongest version of your thesis and it is worth stating.</p>
+<p>But R&amp;T also hand you the reason it still doesn't work, and they say it almost in passing <strong>[V]</strong>:</p>
+<blockquote>
+<p>"Weak adjacent identity order is not, however, equivalent to absence of meaning: <strong>lists, labels, paradigms, litanies, tables, and formulaic notations can carry content without behaving like continuous prose</strong>"</p>
+</blockquote>
+<p>Read that carefully. It rescues the <em>possibility</em> that labels mean something. It simultaneously destroys the crib <em>method</em>. <strong>A crib is only as valuable as the global consistency check it feeds.</strong> Ventris's Knossos/Pylos place names were worth something not because three names were guessed, but because a wrong grid produced grammatical garbage across thousands of unrelated tablets, and a right one produced coherent Greek. Voynichese has no such "elsewhere": with token-order information below 1% of entropy, <strong>there is no syntax for a candidate key to be checked against.</strong> You can propagate a crib and never find out that you were wrong. That is not a decipherment programme; it is an unfalsifiable generator of readings — which is precisely the observed history in Section 1.</p>
+<hr />
+<p>## 3. HOW GOOD ARE PLANT IDs? — There is no measured agreement rate, and the qualitative evidence says it is poor.</p>
+<p><strong>Direct answer to your question: no inter-rater agreement study exists.</strong> I searched the literature (OpenAlex: 2,066 Voynich works, none on identification reliability), the forums and the blogs. Nobody has ever run independent botanists on the same folios under blind conditions and computed a kappa. This is a genuine gap, and it means <strong>the crib programme currently has no measured anchor stability at all.</strong></p>
+<p>What the qualitative evidence shows:</p>
+<ul>
+<li><strong>Independent experts place the same manuscript on different continents. [V]</strong> Zandbergen: "other botanical scholars have positively identified Asian species in the MS" — against Tucker &amp; Talbert's New World and the traditional European reading. That is not a disagreement about species; it is a disagreement about hemisphere.</li>
+<li><strong>f1v: Sherwood/Petersen say <em>Atropa belladonna</em> (European deadly nightshade). Tucker &amp; Talbert say <em>xiuhamolli</em>, a Mexican soap plant. O'Donovan says neither.</strong> <strong>[V]</strong> Same folio, three incompatible readings, each from someone with domain credentials.</li>
+<li><strong>The foundational IDs collapsed.</strong> O'Neill's 1944 sunflower (f93r) and pepper — on which he said six botanists agreed with him <strong>[R]</strong> — are "no longer generally accepted" <strong>[V]</strong>. Note the structure of that failure: reported expert consensus, later abandoned.</li>
+<li><strong>Even "agreement" is unstable in kind.</strong> O'Donovan <strong>[V]</strong>: "few things annoy me more than... 'unidentifiable plants'... I'll happily endorse Ellie Velinska's recognition that the focus of the drawing on folio 8v is <em>Silene</em>, and Dana Scott's identification of 'Rose' for folio 19v. A number of Sherwood's identifications... are good too." So she affirms identifiability while rejecting most specific identifications — including, in detail, Sherwood's f1v.</li>
+<li><strong>The ID community is not independent.</strong> O'Donovan documents that some published ID sets are "unacknowledged use of, and sometimes random re-assignments of, identifications made by others" <strong>[R]</strong>. Where IDs <em>do</em> agree, you cannot assume the agreement is independent — which means even a future kappa would need provenance controls.</li>
+<li><strong>Zandbergen's own verdict [V]:</strong> identifications "are always subjective, but many are highly convincing."</li>
+</ul>
+<p><strong>Is there any folio with broad consensus?</strong> The best candidates, all with caveats:<br />
+  - <strong>f2v — water lily / <em>Nymphaea</em>.</strong> <strong>[R]</strong> Ethel Voynich, Sherwood and others concur. But O'Donovan reads it as <em>Nymphoides</em> in an Ayurvedic compound named for <em>Nardostachys jatamansi</em> — so even here, the genus is contested.<br />
+  - <strong>f9v — <em>Viola</em>.</strong> <strong>[R]</strong> Broad agreement on the genus. Tucker &amp; Talbert split it to the North American <em>V. bicolor</em> against the Eurasian <em>V. tricolor</em> on stipular-lobe shape — i.e. agreement at genus, hemisphere-level disagreement at species. For a crib you need the <em>name</em>, so genus-level agreement is worth very little.<br />
+  - <strong>f56r — sundew (<em>Drosera</em>).</strong> <strong>[R]</strong> Sherwood calls it "obviously a sundew"; Zandbergen's page descriptions list it among convincing cases.<br />
+  - <strong>f18r — <em>Calendula officinalis</em>.</strong> <strong>[V]</strong> Ethel Voynich and Petersen agreed on every morphological part — and had to discard the colour to do it (see §5).<br />
+  - <strong>f35v</strong> ↔ Paris BnF Lat. 6823 f.60r: Zandbergen <strong>[V]</strong> — "it is inconceivable that it was not in some way inspired by this or a similar illustration." That is a source relationship, not a species ID.</p>
+<p><strong>Assessment.</strong> Call it perhaps 5–15 folios out of ~130 with genus-level agreement among people who are not citing each other, and near-zero folios with species-and-name-level agreement that survives cross-examination. Against a required crib budget in the hundreds (§4), that is not a shortfall — it is a different order of magnitude.</p>
+<hr />
+<p>## 4. WHAT A METHODOLOGICALLY SOUND PROGRAMME WOULD REQUIRE</p>
+<p>### 4.1 The sufficiency arithmetic — and why it fails before you start</p>
+<p>Work out the crib budget honestly.</p>
+<ul>
+<li>Under a <strong>simple substitution</strong> with ~20–22 productive EVA glyph types: labels average ~5–6 glyphs. 30 confirmed label↔name pairs would supply ~170 glyph constraints against ~22 unknowns. Nominally sufficient — comfortably over-determined. <strong>But R&amp;T's calibrated attack rejects this entire cipher family [V]</strong>, so this budget is spending money that doesn't exist.</li>
+<li>Under <strong>verbose/homophonic encoding</strong>, which is where the evidence actually points: at Greshko's ~2.5 glyphs/letter median, a 5–6 glyph label carries <strong>2–3 plaintext letters</strong>. Even at oshfdk's optimistic 1.5, it carries 3–4. You cannot fit "coriandrum" or "nochtli" in there. This is Greshko conceding the point about his own cipher <strong>[V]</strong> — and it is the reason his workaround is to abandon labels-as-names entirely and read f68r2's 24 star labels as 8 rows of interspersed running text.</li>
+<li>The Naibbe-class key has hundreds of entries (most word types outside the top 100 encode plaintext <em>bigrams</em>) <strong>[V]</strong>. To constrain a key of that size you would need several hundred confirmed pairs. <strong>There are only ~152 named botanical items in the entire manuscript [R].</strong></li>
+</ul>
+<p><strong>The crib budget is structurally insufficient for any cipher class consistent with the measured statistics.</strong> This is not a "needs more data" problem. The data does not exist in the object.</p>
+<p>### 4.2 If you ran it anyway — the minimum viable design</p>
+<p><strong>Phase 0 — Establish the anchor exists (this has never been done; do this first, it is cheap).</strong><br />
+  Blind panel: N ≥ 5 botanists with relevant regional expertise, working independently, given greyscale images only (see §5), and given <em>no</em> access to the text, to each other, or to prior Voynich ID literature. Output: ranked candidate list per folio against a controlled taxonomic vocabulary, with stated confidence. Compute <strong>Krippendorff's α</strong> at genus and species level. Add provenance controls to detect non-independence.<br />
+<strong>Gate: α &lt; 0.4 at species level → stop. There is no anchor and the programme cannot begin.</strong> My prediction from §3 is that it fails this gate.</p>
+<p><strong>Phase 1 — Pre-registration.</strong> The ID set, the target language(s), the orthographic normalisation, the distance metric, the match threshold and the train/test split must all be registered publicly <em>before</em> any text is examined. Every failure in §1 — Bax, Sherwood, Tucker — is a failure to do this. Sherwood's method is ID-tuned-to-label and label-tuned-to-ID simultaneously, which is why it "works" 86% of the time.</p>
+<p><strong>Phase 2 — The primary statistic (this is what nobody has ever computed).</strong><br />
+  Labels L₁…L_K with pre-registered candidate name sets N₁…N_K. Fit key φ on a training subset. Test statistic T = number of <em>held-out</em> labels where φ(Lᵢ) matches some member of Nᵢ within edit distance d.<br />
+  Null distribution: <strong>permute the label↔plant assignment and refit φ from scratch on each permutation</strong>, ≥10⁵ permutations. Refitting on every permutation is essential and is the step everyone skips — without it you are testing a null that assumes the key was given rather than fitted, and any sufficiently flexible key (Sherwood's anagrams, Bax's three R's) will clear it trivially.<br />
+  Report exact p on held-out data only. Demand p &lt; 10⁻³ with the multiplicity of the language/orthography search space explicitly corrected.</p>
+<p><strong>Phase 3 — Key-free confirmation (run this in parallel; it is the best experiment available and it is cheap).</strong><br />
+<strong>Formalise the Oocephalus test.</strong> Take Knowles' full pharma↔herbal duplicate-drawing list <strong>[V]</strong>. For each matched pair, ask whether the pharma label token recurs in the herbal page's running text. Null: frequency-matched random tokens of the same MS-wide rarity against random herbal pages.<br />
+  This test assumes <strong>no language, no key, no plant identification at all</strong>. It asks only whether the manuscript is internally consistent with labels being names of things. It is the single cleanest available falsifier.<br />
+  Oocephalus's informal 2016 version returned <code>otory</code> and little else <strong>[V]</strong>. A properly powered version at n ≥ 30 pairs would settle it.</p>
+<p>### 4.3 What would falsify it — concretely</p>
+<ol>
+<li><strong>Held-out match rate within the refit-permutation null.</strong> → The crib produces nothing a random key wouldn't.</li>
+<li><strong>Krippendorff's α &lt; 0.4 at species level.</strong> → No stable anchor; programme cannot start.</li>
+<li><strong>Oocephalus recurrence test null at n ≥ 30.</strong> → Labels are not the names of the things they sit beside, in the text's own vocabulary. <strong>This kills the thesis regardless of how good the plant IDs get.</strong></li>
+<li><strong>Repeated labels on incompatible objects at chance rate.</strong> Already effectively observed: <code>okoe89</code> labels three plants, a funnel, and a castle <strong>[V]</strong>; "a good number of zodiac labels occur multiple times" <strong>[V]</strong>.</li>
+<li><strong>Any proposed key failing to generalise from pharma labels to herbal running text.</strong> Given token-order information &lt;1% of entropy <strong>[V]</strong>, there is no coherent output to check — which means this falsifier is <em>unavailable</em>, and that unavailability is itself the strongest argument against the whole programme.</li>
+</ol>
+<p>### 4.4 On the Linear B analogy</p>
+<p>It does not hold, and the disanalogy is instructive. Ventris had (a) Kober's triplets — an inflectional paradigm derived from <em>internal</em> evidence, independent of any plaintext guess; (b) a grid built from that paradigm, into which place names were inserted as constraints rather than as answers; (c) a global consistency check, because a wrong grid produced non-Greek across thousands of unrelated tablets.</p>
+<p>Voynich research has no (a): no established inflectional paradigm. And it has no (c): R&amp;T's &lt;1% token-order result means there is no prose coherence to validate against. <strong>Cribs were never the engine of Linear B — the paradigm and the global check were. The place names were the ignition on an engine that already existed.</strong> There is no engine here, so ignition does nothing.</p>
+<p>### 4.5 On "knowing the plants IS effectively a translation"</p>
+<p>Flatly false, and worth saying bluntly. Even a perfect, uncontested identification of all ~130 plants gives you a semantic gloss of the <em>pictures</em>. The text-to-image relationship is itself unestablished: JKP's point that the MS is unfinished and that text may have been added later by a different person for a different purpose <strong>[V]</strong>; and the demonstrated fact that the <em>paint</em> was added later by someone who did not understand the content (paint transfers match current binding order although quires were demonstrably reordered) <strong>[V]</strong>. Identifying the plants would be a real and valuable contribution to the art history and source-tradition question. It would not be a translation, and on the evidence above it would not measurably advance one.</p>
+<hr />
+<p>## 5. COLOUR-VISION-DEFICIENCY PRECEDENT — split verdict. Read this carefully, the two halves differ.</p>
+<p>### 5a. "Identify on morphology, ignore pigment" — <strong>PRIOR ART EXISTS. Clear priority, 2024, with quantitative backing. Do not claim this.</strong></p>
+<p><strong>Koen Gheuens, "Voynich Flowers: Too Blue?", The Voynich Temple, 13 August 2024 [V]</strong> — submitted as his Voynich Manuscript Day 2024 presentation. His closing sentence is your proposal:</p>
+<blockquote>
+<p>"<strong>All of this means that the position that the plant colors are botanically reliable cannot possibly be defended. For people wishing to undertake such an exercise, it might be more fruitful to work from greyscale images.</strong>"</p>
+</blockquote>
+<p>His supporting data (all <strong>[V]</strong>, counted by him across the VM and six comparison herbals — Wenceslas Casanatense 459, Manfredus BNF Lat 6823, Trinity O.2.48, Chigi Dioscorides Chig.F.VII.159, Firenze Apuleius Plut.73.16, Vermont MS 2 — sample-matched to ~134 plants each):</p>
+<ul>
+<li><strong>52% of flowered VM plants have blue petals</strong>; 74% have blue somewhere in the flower. Nature: ~5% blue (Weevers). Other herbals: 0–24% (Vermont 16%, Trinity 24%). <strong>"6 times the average herbal, 10 times the natural proportion."</strong></li>
+<li><strong>No purple anywhere in the VM.</strong> Even generously pooling nature's blue+purple = 19% against the VM's 52% petal-blue alone, the surplus is unexplained.</li>
+<li><strong>Yellow is the lowest of every manuscript sampled</strong>, against ~31% yellow-orange in nature. Zandbergen relays that Alain Touwaide remarked on this in 2014 <strong>[R]</strong>. Pigment degradation is ruled inadequate: yellow is still visibly present where applied, and painted-vs-blank areas remain distinguishable.</li>
+<li><strong>Red is at the bottom end even when Herbal A is isolated.</strong> (Sam G.'s observation: Herbal A has plenty of red, Herbal B almost none <strong>[R]</strong>.)</li>
+<li><strong>White/blank is excessive</strong>, and ~40% of flowered plants show deliberate blue/white alternation within a single flower.</li>
+<li><strong>Calyxes</strong>, green as a rule in every comparison herbal, are disproportionately white, blue, yellow and red in the VM.</li>
+<li>Stems: excess yellow/tan, deficit of green and brown.</li>
+</ul>
+<p>Earlier, weaker precedent for the same methodological move <strong>[V]</strong>:<br />
+  - <strong>Ethel Lilian Voynich and Theodore Petersen, 1920s–30s</strong>, on f18r, from her Beinecke notebooks: <em>"Dr. Petersen agrees with me that, in spite of the impossible blue and red colouring (which may have been put in for a blind, or may have been added later by someone who did not know the plant) this is a drawing of Calendula Officinalis. All parts agree with that; root, growth, stem, leaves, disk rays, involucre and buds."</em> That is identification-by-morphology-discounting-pigment, a century ago.<br />
+  - <strong>Joannes Richter, 2011</strong> — noticed bright yellow missing from all flowers; explained it as religious symbolism (yellow as the traitor's colour). Observation yes, vision no.<br />
+  - <strong>Nick Pelling, 20 Dec 2011</strong> — "trying to infer things about the Voynich Manuscript based on its colours is, sadly, a sure path to madness," grounded in Stolfi's heavy-painter hypothesis.<br />
+  - <strong>D.N. O'Donovan, 8 July 2025 [V]</strong> — treats it as settled background: <em>"elements coloured naturally in that range [pink to purple] will be omitted or differently coloured in this manuscript's vegetal drawings"</em>; <em>"the shunned range from pink through purple."</em></p>
+<p>### 5b. "The illustrator had a colour vision deficiency" — <strong>NEARLY ABSENT, but not cleanly absent. One prior proposal, and it is not the one you want.</strong></p>
+<p><strong>voynich.ninja thread-5505, "Possibility that the VM author was colorblind?" [V]</strong> — the whole thread is four posts and I read all of them:</p>
+<ul>
+<li><strong><code>hatoncat</code>, 4 February 2026</strong> — opens by quoting Gheuens' summary (too much blue, too much white, too much yellow in stems, non-green calyxes) and asks whether the blue flowers "might have actually appeared green to the drawer." Proposes <strong>blue-yellow deficiency (tritanomaly/tritanopia)</strong>, citing a Google search. "Could this explain why they thought they were including pink when they were using a yellow pigment, or a green ink when it was actually blue?"</li>
+<li><strong><code>Koen G</code> (Koen Gheuens), 4 February 2026 — rebuts it same day:</strong> "It doesn't quite add up though. What we are missing in flower petals is yellow and pink/red. Instead, we have much more blue. With the condition you describe, the implication would be that the painter thought they were using green instead of blue, which still doesn't make sense for the petals. Moreover, <strong>leaves are usually done in good greens. So I assume that this person knew pretty well what green looked like.</strong>"</li>
+<li><strong><code>agalakhov</code>, 4 July 2026</strong> — offers the rival explanation: fading, "if green was a mixture of stable blue and unstable yellow. A spectroscopy of paints would help."</li>
+<li><strong><code>ErinaBee</code>, 7 July 2026</strong> — reports mild CVD personally, and: "<strong>colorblind people usually mix up red and green.</strong> Blue and green would indicate Tritanopia which is a very severe form... A blue leaf would appear green, but a yellow petal still looks yellowish, not blue... <strong>Tritanopia would not contribute to the deficiency of red.</strong>"</li>
+</ul>
+<p><strong>Precise priority assessment:</strong><br />
+  - The <strong>general</strong> "VM illustrator was colour blind" idea: <strong>proposed, 4 February 2026</strong> — i.e. <em>in</em> 2026, not before it. Whether that counts as prior art depends on your cutoff date.<br />
+  - <strong>Deuteranomaly / red-green specifically as the proposed explanation: NOT FOUND ANYWHERE.</strong> The only person in the thread to mention red-green is ErinaBee, and she raises it to <em>characterise typical CVD</em> while arguing that the proposed tritan mechanism fails — she does not propose deuteranomaly as the answer. Nobody connects red-green deficiency to the VM's red/yellow deficit.<br />
+  - <strong>Academic literature: VERIFIED ABSENT.</strong> OpenAlex searches for Voynich + colour blindness returned zero relevant works across 2,066 indexed Voynich papers. Crossref likewise.<br />
+  - <strong>Cipher Mysteries: VERIFIED ABSENT.</strong> I fetched the most relevant post ("Voynich colour inference, a sure path to madness", 2011) and grepped the full page including all 25 comments for <em>colour blind / colorblind / color vision / deuter / tritan / protan</em> — <strong>zero hits.</strong> Domain-restricted searches across ciphermysteries.com, voynichrevisionist.com, herculeaf.wordpress.com, voynichportal.com and voynich.nu returned nothing.<br />
+  - <strong>Gheuens' "Too Blue?" post: VERIFIED ABSENT.</strong> Grepped the full article plus its 24 comments for the same terms — <strong>zero hits.</strong> The one hit for "blind" is Ethel Voynich's 1920s phrase "put in for a blind," meaning a deliberate deception, not vision.</p>
+<p>### 5c. Blunt assessment of the CVD hypothesis on the evidence</p>
+<p>If you intend to pursue this, you should know what it is up against, because the obstacles are in the data I verified above, not in the literature:</p>
+<ol>
+<li><strong>Gheuens' green objection is strong and unanswered [V].</strong> Leaves are rendered in good greens throughout. A red-green deficient painter discriminates green from red poorly — but green from <em>blue</em> perfectly well, which is consistent. So deuteranomaly survives this objection where tritanomaly does not. That is the one respect in which your version is better than hatoncat's, and it is worth stating.</li>
+<li><strong>The yellow pattern is the real problem, and it is not perceptual.</strong> Yellow is <em>abundant in stems</em> and <em>absent from flowers</em> <strong>[V]</strong>. No colour vision deficiency is context-sensitive by plant organ. That is a selection or convention effect. Any CVD account must either explain this or concede it needs a second, non-perceptual mechanism — at which point parsimony is gone.</li>
+<li><strong>The deliberate blue/white alternation within single flowers (~40% of flowered plants) [V]</strong> is a design decision, not a perceptual error.</li>
+<li><strong>The dominant rival explanation is codicologically grounded and it is good.</strong> Stolfi's heavy painter, added perhaps a century later by someone who did not understand the content <strong>[V]</strong>; supported by the fact that paint transfers match the <em>current</em> binding order although the quires were demonstrably reordered <strong>[V]</strong>; further supported by Pelling's observation that light Aries and dark Aries were painted by different hands in different palettes <strong>[V]</strong>. If most colour is not the original illustrator's, the original illustrator's colour vision is not recoverable from it — the hypothesis is about the wrong person.</li>
+<li><strong>agalakhov's fading hypothesis is cheaper and testable [V]:</strong> green as stable-blue + unstable-yellow. Spectroscopy would settle it. McCrone already analysed the pigments (azurite+cuprite blue, copper/copper-chloride green, hematite red ochre) <strong>[R]</strong> — a targeted re-examination could discriminate.</li>
+</ol>
+<p><strong>Net priority verdict:</strong> the <em>methodology</em> (ignore pigment, use morphology, prefer greyscale) is published and quantified by Gheuens, August 2024 — you cannot claim it and should cite it. The <em>specific deuteranomaly explanation</em> appears genuinely unclaimed, but its nearest neighbour was floated on 4 February 2026 and rebutted the same day by the person who owns the underlying dataset. Treat 5a as established prior art, 5b as narrowly open but contested territory with a live rebuttal you would have to answer.</p>
+<hr />
+<p>## VERDICT ON THE CRIB THESIS</p>
+<p><strong>Not viable.</strong> Four independent kill-shots:</p>
+<ol>
+<li><strong>The corpus doesn't exist.</strong> The ~130 identifiable full-plant folios have no labels — only running text, and the first-word anchor is dead on gallows statistics <strong>[V]</strong>. The entire botanical label corpus is ~152 items in a 12-page section of partial drawings that are the hardest to identify.</li>
+<li><strong>The labels are too short to hold plant names</strong> under any verbosity consistent with the statistics — conceded by Greshko about his own cipher <strong>[V]</strong> — and they repeat across incompatible objects (<code>okoe89</code>: three plants, a funnel, a castle) <strong>[V]</strong>.</li>
+<li><strong>The anchor is unstable and has never been measured.</strong> Credentialed botanists assign the same folios to different hemispheres <strong>[V]</strong>; the foundational IDs (O'Neill's sunflower) collapsed <strong>[V]</strong>; no inter-rater study exists.</li>
+<li><strong>There is no global consistency check for a crib to feed.</strong> Token-order information is &lt;1% of token entropy <strong>[V]</strong>, so a wrong key produces no detectable garbage. This is why every attempt in §1 "succeeded" and none replicated. The Linear B analogy inverts: cribs were the ignition, the paradigm and the coherence check were the engine, and here the engine is missing.</li>
+</ol>
+<p>"Knowing the plants IS effectively a translation" is false. Identifying the plants is a worthwhile contribution to art history and the source-tradition question. It is not a decipherment and the evidence indicates it would not produce one.</p>
+<p><strong>The one thing genuinely worth doing</strong> is §4.2 Phase 3 — the formalised Oocephalus test over Knowles' full pharma↔herbal duplicate list with a frequency-matched null. It needs no language, no key, no plant identification, and no funding. It asks whether the manuscript is internally consistent with labels being names at all. A null result at n ≥ 30 closes the question permanently. A positive result would be the most important finding in the field in a decade. Nobody has run it properly. That is the experiment.</p>
+<hr />
+<p>## SOURCES</p>
+<p><strong>Retrieved and read in full (primary):</strong><br />
+  - https://export.arxiv.org/api/query?id_list=2608.17096 — Rozanova &amp; Temerev metadata + abstract<br />
+  - https://arxiv.org/html/2608.17096v1 — full text, "A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space"<br />
+  - https://ciphermysteries.com/2017/09/03/voynich-labelese — Pelling on labelese<br />
+  - https://ciphermysteries.com/2014/02/21/stephen-bax-voynich-manuscript — Pelling's 7-point demolition of Bax<br />
+  - https://ciphermysteries.com/2014/01/21/brand-new-new-world-nahuatl-voynich-manuscript-theory — Pelling on Tucker &amp; Talbert, incl. Zandbergen's comment<br />
+  - https://ciphermysteries.com/2011/12/20/voynich-colour-inference-a-sure-path-to-madness — heavy painter; Richter 2011; CVD-grep negative<br />
+  - https://www.voynich.ninja/thread-4848.html and https://www.voynich.ninja/archive/index.php/thread-4848{,-2,-3,-4}.html — Naibbe thread; Greshko "weirdly short and uninformative" located on archive page 2<br />
+  - https://www.voynich.ninja/archive/index.php/thread-5505.html — "Possibility that the VM author was colorblind?", all four posts<br />
+  - https://www.voynich.ninja/archive/index.php/thread-196{,-2,-3,-4}.html — "Plants and labels in pharma section"; the Oocephalus test<br />
+  - https://herculeaf.wordpress.com/2024/08/13/voynich-flowers-too-blue/ — Gheuens' colour statistics; greyscale recommendation; Ethel Voynich f18r quote<br />
+  - https://www.voynich.nu/illustr.html — Zandbergen on sections, where labels occur, ID history<br />
+  - https://voynich.nu/a4_word.html — Zandbergen on labels as evidence for word spaces<br />
+  - https://www.voynich.nu/a1_intro.html<br />
+  - https://voynichrevisionist.com/2025/07/08/the-voynich-manuscripts-vegetal-images-graphic-vocabulary-pt-6a-inexactitude-authority-and-dissent/ — O'Donovan on ID methodology and Sherwood's f1v<br />
+  - https://voynichrevisionist.com/2025/10/04/the-voynich-manuscripts-vegetal-images-vocabulary-pt-9-meme-law-unidentifiable-plants/ — who has claimed IDs since 2000<br />
+  - https://voynichattacks.wordpress.com/category/labels/ — Julian Bunn's label attacks; Lapidario null; okoe89/castle<br />
+  - http://web.archive.org/web/20260316093750id_/https://www.edithsherwood.com/voynich-botanical-plant-anagrams/index.php — Sherwood, "The Voynich Botanical Plant Names Decoded" (live site down)<br />
+  - http://web.archive.org/web/20260415190330/https://stephenbax.net/?page_id=419 — Bax "Voynich plant names" (page shell only; content not preserved)<br />
+  - https://api.openalex.org/works?search=Voynich+manuscript (+ colour-vision variants) — 2,066 works; zero on CVD or ID reliability<br />
+  - https://api.crossref.org/works?query.bibliographic=Phytomorphs+Pharmaceutical+Section+Rosetta+Stone+Voynich — confirmed Tucker &amp; Janick 2018, DOI 10.1007/978-3-319-77294-3_5<br />
+  - https://archive.org/wayback/available?url=... — availability lookups<br />
+  - https://archive.org/stream/Stephen_Bax_Voynich_manuscript_script_and_language_2014/Voynich-a-provisional-partial-decoding-BAX_djvu.txt — retrieved as HTML wrapper; not used as a primary citation</p>
+<p><strong>UNRETRIEVED — blocked, flagged rather than paraphrased:</strong><br />
+  - https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408 — Greshko, "The Naibbe cipher", Cryptologia. <strong>403.</strong> §4.4 (the label discussion Greshko points to) not read. No preprint found on arXiv, OSF or Zenodo.<br />
+  - https://hort.purdue.edu/newcrop/voynich/unraveling-voynich-chap-5-rosetta-stone.pdf — Tucker &amp; Janick Ch.5 "The Rosetta Stone of the Voynich Codex". <strong>Purdue WAF rejection</strong>; not in Wayback.<br />
+  - https://www.herbalgram.org/.../hg100-feat-voynich/ — Tucker &amp; Talbert 2013. <strong>0 bytes live and via Wayback.</strong> The "179 items / 152 named" figure is therefore <strong>[R]</strong>, not <strong>[V]</strong>.<br />
+  - https://link.springer.com/chapter/10.1007/978-3-319-77294-3_5 — <strong>211-byte stub.</strong><br />
+  - https://stephenbax.net/wp-content/uploads/2014/01/Voynich-a-provisional-partial-decoding-BAX.pdf — <strong>403.</strong> Bax's paper characterised from Pelling's point-by-point critique and search summaries, not from the original.<br />
+  - https://www.ic.unicamp.br/~stolfi/voynich/00-12-21-word-length-distr/ — <strong>404.</strong> The label-vs-running-text length claim in §2 is <strong>[R]</strong> and should be re-verified.<br />
+  - https://www.voynich.nu/a2_pharma.html — <strong>404</strong> (wrong path; not re-located).</p>
+<hr />
+<h2>Academic References &amp; Codicological Bibliography</h2>
+<ul>
+<li><strong>Beinecke Library</strong>: Yale University Beinecke Rare Book and Manuscript Library. (c. 1404–1438). <em>Voynich Manuscript</em> [Digital Facsimile MS 408]. Yale University Digital Collections. https://collections.library.yale.edu/catalog/2002046</li>
+<li><strong>Hodgins, G. W. L.</strong> (2011). <em>Radiocarbon Dating of the Voynich Manuscript Parchment</em>. NSF Arizona AMS Laboratory, University of Arizona &amp; Yale University Beinecke Library.</li>
+<li><strong>McCrone Associates</strong>. (2009). <em>Microanalytic Pigment, Fiber, and Ink Characterization of Beinecke MS 408</em>. McCrone Research Institute Report to Yale University Library.</li>
+<li><strong>Casey, T. L.</strong> (2026). <em>The Mechanical Voynich: Interactive SVG Concordance Atlas and Iatromathematical Exegesis of Beinecke MS 408</em>. The Mechanical Voynich Research Platform. https://voynich.ozark-oracle.com</li>
+<li><strong>Palmer, R.</strong> (1985). Medical Botany in Medieval Venice. <em>Medical History</em>, 29(4), 402–421. https://doi.org/10.1017/s0025727300044738</li>
+<li><strong>Steneck, N. H.</strong> (1974). <em>Science and Creation in the Middle Ages: The Art and Mind of Henry of Langenstein</em>. University of Notre Dame Press.</li>
+<li><strong>Köhler, F. E.</strong> (1887). <em>Köhler's Medizinal-Pflanzen in naturgetreuen Abbildungen mit kurz erläuterndem Texte</em>. Gera-Untermhaus.</li>
+<li><strong>Segre, A.</strong> (1998). <em>Il Trattato de Herbis dell'Erbario Estense: Codice Modena Lat. 993</em>. Franco Maria Ricci.</li>
+<li><strong>Zandbergen, R.</strong> (2017). <em>Analysis of Currier Hand A and B Segregation in MS 408</em>. Voynich Information Portal.</li>
+</ul>
+    </div>
+</body>
+</html>

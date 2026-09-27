@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mechanical Voynich: System User Manual, Dictionary, and Codicological Handbook · The Mechanical Voynich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #090d16;
+            --bg-card: #111827;
+            --border-color: #1f2937;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --gold: #d4af37;
+            --cyan: #38bdf8;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 19px;
+            line-height: 1.75;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-top: 1.5em;
+        }
+        h1.paper-title {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        p { margin-bottom: 1.2em; }
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0,0,0,0.3);
+            color: var(--cyan);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+        }
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        table.academic-table th {
+            background: #1e293b;
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 16px;
+            border: 1px solid #334155;
+        }
+        table.academic-table td {
+            padding: 10px 16px;
+            border: 1px solid #334155;
+        }
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Mechanical Voynich: System User Manual, Dictionary, and Codicological Handbook</h1>
+<p><strong>Lead Researcher &amp; Author</strong>: Tammy Lou Casey<br />
+<strong>Affiliation</strong>: Independent Researcher<br />
+<strong>Target Platform</strong>: <em>The Mechanical Voynich</em> Web Portal &amp; Interactive Concordance Atlas<br />
+<strong>Live URL</strong>: <a href="https://voynich.ozark-oracle.com">https://voynich.ozark-oracle.com</a></p>
+<hr />
+<h2>1. Executive Introduction: Purpose of This Manual</h2>
+<p>This handbook provides clear, plain-English, step-by-step instructions for researchers, botanists, historians, and the public on how to navigate <strong>The Mechanical Voynich Research Platform</strong> and utilize our <strong>EVA-to-English Botanical Lexicon &amp; Pharmacopeia Dictionary</strong>.</p>
+<p>Whether you are looking up a specific folio image, analyzing a plant's root anatomy, tracing a medieval pharmaceutical recipe, or translating an EVA word token, this guide outlines the exact workflow.</p>
+<hr />
+<h2>2. Core Concepts: The Triad Concordance Architecture</h2>
+<p>The Voynich manuscript (Yale Beinecke MS 408) is organized into three interconnected anatomical sections:</p>
+<pre><code>┌──────────────────────────────────────────────────────────────────────────┐
+│                     THE TRIAD CONCORDANCE ARCHITECTURE                   │
+├──────────────────────────────────────────────────────────────────────────┤
+│ 1. HERBAL SECTION (ff. 1r - 66v):                                       │
+│    Large plant portraits detailing root morphology, stems, and flowers. │
+│                                   │                                      │
+│                                   ▼                                      │
+│ 2. PHARMACEUTICAL SECTION (ff. 87r - 102r):                              │
+│    Apothecary jars (albarelli) containing processed extracts, marked     │
+│    with miniature sprigs and diagnostic label tokens.                    │
+│                                   │                                      │
+│                                   ▼                                      │
+│ 3. RECIPE SECTION (ff. 103r - 116v):                                     │
+│    Compounding formulary paragraphs preceded by stars, detailing         │
+│    posology (dosage), vehicle (wine/tallow), and administration times.  │
+└──────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>3. How to Use the EVA Botanical Lexicon &amp; Dictionary</h2>
+<h3>3.1 Understanding EVA (European Voynich Alphabet)</h3>
+<p>The manuscript text is transcribed using <strong>EVA (European Voynich Alphabet)</strong>, a standardized ASCII representation of Voynich glyphs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">EVA Token</th>
+<th style="text-align: left;">Botanical / Grammatical Meaning</th>
+<th style="text-align: left;">Medieval Latin Equivalent</th>
+<th style="text-align: left;">Clinical / Practical Translation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>daiin</strong></td>
+<td style="text-align: left;">"take / recipe minim"</td>
+<td style="text-align: left;"><em>Recipe / Minim</em></td>
+<td style="text-align: left;">Primary prescription header ("Take 2 minims")</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ol</strong></td>
+<td style="text-align: left;">"the / sacred simplex"</td>
+<td style="text-align: left;"><em>Herba / Simplex</em></td>
+<td style="text-align: left;">Simplex herb marker preceding plant name</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>chedy</strong></td>
+<td style="text-align: left;">"mix / compound"</td>
+<td style="text-align: left;"><em>Misce / Compone</em></td>
+<td style="text-align: left;">Compounding instruction for apothecary</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>otaiin</strong></td>
+<td style="text-align: left;">"decoction / liquid extract"</td>
+<td style="text-align: left;"><em>Decoctio / Liquor</em></td>
+<td style="text-align: left;">Aqueous or wine-steeped liquid extract</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>aiin</strong></td>
+<td style="text-align: left;">"minim / fluid drop"</td>
+<td style="text-align: left;"><em>Drop / Minim</em></td>
+<td style="text-align: left;">Unit of liquid dosage measurement</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>qokeey</strong></td>
+<td style="text-align: left;">"purge / cleanse"</td>
+<td style="text-align: left;"><em>Purga / Catharticum</em></td>
+<td style="text-align: left;">Evacuant or bowel purge directive</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>shedy</strong></td>
+<td style="text-align: left;">"wash / lotion"</td>
+<td style="text-align: left;"><em>Lotio / Lavacrum</em></td>
+<td style="text-align: left;">External wash or topical liniment</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ykeey</strong></td>
+<td style="text-align: left;">"boil / simmer"</td>
+<td style="text-align: left;"><em>Coque / Ferveo</em></td>
+<td style="text-align: left;">Thermal extraction instruction</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>3.2 Step-by-Step Word Lookup Protocol</h3>
+<p>To look up any word token from the manuscript:</p>
+<ol>
+<li><strong>Open the Lexicon Explorer</strong>: Navigate to the <strong>Lexicon Tab</strong> on <a href="https://voynich.ozark-oracle.com">https://voynich.ozark-oracle.com</a> or open <a href="file:///c:/flask-structural-api/services/voynich/research/dist/lexicon.html"><code>dist/lexicon.html</code></a>.</li>
+<li><strong>Search by EVA Token</strong>: Type the EVA string (e.g. <code>daiin</code>, <code>chedy</code>, <code>ol</code>) into the interactive search bar.</li>
+<li><strong>Filter by Section</strong>: Select whether you are searching within Herbal titles, Jar labels, or Recipe paragraphs.</li>
+<li><strong>Review Frequency &amp; Cross-References</strong>: The system instantly displays:</li>
+<li>Total occurrences across the codex.</li>
+<li>Associated botanical folios where the token appears.</li>
+<li>Corresponding Salernitan pharmaceutical translation.</li>
+</ol>
+<hr />
+<h2>4. How to Use the Interactive Concordance Atlas &amp; Labeled Page Map</h2>
+<h3>4.1 Navigating the SVG Interactive Atlas</h3>
+<ol>
+<li><strong>Select a Folio</strong>: Click on any folio tab (e.g. <code>f1r</code>, <code>f2v</code>, <code>f33v</code>, <code>f87r</code>).</li>
+<li><strong>Toggle Labeled Anatomical Zones</strong>: Click the <strong>"Show Anatomical Map"</strong> button. The high-resolution IIIF parchment image renders interactive color-coded diagnostic overlays:</li>
+<li>🔵 <strong>Cyan Zones (Flowers / Corolla)</strong>: Floral organ diagnostics.</li>
+<li>🟢 <strong>Emerald Zones (Foliage / Lamina)</strong>: Leaf margins, venation, and heterophylly.</li>
+<li>🟠 <strong>Amber Zones (Rhizome / Rootstock)</strong>: Primary diagnostic root anatomy (<em>Radix</em>).</li>
+<li>🟣 <strong>Amethyst Zones (Albarelli / Vessels)</strong>: Apothecary jar labels.</li>
+<li>
+<p>🟡 <strong>Gold Lines (Text Lines / Prescription Clauses)</strong>: Transcribed EVA text lines.</p>
+</li>
+<li>
+<p><strong>Hover &amp; Inspect</strong>: Hover over any zone to view instant botanical diagnosis, photography comparisons from <em>Köhler's Medizinal-Pflanzen</em>, and Salernitan posology links.</p>
+</li>
+</ol>
+<hr />
+<h2>5. How to Look Up Unidentified &amp; Forgotten Plants</h2>
+<p>When encountering an unfamiliar or "surreal" plant drawing:</p>
+<ol>
+<li><strong>Check the Root First</strong>: In classical botany, foliage changes with season, but <strong>root morphology is permanent</strong>. Examine whether the root is a single taproot (<em>Hyoscyamus</em>), a cluster of tubers (<em>Sium sisarum</em> - Skirret), a creeping scaly rhizome (<em>Polygonatum</em>), or an isolated subterranean sphere (<em>Conopodium</em> - Pignut).</li>
+<li><strong>Check for Heterophylly</strong>: Compare lower basal leaves against upper stem leaves. If they differ, check the <strong>Heterophylly Matrix</strong> in <a href="file:///c:/flask-structural-api/services/voynich/research/VOYNICH_MORPHOLOGICAL_GROWTH_PATTERNS_MONOGRAPH.md"><code>VOYNICH_MORPHOLOGICAL_GROWTH_PATTERNS_MONOGRAPH.md</code></a>.</li>
+<li><strong>Consult the Master Botanical Index</strong>: Open <a href="file:///c:/flask-structural-api/services/voynich/research/VOYNICH_MASTER_BOTANICAL_INDEX_AND_PHARMACOPEIA.md"><code>VOYNICH_MASTER_BOTANICAL_INDEX_AND_PHARMACOPEIA.md</code></a> or the <strong>Botanical Consensus Tab</strong> to view verified binomials, high-resolution photography, and Salernitan recipes.</li>
+</ol>
+<hr />
+<h2>6. Quick Reference Cheat-Sheet for New Users</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Goal</th>
+<th style="text-align: left;">Recommended Tool / Action</th>
+<th style="text-align: left;">Direct File / URL Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Browse All Folio High-Res Maps</strong></td>
+<td style="text-align: left;">Interactive Page Map Explorer</td>
+<td style="text-align: left;"><a href="https://voynich.ozark-oracle.com">https://voynich.ozark-oracle.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Look Up EVA Words &amp; Translations</strong></td>
+<td style="text-align: left;">EVA-to-English Lexicon Dictionary</td>
+<td style="text-align: left;"><a href="file:///c:/flask-structural-api/services/voynich/research/dist/lexicon.html"><code>dist/lexicon.html</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Inspect Plant Identities &amp; Photos</strong></td>
+<td style="text-align: left;">Master Botanical Index</td>
+<td style="text-align: left;"><a href="file:///c:/flask-structural-api/services/voynich/research/dist/botanical.html"><code>dist/botanical.html</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Study Growth Patterns &amp; Skirret/Pignut</strong></td>
+<td style="text-align: left;">Morphological Monograph</td>
+<td style="text-align: left;"><a href="file:///c:/flask-structural-api/services/voynich/research/VOYNICH_MORPHOLOGICAL_GROWTH_PATTERNS_MONOGRAPH.md"><code>VOYNICH_MORPHOLOGICAL_GROWTH_PATTERNS_MONOGRAPH.md</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Read Page-by-Page Exegesis</strong></td>
+<td style="text-align: left;">Complete Translation Monograph</td>
+<td style="text-align: left;"><a href="file:///c:/flask-structural-api/services/voynich/research/VOYNICH_PAGE_BY_PAGE_TRANSLATION_AND_STRUCTURAL_EXEGESIS.md"><code>VOYNICH_PAGE_BY_PAGE_TRANSLATION_AND_STRUCTURAL_EXEGESIS.md</code></a></td>
+</tr>
+</tbody>
+</table>
+    </div>
+</body>
+</html>
