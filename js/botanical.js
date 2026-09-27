@@ -25,7 +25,12 @@ function renderBotanicalGallery() {
     if (currentBotanicalFilter === 'identified') {
         entries = entries.filter(e => e.status === 'IDENTIFIED');
     } else if (currentBotanicalFilter === 'imported') {
-        entries = entries.filter(e => (e.compounding_posology || '').toLowerCase().includes('spice') || (e.common_name || '').toLowerCase().includes('rhubarb') || (e.common_name || '').toLowerCase().includes('ginger') || (e.common_name || '').toLowerCase().includes('spikenard'));
+        const keywords = ['venetian', 'trade', 'import', 'spice', 'theriac', 'rhubarb', 'spikenard', 'ginger', 'gamboge', 'resin', 'gum', 'silphium', 'asafoetida', 'siler', 'alexipharmic', 'albarello', 'exotic', 'oriental'];
+        entries = entries.filter(e => {
+            if (e.status === 'IMPORTED_SPICE_TRADE' || e.is_imported) return true;
+            const txt = ((e.common_name || '') + ' ' + (e.binomial || '') + ' ' + (e.compounding_posology || '') + ' ' + (e.english_translation || '') + ' ' + (e.root_diagnosis || '') + ' ' + (e.photo_credit || '') + ' ' + (e.pharma_link || '')).toLowerCase();
+            return keywords.some(kw => txt.includes(kw));
+        });
     } else if (currentBotanicalFilter === 'pending') {
         entries = entries.filter(e => e.status !== 'IDENTIFIED');
     }
