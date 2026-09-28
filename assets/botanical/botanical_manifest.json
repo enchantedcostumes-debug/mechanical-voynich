@@ -1,0 +1,972 @@
+{
+  "f1r": {
+    "plant_local": "assets/botanical/f1r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Atropa_belladonna_%2816421213557%29.jpg/1280px-Atropa_belladonna_%2816421213557%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Atropa belladonna",
+    "common_name": "Deadly Nightshade",
+    "family": "Solanaceae"
+  },
+  "f1v": {
+    "plant_local": "assets/botanical/f1v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-073.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Hyoscyamus niger",
+    "common_name": "Black Henbane",
+    "family": "Solanaceae"
+  },
+  "f2r": {
+    "plant_local": "assets/botanical/f2r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Artemisia_absinthium_P1210748.jpg/1280px-Artemisia_absinthium_P1210748.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Artemisia absinthium",
+    "common_name": "Wormwood",
+    "family": "Asteraceae"
+  },
+  "f2v": {
+    "plant_local": "assets/botanical/f2v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/2016_Kwiat_grzybieni_bia%C5%82ych_2.jpg/1280px-2016_Kwiat_grzybieni_bia%C5%82ych_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Nymphaea alba",
+    "common_name": "European White Water Lily",
+    "family": "Nymphaeaceae"
+  },
+  "f3r": {
+    "plant_local": "assets/botanical/f3r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/3/33/Grote_weegbree_bloeiwijze_Plantago_major_subsp._major.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Plantago major",
+    "common_name": "Greater Plantain",
+    "family": "Plantaginaceae"
+  },
+  "f3v": {
+    "plant_local": "assets/botanical/f3v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Paeonia_officinalis_01.JPG/1280px-Paeonia_officinalis_01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Paeonia officinalis",
+    "common_name": "Common Peony",
+    "family": "Paeoniaceae"
+  },
+  "f4r": {
+    "plant_local": "assets/botanical/f4r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/8/84/Nordens_flora_Alchemilla_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Alchemilla vulgaris",
+    "common_name": "Lady's Mantle",
+    "family": "Rosaceae"
+  },
+  "f4v": {
+    "plant_local": "assets/botanical/f4v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Centaurium_erythraea_220603.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Centaurium erythraea",
+    "common_name": "Common Centaury",
+    "family": "Gentianaceae"
+  },
+  "f5r": {
+    "plant_local": "assets/botanical/f5r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Chelidonium_majus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-033.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Chelidonium majus",
+    "common_name": "Greater Celandine",
+    "family": "Papaveraceae"
+  },
+  "f5v": {
+    "plant_local": "assets/botanical/f5v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Helleborus_niger_Kaiser.jpg/1280px-Helleborus_niger_Kaiser.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Helleborus niger",
+    "common_name": "Black Hellebore",
+    "family": "Ranunculaceae"
+  },
+  "f6r": {
+    "plant_local": "assets/botanical/f6r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aconitum_napellus_230705.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Aconitum napellus",
+    "common_name": "Monkshood / Wolfsbane",
+    "family": "Ranunculaceae"
+  },
+  "f6v": {
+    "plant_local": "assets/botanical/f6v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Mandragora_officinarum_002.JPG/1280px-Mandragora_officinarum_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Mandragora officinarum",
+    "common_name": "Mediterranean Mandrake",
+    "family": "Solanaceae"
+  },
+  "f7r": {
+    "plant_local": "assets/botanical/f7r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Symphytum_officinale_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Symphytum officinale",
+    "common_name": "Common Comfrey",
+    "family": "Boraginaceae"
+  },
+  "f7v": {
+    "plant_local": "assets/botanical/f7v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Polygonatum_multiflorum_7789.jpg/1280px-Polygonatum_multiflorum_7789.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Polygonatum multiflorum",
+    "common_name": "Solomon's Seal",
+    "family": "Asparagaceae"
+  },
+  "f8r": {
+    "plant_local": "assets/botanical/f8r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%28MHNT%29_Hypericum_perforatum_flower_and_buttons.jpg/1280px-%28MHNT%29_Hypericum_perforatum_flower_and_buttons.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Hypericum perforatum",
+    "common_name": "St. John's Wort",
+    "family": "Hypericaceae"
+  },
+  "f8v": {
+    "plant_local": "assets/botanical/f8v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/2/21/Bladder_Campion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Silene vulgaris",
+    "common_name": "Bladder Campion",
+    "family": "Caryophyllaceae"
+  },
+  "f9r": {
+    "plant_local": "assets/botanical/f9r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Salvia_officinalis0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Salvia officinalis",
+    "common_name": "Common Sage",
+    "family": "Lamiaceae"
+  },
+  "f9v": {
+    "plant_local": "assets/botanical/f9v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Violatricolorarvensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Viola tricolor",
+    "common_name": "Wild Pansy / Heartsease",
+    "family": "Violaceae"
+  },
+  "f10r": {
+    "plant_local": "assets/botanical/f10r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg/1280px-Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Taraxacum officinale",
+    "common_name": "Dandelion / Dens Leonis",
+    "family": "Asteraceae"
+  },
+  "f10v": {
+    "plant_local": "assets/botanical/f10v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Asarum_europaeum_170406.jpg/1280px-Asarum_europaeum_170406.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Asarum europaeum",
+    "common_name": "Asarabacca",
+    "family": "Aristolochiaceae"
+  },
+  "f11r": {
+    "plant_local": "assets/botanical/f11r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Rumex_X_patientia_Sturm55.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Rumex acetosa",
+    "common_name": "Common Sorrel",
+    "family": "Polygonaceae"
+  },
+  "f11v": {
+    "plant_local": "assets/botanical/f11v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Succisa_pratensis_sl6.jpg/1280px-Succisa_pratensis_sl6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Succisa pratensis",
+    "common_name": "Devil's-bit Scabious",
+    "family": "Caprifoliaceae"
+  },
+  "f12r": {
+    "plant_local": "assets/botanical/f12r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Cannabis_sativa_2.jpg/1280px-Cannabis_sativa_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Cannabis sativa",
+    "common_name": "Hemp / Cannabis",
+    "family": "Cannabaceae"
+  },
+  "f12v": {
+    "plant_local": "assets/botanical/f12v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Die_Weinraute%2C_lat._Ruta_graveolens%2C_Pflanze_mit_den_gelben_Bl%C3%BCten.jpg/1280px-Die_Weinraute%2C_lat._Ruta_graveolens%2C_Pflanze_mit_den_gelben_Bl%C3%BCten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Ruta graveolens",
+    "common_name": "Common Rue / Herb of Grace",
+    "family": "Rutaceae"
+  },
+  "f13r": {
+    "plant_local": "assets/botanical/f13r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Fen_nettle_%28Urtica_dioica_ssp._galeopsifolia%29_-_geograph.org.uk_-_5423125.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Urtica dioica",
+    "common_name": "Stinging Nettle",
+    "family": "Urticaceae"
+  },
+  "f13v": {
+    "plant_local": "assets/botanical/f13v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Bryonia_alba1pl.jpg/1280px-Bryonia_alba1pl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Bryonia alba",
+    "common_name": "White Bryony",
+    "family": "Cucurbitaceae"
+  },
+  "f14r": {
+    "plant_local": "assets/botanical/f14r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cichorium_pumilum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Cichorium intybus",
+    "common_name": "Wild Chicory",
+    "family": "Asteraceae"
+  },
+  "f14v": {
+    "plant_local": "assets/botanical/f14v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Verbena_officinalis_sabliere-morriere-plailly_60_30062008_1.jpg/1280px-Verbena_officinalis_sabliere-morriere-plailly_60_30062008_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Verbena officinalis",
+    "common_name": "Common Vervain",
+    "family": "Verbenaceae"
+  },
+  "f15r": {
+    "plant_local": "assets/botanical/f15r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/5/53/Inula_helenium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-210.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Inula helenium",
+    "common_name": "Elecampane / Horseheal",
+    "family": "Asteraceae"
+  },
+  "f15v": {
+    "plant_local": "assets/botanical/f15v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Jeneverbes.jpg/1280px-Jeneverbes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Juniperus communis",
+    "common_name": "Common Juniper",
+    "family": "Cupressaceae"
+  },
+  "f16r": {
+    "plant_local": "assets/botanical/f16r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Aristolochia_rotunda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Aristolochia rotunda",
+    "common_name": "Round Birthwort",
+    "family": "Aristolochiaceae"
+  },
+  "f16v": {
+    "plant_local": "assets/botanical/f16v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/1280px-Foeniculum_July_2011-1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Foeniculum vulgare",
+    "common_name": "Fennel / Dill",
+    "family": "Apiaceae"
+  },
+  "f17r": {
+    "plant_local": "assets/botanical/f17r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Ranunculus_aquatilis_plant.jpg/1280px-Ranunculus_aquatilis_plant.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Ranunculus aquatilis",
+    "common_name": "Water Crowfoot",
+    "family": "Ranunculaceae"
+  },
+  "f17v": {
+    "plant_local": "assets/botanical/f17v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Valeriana_officinalis_002.JPG/1280px-Valeriana_officinalis_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Valeriana officinalis",
+    "common_name": "Garden Valerian",
+    "family": "Caprifoliaceae"
+  },
+  "f18r": {
+    "plant_local": "assets/botanical/f18r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Calendula_officinalis%2C_pot_marigold.JPG/1280px-Calendula_officinalis%2C_pot_marigold.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Calendula officinalis",
+    "common_name": "Pot Marigold",
+    "family": "Asteraceae"
+  },
+  "f18v": {
+    "plant_local": "assets/botanical/f18v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Mallow_January_2008-1.jpg/1280px-Mallow_January_2008-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Malva sylvestris",
+    "common_name": "Common Mallow",
+    "family": "Malvaceae"
+  },
+  "f19r": {
+    "plant_local": "assets/botanical/f19r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Illustration_Agrimonia_eupatoria0.jpg/1280px-Illustration_Agrimonia_eupatoria0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Agrimonia eupatoria",
+    "common_name": "Common Agrimony",
+    "family": "Rosaceae"
+  },
+  "f19v": {
+    "plant_local": "assets/botanical/f19v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Wild_Rosa_gallica_Romania.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Rosa gallica",
+    "common_name": "Apothecary's Rose",
+    "family": "Rosaceae"
+  },
+  "f20r": {
+    "plant_local": "assets/botanical/f20r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Achillea_millefolium_%28bright%29.jpg/1280px-Achillea_millefolium_%28bright%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Achillea millefolium",
+    "common_name": "Common Yarrow",
+    "family": "Asteraceae"
+  },
+  "f20v": {
+    "plant_local": "assets/botanical/f20v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ursa_ajlo_1.jpg/1280px-Ursa_ajlo_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Allium sativum",
+    "common_name": "Cultivated Garlic",
+    "family": "Amaryllidaceae"
+  },
+  "f21r": {
+    "plant_local": "assets/botanical/f21r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Digitalis_purpurea_LC0101.jpg/1280px-Digitalis_purpurea_LC0101.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Digitalis purpurea",
+    "common_name": "Common Foxglove",
+    "family": "Plantaginaceae"
+  },
+  "f21v": {
+    "plant_local": "assets/botanical/f21v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Flora_Monte_di_Mezzo_riserva_UNESCO_M.A.B._-_estate_2015.JPG/1280px-Flora_Monte_di_Mezzo_riserva_UNESCO_M.A.B._-_estate_2015.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Cyclamen hederifolium",
+    "common_name": "Ivy-Leaved Sowbread",
+    "family": "Primulaceae"
+  },
+  "f22r": {
+    "plant_local": "assets/botanical/f22r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Illustration_Colchicum_autumnale0.jpg/1280px-Illustration_Colchicum_autumnale0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Colchicum autumnale",
+    "common_name": "Autumn Crocus / Meadow Saffron",
+    "family": "Colchicaceae"
+  },
+  "f22v": {
+    "plant_local": "assets/botanical/f22v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2751_rbgs11jan.jpg/1280px-Gardenology.org-IMG_2751_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Mentha pulegium",
+    "common_name": "European Pennyroyal",
+    "family": "Lamiaceae"
+  },
+  "f23r": {
+    "plant_local": "assets/botanical/f23r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/P1000627_Bryonia_dioica_%28Cucurbitaceae%29_Plant.JPG/1280px-P1000627_Bryonia_dioica_%28Cucurbitaceae%29_Plant.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Bryonia dioica",
+    "common_name": "Red Bryony / White Bryony",
+    "family": "Cucurbitaceae"
+  },
+  "f23v": {
+    "plant_local": "assets/botanical/f23v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Asarum_europaeum_170406.jpg/1280px-Asarum_europaeum_170406.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Asarum europaeum",
+    "common_name": "Wild Asarabacca",
+    "family": "Aristolochiaceae"
+  },
+  "f24r": {
+    "plant_local": "assets/botanical/f24r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Nardostachys_grandiflora.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Nardostachys jatamansi",
+    "common_name": "Himalayan Spikenard",
+    "family": "Caprifoliaceae"
+  },
+  "f24v": {
+    "plant_local": "assets/botanical/f24v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Alchemilla_alpina1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Alchemilla alpina",
+    "common_name": "Alpine Lady's Mantle",
+    "family": "Rosaceae"
+  },
+  "f25r": {
+    "plant_local": "assets/botanical/f25r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/%28MHNT%29_Coriandrum_sativum_-_inflorescence.jpg/1280px-%28MHNT%29_Coriandrum_sativum_-_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Coriandrum sativum",
+    "common_name": "Coriander / Cilantro",
+    "family": "Apiaceae"
+  },
+  "f25v": {
+    "plant_local": "assets/botanical/f25v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Polygonum_aviculare_4.JPG/1280px-Polygonum_aviculare_4.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Polygonum bistorta",
+    "common_name": "Bistort / Snakeweed",
+    "family": "Polygonaceae"
+  },
+  "f26r": {
+    "plant_local": "assets/botanical/f26r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/6/60/Duda.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Mandragora autumnalis",
+    "common_name": "Autumn Mandrake",
+    "family": "Solanaceae"
+  },
+  "f26v": {
+    "plant_local": "assets/botanical/f26v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cyclamen_purpurascens_Orchi_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Cyclamen purpurascens",
+    "common_name": "Alpine Cyclamen",
+    "family": "Primulaceae"
+  },
+  "f27r": {
+    "plant_local": "assets/botanical/f27r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Papaver_somniferum_flowers.jpg/1280px-Papaver_somniferum_flowers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Papaver somniferum",
+    "common_name": "Opium Poppy",
+    "family": "Papaveraceae"
+  },
+  "f28r": {
+    "plant_local": "assets/botanical/f28r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pimpinella_saxifraga_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-241.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Pimpinella saxifraga",
+    "common_name": "Burnet Saxifrage",
+    "family": "Apiaceae"
+  },
+  "f28v": {
+    "plant_local": "assets/botanical/f28v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Dracunculus_vulgaris_LC0044.jpg/1280px-Dracunculus_vulgaris_LC0044.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Dracunculus vulgaris",
+    "common_name": "Dragon Arum",
+    "family": "Araceae"
+  },
+  "f29r": {
+    "plant_local": "assets/botanical/f29r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Conium.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Conium maculatum",
+    "common_name": "Poison Hemlock",
+    "family": "Apiaceae"
+  },
+  "f29v": {
+    "plant_local": "assets/botanical/f29v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Carduus_Nutans_in_the_Carpathian_Mountains.jpg/1280px-Carduus_Nutans_in_the_Carpathian_Mountains.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Carduus nutans",
+    "common_name": "Musk Thistle",
+    "family": "Asteraceae"
+  },
+  "f30r": {
+    "plant_local": "assets/botanical/f30r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Gentianaceae_-_Gentiana_cruciata-4.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Gentiana cruciata",
+    "common_name": "Cross Gentian",
+    "family": "Gentianaceae"
+  },
+  "f30v": {
+    "plant_local": "assets/botanical/f30v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Solanum_dulcamara_%285386574212%29.jpg/1280px-Solanum_dulcamara_%285386574212%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Solanum dulcamara",
+    "common_name": "Bittersweet Nightshade",
+    "family": "Solanaceae"
+  },
+  "f31r": {
+    "plant_local": "assets/botanical/f31r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/2/24/Scrophularia_nodosa8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Scrophularia nodosa",
+    "common_name": "Common Figwort",
+    "family": "Scrophulariaceae"
+  },
+  "f31v": {
+    "plant_local": "assets/botanical/f31v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Purple_Salsify_-_Stierch.jpg/1280px-Purple_Salsify_-_Stierch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Tragopogon porrifolius",
+    "common_name": "Purple Salsify",
+    "family": "Asteraceae"
+  },
+  "f32r": {
+    "plant_local": "assets/botanical/f32r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Eryngium_campestre_310705b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Eryngium campestre",
+    "common_name": "Field Eryngo",
+    "family": "Apiaceae"
+  },
+  "f32v": {
+    "plant_local": "assets/botanical/f32v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Rubia_tinctorum_flowers.jpg/1280px-Rubia_tinctorum_flowers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Rubia tinctorum",
+    "common_name": "Common Madder",
+    "family": "Rubiaceae"
+  },
+  "f33r": {
+    "plant_local": "assets/botanical/f33r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Euphorbia_lathyris_Sturm33.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Euphorbia lathyris",
+    "common_name": "Caper Spurge",
+    "family": "Euphorbiaceae"
+  },
+  "f33v": {
+    "plant_local": "assets/botanical/f33v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/%28MHNT%29_Centaurea_Benedicta_-_Jardin_Botanique_Henri_GAUSSEN.jpg/1280px-%28MHNT%29_Centaurea_Benedicta_-_Jardin_Botanique_Henri_GAUSSEN.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Centaurea benedicta",
+    "common_name": "Blessed Thistle",
+    "family": "Asteraceae"
+  },
+  "f34r": {
+    "plant_local": "assets/botanical/f34r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Valeriana_pyrenaica_flowers%2C_Annick_Water%2C_Lainshaw%2C_Stewarton%2C_East_Ayrshire.jpg/1280px-Valeriana_pyrenaica_flowers%2C_Annick_Water%2C_Lainshaw%2C_Stewarton%2C_East_Ayrshire.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Valeriana pyrenaica",
+    "common_name": "Pyrenean Valerian",
+    "family": "Caprifoliaceae"
+  },
+  "f34v": {
+    "plant_local": "assets/botanical/f34v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sambucus_nigra_004.jpg/1280px-Sambucus_nigra_004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Sambucus nigra",
+    "common_name": "European Black Elder",
+    "family": "Adoxaceae"
+  },
+  "f35r": {
+    "plant_local": "assets/botanical/f35r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rheum_officinale1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Rheum officinale",
+    "common_name": "Medicinal Rhubarb",
+    "family": "Polygonaceae"
+  },
+  "f35v": {
+    "plant_local": "assets/botanical/f35v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Borage-flower-hr.jpg/1280px-Borage-flower-hr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Borago officinalis",
+    "common_name": "Common Borage",
+    "family": "Boraginaceae"
+  },
+  "f36r": {
+    "plant_local": "assets/botanical/f36r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Cynoglossum_officinale_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Cynoglossum officinale",
+    "common_name": "Houndstongue",
+    "family": "Boraginaceae"
+  },
+  "f36v": {
+    "plant_local": "assets/botanical/f36v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Anemones5.jpg/1280px-Anemones5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Anemone nemorosa",
+    "common_name": "Wood Anemone",
+    "family": "Ranunculaceae"
+  },
+  "f37r": {
+    "plant_local": "assets/botanical/f37r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/ArctiumLappa1.jpg/1280px-ArctiumLappa1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Arctium lappa",
+    "common_name": "Greater Burdock",
+    "family": "Asteraceae"
+  },
+  "f37v": {
+    "plant_local": "assets/botanical/f37v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pulmonaria_officinalis_800.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Pulmonaria officinalis",
+    "common_name": "Common Lungwort",
+    "family": "Boraginaceae"
+  },
+  "f38r": {
+    "plant_local": "assets/botanical/f38r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bellis_perennis_sl1.jpg/1280px-Bellis_perennis_sl1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Bellis perennis",
+    "common_name": "Common Lawn Daisy",
+    "family": "Asteraceae"
+  },
+  "f38v": {
+    "plant_local": "assets/botanical/f38v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Saponaria-officinalis-flower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Saponaria officinalis",
+    "common_name": "Common Soapwort",
+    "family": "Caryophyllaceae"
+  },
+  "f39r": {
+    "plant_local": "assets/botanical/f39r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Coltsfoot.jpg/1280px-Coltsfoot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Tussilago farfara",
+    "common_name": "Coltsfoot",
+    "family": "Asteraceae"
+  },
+  "f39v": {
+    "plant_local": "assets/botanical/f39v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Sanicula_europaea_050606.jpg/1280px-Sanicula_europaea_050606.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Sanicula europaea",
+    "common_name": "Wood Sanicle",
+    "family": "Apiaceae"
+  },
+  "f40r": {
+    "plant_local": "assets/botanical/f40r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%28MHNT%29_Geum_urbanum_-_Habit.jpg/1280px-%28MHNT%29_Geum_urbanum_-_Habit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Geum urbanum",
+    "common_name": "Wood Avens / Herb Bennet",
+    "family": "Rosaceae"
+  },
+  "f40v": {
+    "plant_local": "assets/botanical/f40v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Lavandula angustifolia",
+    "common_name": "English Lavender",
+    "family": "Lamiaceae"
+  },
+  "f41v": {
+    "plant_local": "assets/botanical/f41v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Origanum-vulgare.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Origanum vulgare",
+    "common_name": "Wild Marjoram / Oregano",
+    "family": "Lamiaceae"
+  },
+  "f42r": {
+    "plant_local": "assets/botanical/f42r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Thymus vulgaris",
+    "common_name": "Garden Thyme",
+    "family": "Lamiaceae"
+  },
+  "f42v": {
+    "plant_local": "assets/botanical/f42v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Seseli_libanotis_sl3.jpg/1280px-Seseli_libanotis_sl3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Seseli libanotis",
+    "common_name": "Moon Carrot / Siler Montanum",
+    "family": "Apiaceae"
+  },
+  "f43r": {
+    "plant_local": "assets/botanical/f43r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/ArtemisiaVulgaris.jpg/1280px-ArtemisiaVulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Artemisia vulgaris",
+    "common_name": "Common Mugwort",
+    "family": "Asteraceae"
+  },
+  "f43v": {
+    "plant_local": "assets/botanical/f43v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Tansy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Tanacetum vulgare",
+    "common_name": "Common Tansy",
+    "family": "Asteraceae"
+  },
+  "f44r": {
+    "plant_local": "assets/botanical/f44r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/8/84/Marrubium_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-224.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Marrubium vulgare",
+    "common_name": "White Horehound",
+    "family": "Lamiaceae"
+  },
+  "f44v": {
+    "plant_local": "assets/botanical/f44v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Gamander_Passau.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Teucrium chamaedrys",
+    "common_name": "Wall Germander",
+    "family": "Lamiaceae"
+  },
+  "f45r": {
+    "plant_local": "assets/botanical/f45r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/20130703Stachys_sylvatica1.jpg/1280px-20130703Stachys_sylvatica1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Stachys officinalis",
+    "common_name": "Wood Betony",
+    "family": "Lamiaceae"
+  },
+  "f45v": {
+    "plant_local": "assets/botanical/f45v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Glechoma_hederacea_-_Keila.jpg/1280px-Glechoma_hederacea_-_Keila.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Glechoma hederacea",
+    "common_name": "Ground Ivy",
+    "family": "Lamiaceae"
+  },
+  "f46r": {
+    "plant_local": "assets/botanical/f46r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Catnip-blossom.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Nepeta cataria",
+    "common_name": "Catnip / Catmint",
+    "family": "Lamiaceae"
+  },
+  "f46v": {
+    "plant_local": "assets/botanical/f46v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ortie_blanche_05.jpg/1280px-Ortie_blanche_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Lamium album",
+    "common_name": "White Deadnettle",
+    "family": "Lamiaceae"
+  },
+  "f47r": {
+    "plant_local": "assets/botanical/f47r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Ballota_nigra_subsp._nigra_sl13.jpg/1280px-Ballota_nigra_subsp._nigra_sl13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Ballota nigra",
+    "common_name": "Black Horehound",
+    "family": "Lamiaceae"
+  },
+  "f47v": {
+    "plant_local": "assets/botanical/f47v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ajuga_reptans_20070429_132711_1.jpg/1280px-Ajuga_reptans_20070429_132711_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Ajuga reptans",
+    "common_name": "Common Bugle",
+    "family": "Lamiaceae"
+  },
+  "f48r": {
+    "plant_local": "assets/botanical/f48r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/6/68/Oenanthe_pimpinelloides2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Oenanthe pimpinelloides",
+    "common_name": "Parsley Water Dropwort",
+    "family": "Apiaceae"
+  },
+  "f48v": {
+    "plant_local": "assets/botanical/f48v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/3/31/Primula_veris_230405.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Primula veris",
+    "common_name": "Cowslip Primrose",
+    "family": "Primulaceae"
+  },
+  "f49r": {
+    "plant_local": "assets/botanical/f49r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Convolvulus_arvensis_in_Aveyron_%282%29.jpg/1280px-Convolvulus_arvensis_in_Aveyron_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Convolvulus arvensis",
+    "common_name": "Field Bindweed",
+    "family": "Convolvulaceae"
+  },
+  "f49v": {
+    "plant_local": "assets/botanical/f49v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Calystegia_April_2008-1.jpg/1280px-Calystegia_April_2008-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Calystegia sepium",
+    "common_name": "Hedge Bindweed",
+    "family": "Convolvulaceae"
+  },
+  "f50r": {
+    "plant_local": "assets/botanical/f50r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Cuscuta_europaea_%28on_Urtica_dioica%29.jpg/1280px-Cuscuta_europaea_%28on_Urtica_dioica%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Cuscuta europaea",
+    "common_name": "Greater Dodder",
+    "family": "Convolvulaceae"
+  },
+  "f50v": {
+    "plant_local": "assets/botanical/f50v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Sedum_acre_single_-_Niitv%C3%A4lja.jpg/1280px-Sedum_acre_single_-_Niitv%C3%A4lja.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Sedum acre",
+    "common_name": "Goldmoss Stonecrop",
+    "family": "Crassulaceae"
+  },
+  "f51r": {
+    "plant_local": "assets/botanical/f51r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sempervivum_tectorum_Almindelig_Husl%C3%B8g.jpg/1280px-Sempervivum_tectorum_Almindelig_Husl%C3%B8g.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Sempervivum tectorum",
+    "common_name": "Common Houseleek",
+    "family": "Crassulaceae"
+  },
+  "f51v": {
+    "plant_local": "assets/botanical/f51v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Asarum_europaeum_170406.jpg/1280px-Asarum_europaeum_170406.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Asarum europaeum",
+    "common_name": "Galled Asarabacca",
+    "family": "Aristolochiaceae"
+  },
+  "f52r": {
+    "plant_local": "assets/botanical/f52r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Saxifraga_granulata_140505.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Saxifraga granulata",
+    "common_name": "Meadow Saxifrage",
+    "family": "Saxifragaceae"
+  },
+  "f52v": {
+    "plant_local": "assets/botanical/f52v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Parnassia_palustris_-_Niitv%C3%A4lja_bog.jpg/1280px-Parnassia_palustris_-_Niitv%C3%A4lja_bog.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Parnassia palustris",
+    "common_name": "Grass of Parnassus",
+    "family": "Celastraceae"
+  },
+  "f53r": {
+    "plant_local": "assets/botanical/f53r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Drosera_anglica_ne1.JPG/1280px-Drosera_anglica_ne1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Drosera anglica",
+    "common_name": "English Sundew",
+    "family": "Droseraceae"
+  },
+  "f53v": {
+    "plant_local": "assets/botanical/f53v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Wiesenknopf_Bl%C3%BCte_6260037-PSD-PSD.jpg/1280px-Wiesenknopf_Bl%C3%BCte_6260037-PSD-PSD.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Sanguisorba minor",
+    "common_name": "Salad Burnet",
+    "family": "Rosaceae"
+  },
+  "f54r": {
+    "plant_local": "assets/botanical/f54r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Potentilla_erecta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-248.jpg/1280px-Potentilla_erecta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-248.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Potentilla erecta",
+    "common_name": "Tormentil",
+    "family": "Rosaceae"
+  },
+  "f54v": {
+    "plant_local": "assets/botanical/f54v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Illustration_Fragaria_vesca0.jpg/1280px-Illustration_Fragaria_vesca0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Fragaria vesca",
+    "common_name": "Wild Woodland Strawberry",
+    "family": "Rosaceae"
+  },
+  "f55r": {
+    "plant_local": "assets/botanical/f55r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/20140715Filipendula_ulmaria.jpg/1280px-20140715Filipendula_ulmaria.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Filipendula ulmaria",
+    "common_name": "Meadowsweet",
+    "family": "Rosaceae"
+  },
+  "f55v": {
+    "plant_local": "assets/botanical/f55v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Geum_rivale_flower_-_Keila.jpg/1280px-Geum_rivale_flower_-_Keila.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Geum rivale",
+    "common_name": "Water Avens",
+    "family": "Rosaceae"
+  },
+  "f56r": {
+    "plant_local": "assets/botanical/f56r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Drosera_rotundifolia_Ohio.jpg/1280px-Drosera_rotundifolia_Ohio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Drosera rotundifolia",
+    "common_name": "Round-Leaved Sundew",
+    "family": "Droseraceae"
+  },
+  "f56v": {
+    "plant_local": "assets/botanical/f56v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Caltha_palustris_plant.JPG/1280px-Caltha_palustris_plant.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Caltha palustris",
+    "common_name": "Marsh Marigold / Kingcup",
+    "family": "Ranunculaceae"
+  },
+  "f57r": {
+    "plant_local": "assets/botanical/f57r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Helleborus_viridis_003.JPG/1280px-Helleborus_viridis_003.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Helleborus viridis",
+    "common_name": "Green Hellebore",
+    "family": "Ranunculaceae"
+  },
+  "f57v": {
+    "plant_local": "assets/botanical/f57v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Aquilegia_vulgaris_-_Harilik_kurekell.jpg/1280px-Aquilegia_vulgaris_-_Harilik_kurekell.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Aquilegia vulgaris",
+    "common_name": "Common Columbine",
+    "family": "Ranunculaceae"
+  },
+  "f58r": {
+    "plant_local": "assets/botanical/f58r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Delphinium_elatum_var._palmatifidum_as_Delphinium_intermedium_var._palmatifidum_by_S._A._Drake._Edwards%27s_Botanical_Register_vol._24%2C_t._38_%281838%29.tif/lossless-page1-1280px-Delphinium_elatum_var._palmatifidum_as_Delphinium_intermedium_var._palmatifidum_by_S._A._Drake._Edwards%27s_Botanical_Register_vol._24%2C_t._38_%281838%29.tif.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Delphinium staphisagria",
+    "common_name": "Lousewort Stavesacre",
+    "family": "Ranunculaceae"
+  },
+  "f58v": {
+    "plant_local": "assets/botanical/f58v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Thalictrum_flavum0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Thalictrum flavum",
+    "common_name": "Yellow Meadow-Rue",
+    "family": "Ranunculaceae"
+  },
+  "f87r": {
+    "plant_local": "assets/botanical/f87r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/1280px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Zingiber officinale",
+    "common_name": "Ginger Root",
+    "family": "Zingiberaceae"
+  },
+  "f87v": {
+    "plant_local": "assets/botanical/f87v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Curcuma_zedoaria_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-048.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Curcuma longa",
+    "common_name": "Turmeric Root",
+    "family": "Zingiberaceae"
+  },
+  "f88r": {
+    "plant_local": "assets/botanical/f88r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Crocus_sativus2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Crocus sativus",
+    "common_name": "Saffron Crocus",
+    "family": "Iridaceae"
+  },
+  "f88v": {
+    "plant_local": "assets/botanical/f88v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/8/86/Commiphora_myrrha_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Commiphora myrrha",
+    "common_name": "Myrrh Gum Resin",
+    "family": "Burseraceae"
+  },
+  "f89r": {
+    "plant_local": "assets/botanical/f89r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Boswellia_sacra.jpg/1280px-Boswellia_sacra.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Boswellia sacra",
+    "common_name": "Frankincense Resin",
+    "family": "Burseraceae"
+  },
+  "f89v": {
+    "plant_local": "assets/botanical/f89v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Styrax_benzoin_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-133.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Styrax benzoin",
+    "common_name": "Gum Benzoin Resin",
+    "family": "Styracaceae"
+  },
+  "f90r": {
+    "plant_local": "assets/botanical/f90r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Asa_foetida_Kaempfer.jpg/1280px-Asa_foetida_Kaempfer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Ferula assa-foetida",
+    "common_name": "Asafoetida Devil's Dung",
+    "family": "Apiaceae"
+  },
+  "f93r": {
+    "plant_local": "assets/botanical/f93r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/5/53/Inula_helenium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-210.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Inula helenium",
+    "common_name": "Elecampane Root",
+    "family": "Asteraceae"
+  },
+  "f93v": {
+    "plant_local": "assets/botanical/f93v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Starr_070321-6132_Syzygium_malaccense.jpg/1280px-Starr_070321-6132_Syzygium_malaccense.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Syzygium aromaticum",
+    "common_name": "Clove Tree",
+    "family": "Myrtaceae"
+  },
+  "f94r": {
+    "plant_local": "assets/botanical/f94r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/2/24/Myristica_fragrans_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-097.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Myristica fragrans",
+    "common_name": "Nutmeg / Mace Tree",
+    "family": "Myristicaceae"
+  },
+  "f94v": {
+    "plant_local": "assets/botanical/f94v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Elettaria_cardamomum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-057.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Elettaria cardamomum",
+    "common_name": "True Green Cardamom",
+    "family": "Zingiberaceae"
+  },
+  "f95r": {
+    "plant_local": "assets/botanical/f95r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Garcinia_subelliptica_%28200703%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Garcinia morella",
+    "common_name": "Gamboge Tree Resin",
+    "family": "Clusiaceae"
+  },
+  "f95v": {
+    "plant_local": "assets/botanical/f95v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Pistacia_lentiscus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Pistacia lentiscus",
+    "common_name": "Chios Mastic Tree",
+    "family": "Anacardiaceae"
+  },
+  "f96r": {
+    "plant_local": "assets/botanical/f96r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Acacia_senegal_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Senegalia senegal",
+    "common_name": "Gum Arabic Tree",
+    "family": "Fabaceae"
+  },
+  "f96v": {
+    "plant_local": "assets/botanical/f96v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Astragalus_tragacantha_4.jpg/1280px-Astragalus_tragacantha_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Astragalus tragacantha",
+    "common_name": "Gum Tragacanth",
+    "family": "Fabaceae"
+  },
+  "f99r": {
+    "plant_local": "assets/botanical/f99r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/1280px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Aloe vera",
+    "common_name": "Barbados / Socotrine Aloe",
+    "family": "Asphodelaceae"
+  },
+  "f99v": {
+    "plant_local": "assets/botanical/f99v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Senna_alexandrina_Mill.-Cassia_angustifolia_L._%28Senna_Plant%29.jpg/1280px-Senna_alexandrina_Mill.-Cassia_angustifolia_L._%28Senna_Plant%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Senna alexandrina",
+    "common_name": "Alexandrian Senna",
+    "family": "Fabaceae"
+  },
+  "f100r": {
+    "plant_local": "assets/botanical/f100r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/7/74/Smilax_aspera.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Smilax aspera",
+    "common_name": "Sarsaparilla / Rough Bindweed",
+    "family": "Smilacaceae"
+  },
+  "f100v": {
+    "plant_local": "assets/botanical/f100v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-207.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Glycyrrhiza glabra",
+    "common_name": "Liquorice Root",
+    "family": "Fabaceae"
+  },
+  "f101v": {
+    "plant_local": "assets/botanical/f101v_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Golden_shower_tree.jpg/1280px-Golden_shower_tree.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Cassia fistula",
+    "common_name": "Golden Shower Purging Cassia",
+    "family": "Fabaceae"
+  },
+  "f102r": {
+    "plant_local": "assets/botanical/f102r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Strychnos_nux-vomica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-266.jpg/1280px-Strychnos_nux-vomica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-266.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Strychnos nux-vomica",
+    "common_name": "Poison Nut / Nux Vomica",
+    "family": "Loganiaceae"
+  },
+  "f102v": {
+    "plant_local": "assets/botanical/f102v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Pterocarpus_santalinus_in_Talakona_forest%2C_AP_W_IMG_8145.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Pterocarpus santalinus",
+    "common_name": "Red Sandalwood",
+    "family": "Fabaceae"
+  },
+  "f41r": {
+    "plant_local": "assets/botanical/f41r_plant.jpg",
+    "plant_remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/1280px-Lemon_balm_plant.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "taxon": "Melissa officinalis",
+    "common_name": "Lemon Balm"
+  },
+  "f90v": {
+    "plant_local": "assets/botanical/f90v_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Piper nigrum",
+    "common_name": "Black Pepper Vine"
+  },
+  "f101r": {
+    "plant_local": "assets/botanical/f101r_plant.jpg",
+    "plant_remote": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tamarindus_indica_pods.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "taxon": "Tamarindus indica",
+    "common_name": "Tamarind Tree"
+  }
+}
